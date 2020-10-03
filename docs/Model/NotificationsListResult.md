@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**values** | [**\Swagger\Client\Model\InlineResponse20036Values[]**](InlineResponse20036Values.md) |  | 
+**values** | [**\ZeC128\AppCenter\AppCenterApi\InlineResponse20036Values[]**](InlineResponse20036Values.md) |  | 
 **total** | **int** | the total count of notifications | [optional] 
 **next_link** | **string** |  | [optional] 
 

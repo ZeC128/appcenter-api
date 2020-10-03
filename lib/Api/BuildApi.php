@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * BuildApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class BuildApi
      * Operation branchConfigurationsCreate
      *
      * @param  string $branch The branch name (required)
-     * @param  \Swagger\Client\Model\Params1 $params Parameters of the configuration (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params1 $params Parameters of the configuration (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20075
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20075
      */
     public function branchConfigurationsCreate($branch, $params, $owner_name, $app_name)
     {
@@ -109,17 +109,17 @@ class BuildApi
      * Operation branchConfigurationsCreateWithHttpInfo
      *
      * @param  string $branch The branch name (required)
-     * @param  \Swagger\Client\Model\Params1 $params Parameters of the configuration (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params1 $params Parameters of the configuration (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20075, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20075, HTTP status code, HTTP response headers (array of strings)
      */
     public function branchConfigurationsCreateWithHttpInfo($branch, $params, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20075';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20075';
         $request = $this->branchConfigurationsCreateRequest($branch, $params, $owner_name, $app_name);
 
         try {
@@ -171,7 +171,7 @@ class BuildApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20075',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20075',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class BuildApi
      * 
      *
      * @param  string $branch The branch name (required)
-     * @param  \Swagger\Client\Model\Params1 $params Parameters of the configuration (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params1 $params Parameters of the configuration (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -210,7 +210,7 @@ class BuildApi
      * 
      *
      * @param  string $branch The branch name (required)
-     * @param  \Swagger\Client\Model\Params1 $params Parameters of the configuration (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params1 $params Parameters of the configuration (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -219,7 +219,7 @@ class BuildApi
      */
     public function branchConfigurationsCreateAsyncWithHttpInfo($branch, $params, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20075';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20075';
         $request = $this->branchConfigurationsCreateRequest($branch, $params, $owner_name, $app_name);
 
         return $this->client
@@ -263,7 +263,7 @@ class BuildApi
      * Create request for operation 'branchConfigurationsCreate'
      *
      * @param  string $branch The branch name (required)
-     * @param  \Swagger\Client\Model\Params1 $params Parameters of the configuration (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params1 $params Parameters of the configuration (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -417,7 +417,7 @@ class BuildApi
      * @param  string $app_name The name of the application (required)
      * @param  object $payload payload (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -435,7 +435,7 @@ class BuildApi
      * @param  string $app_name The name of the application (required)
      * @param  object $payload (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -732,9 +732,9 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20075
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20075
      */
     public function branchConfigurationsGet($branch, $owner_name, $app_name)
     {
@@ -749,13 +749,13 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20075, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20075, HTTP status code, HTTP response headers (array of strings)
      */
     public function branchConfigurationsGetWithHttpInfo($branch, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20075';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20075';
         $request = $this->branchConfigurationsGetRequest($branch, $owner_name, $app_name);
 
         try {
@@ -807,7 +807,7 @@ class BuildApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20075',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20075',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -861,7 +861,7 @@ class BuildApi
      */
     public function branchConfigurationsGetAsyncWithHttpInfo($branch, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20075';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20075';
         $request = $this->branchConfigurationsGetRequest($branch, $owner_name, $app_name);
 
         return $this->client
@@ -1045,13 +1045,13 @@ class BuildApi
      * Operation branchConfigurationsUpdate
      *
      * @param  string $branch The branch name (required)
-     * @param  \Swagger\Client\Model\Params $params Parameters of the configuration (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params $params Parameters of the configuration (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20075
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20075
      */
     public function branchConfigurationsUpdate($branch, $params, $owner_name, $app_name)
     {
@@ -1063,17 +1063,17 @@ class BuildApi
      * Operation branchConfigurationsUpdateWithHttpInfo
      *
      * @param  string $branch The branch name (required)
-     * @param  \Swagger\Client\Model\Params $params Parameters of the configuration (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params $params Parameters of the configuration (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20075, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20075, HTTP status code, HTTP response headers (array of strings)
      */
     public function branchConfigurationsUpdateWithHttpInfo($branch, $params, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20075';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20075';
         $request = $this->branchConfigurationsUpdateRequest($branch, $params, $owner_name, $app_name);
 
         try {
@@ -1125,7 +1125,7 @@ class BuildApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20075',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20075',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1141,7 +1141,7 @@ class BuildApi
      * 
      *
      * @param  string $branch The branch name (required)
-     * @param  \Swagger\Client\Model\Params $params Parameters of the configuration (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params $params Parameters of the configuration (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1164,7 +1164,7 @@ class BuildApi
      * 
      *
      * @param  string $branch The branch name (required)
-     * @param  \Swagger\Client\Model\Params $params Parameters of the configuration (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params $params Parameters of the configuration (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1173,7 +1173,7 @@ class BuildApi
      */
     public function branchConfigurationsUpdateAsyncWithHttpInfo($branch, $params, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20075';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20075';
         $request = $this->branchConfigurationsUpdateRequest($branch, $params, $owner_name, $app_name);
 
         return $this->client
@@ -1217,7 +1217,7 @@ class BuildApi
      * Create request for operation 'branchConfigurationsUpdate'
      *
      * @param  string $branch The branch name (required)
-     * @param  \Swagger\Client\Model\Params $params Parameters of the configuration (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params $params Parameters of the configuration (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1369,9 +1369,9 @@ class BuildApi
      * @param  string $branch The branch name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Params2 $params Parameters of the build (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params2 $params Parameters of the build (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1387,9 +1387,9 @@ class BuildApi
      * @param  string $branch The branch name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Params2 $params Parameters of the build (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params2 $params Parameters of the build (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1465,7 +1465,7 @@ class BuildApi
      * @param  string $branch The branch name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Params2 $params Parameters of the build (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params2 $params Parameters of the build (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1488,7 +1488,7 @@ class BuildApi
      * @param  string $branch The branch name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Params2 $params Parameters of the build (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params2 $params Parameters of the build (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1541,7 +1541,7 @@ class BuildApi
      * @param  string $branch The branch name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Params2 $params Parameters of the build (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Params2 $params Parameters of the build (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1683,11 +1683,11 @@ class BuildApi
      * Operation buildsDistribute
      *
      * @param  int $build_id The build ID (required)
-     * @param  \Swagger\Client\Model\DistributeInfo $distribute_info The distribution details (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributeInfo $distribute_info The distribution details (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1701,11 +1701,11 @@ class BuildApi
      * Operation buildsDistributeWithHttpInfo
      *
      * @param  int $build_id The build ID (required)
-     * @param  \Swagger\Client\Model\DistributeInfo $distribute_info The distribution details (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributeInfo $distribute_info The distribution details (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1779,7 +1779,7 @@ class BuildApi
      * 
      *
      * @param  int $build_id The build ID (required)
-     * @param  \Swagger\Client\Model\DistributeInfo $distribute_info The distribution details (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributeInfo $distribute_info The distribution details (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1802,7 +1802,7 @@ class BuildApi
      * 
      *
      * @param  int $build_id The build ID (required)
-     * @param  \Swagger\Client\Model\DistributeInfo $distribute_info The distribution details (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributeInfo $distribute_info The distribution details (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1855,7 +1855,7 @@ class BuildApi
      * Create request for operation 'buildsDistribute'
      *
      * @param  int $build_id The build ID (required)
-     * @param  \Swagger\Client\Model\DistributeInfo $distribute_info The distribution details (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributeInfo $distribute_info The distribution details (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2012,7 +2012,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2029,7 +2029,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2325,7 +2325,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2343,7 +2343,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2655,7 +2655,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2672,7 +2672,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2966,7 +2966,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2982,7 +2982,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3255,7 +3255,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return map[string,object][]
      */
@@ -3271,7 +3271,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of map[string,object][], HTTP status code, HTTP response headers (array of strings)
      */
@@ -3553,9 +3553,9 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20076[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20076[]
      */
     public function buildsListByBranch($branch, $owner_name, $app_name)
     {
@@ -3570,13 +3570,13 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20076[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20076[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsListByBranchWithHttpInfo($branch, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20076[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20076[]';
         $request = $this->buildsListByBranchRequest($branch, $owner_name, $app_name);
 
         try {
@@ -3628,7 +3628,7 @@ class BuildApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20076[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20076[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3674,7 +3674,7 @@ class BuildApi
      */
     public function buildsListByBranchAsyncWithHttpInfo($branch, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20076[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20076[]';
         $request = $this->buildsListByBranchRequest($branch, $owner_name, $app_name);
 
         return $this->client
@@ -3864,7 +3864,7 @@ class BuildApi
      * @param  string $app_name The name of the application (required)
      * @param  int $max_search_depth The depth of the repository to search for project files (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -3884,7 +3884,7 @@ class BuildApi
      * @param  string $app_name The name of the application (required)
      * @param  int $max_search_depth The depth of the repository to search for project files (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4215,9 +4215,9 @@ class BuildApi
      * @param  string $app_name The name of the application (required)
      * @param  string $tools Toolset name (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20021
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20021
      */
     public function buildsListToolsets($owner_name, $app_name, $tools = null)
     {
@@ -4232,13 +4232,13 @@ class BuildApi
      * @param  string $app_name The name of the application (required)
      * @param  string $tools Toolset name (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20021, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20021, HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsListToolsetsWithHttpInfo($owner_name, $app_name, $tools = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20021';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20021';
         $request = $this->buildsListToolsetsRequest($owner_name, $app_name, $tools);
 
         try {
@@ -4290,7 +4290,7 @@ class BuildApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20021',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20021',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4344,7 +4344,7 @@ class BuildApi
      */
     public function buildsListToolsetsAsyncWithHttpInfo($owner_name, $app_name, $tools = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20021';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20021';
         $request = $this->buildsListToolsetsRequest($owner_name, $app_name, $tools);
 
         return $this->client
@@ -4520,9 +4520,9 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20018[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20018[]
      */
     public function buildsListXamarinSDKBundles($owner_name, $app_name)
     {
@@ -4536,13 +4536,13 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20018[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20018[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsListXamarinSDKBundlesWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20018[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20018[]';
         $request = $this->buildsListXamarinSDKBundlesRequest($owner_name, $app_name);
 
         try {
@@ -4594,7 +4594,7 @@ class BuildApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20018[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20018[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4646,7 +4646,7 @@ class BuildApi
      */
     public function buildsListXamarinSDKBundlesAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20018[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20018[]';
         $request = $this->buildsListXamarinSDKBundlesRequest($owner_name, $app_name);
 
         return $this->client
@@ -4817,9 +4817,9 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20017[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20017[]
      */
     public function buildsListXcodeVersions($owner_name, $app_name)
     {
@@ -4833,13 +4833,13 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20017[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20017[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsListXcodeVersionsWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20017[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20017[]';
         $request = $this->buildsListXcodeVersionsRequest($owner_name, $app_name);
 
         try {
@@ -4891,7 +4891,7 @@ class BuildApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20017[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20017[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4943,7 +4943,7 @@ class BuildApi
      */
     public function buildsListXcodeVersionsAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20017[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20017[]';
         $request = $this->buildsListXcodeVersionsRequest($owner_name, $app_name);
 
         return $this->client
@@ -5112,11 +5112,11 @@ class BuildApi
      * Operation buildsUpdate
      *
      * @param  int $build_id The build ID (required)
-     * @param  \Swagger\Client\Model\Properties5 $properties properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties5 $properties properties (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -5130,11 +5130,11 @@ class BuildApi
      * Operation buildsUpdateWithHttpInfo
      *
      * @param  int $build_id The build ID (required)
-     * @param  \Swagger\Client\Model\Properties5 $properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties5 $properties (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5208,7 +5208,7 @@ class BuildApi
      * 
      *
      * @param  int $build_id The build ID (required)
-     * @param  \Swagger\Client\Model\Properties5 $properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties5 $properties (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -5231,7 +5231,7 @@ class BuildApi
      * 
      *
      * @param  int $build_id The build ID (required)
-     * @param  \Swagger\Client\Model\Properties5 $properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties5 $properties (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -5284,7 +5284,7 @@ class BuildApi
      * Create request for operation 'buildsUpdate'
      *
      * @param  int $build_id The build ID (required)
-     * @param  \Swagger\Client\Model\Properties5 $properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties5 $properties (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -5439,7 +5439,7 @@ class BuildApi
      *
      * @param  object $payload payload (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5453,7 +5453,7 @@ class BuildApi
      *
      * @param  object $payload (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5666,7 +5666,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object[]
      */
@@ -5683,7 +5683,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -5973,7 +5973,7 @@ class BuildApi
      * @param  string $app_name The name of the application (required)
      * @param  object $payload payload (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -5990,7 +5990,7 @@ class BuildApi
      * @param  string $app_name The name of the application (required)
      * @param  object $payload (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6282,9 +6282,9 @@ class BuildApi
      * @param  string $service_connection_id The id of the service connection (private). Required for GitLab self-hosted repositories (optional)
      * @param  string $form The selected form of the object (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20032[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20032[]
      */
     public function repositoriesList($source_host, $owner_name, $app_name, $vsts_account_name = null, $vsts_project_id = null, $service_connection_id = null, $form = null)
     {
@@ -6303,13 +6303,13 @@ class BuildApi
      * @param  string $service_connection_id The id of the service connection (private). Required for GitLab self-hosted repositories (optional)
      * @param  string $form The selected form of the object (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20032[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20032[], HTTP status code, HTTP response headers (array of strings)
      */
     public function repositoriesListWithHttpInfo($source_host, $owner_name, $app_name, $vsts_account_name = null, $vsts_project_id = null, $service_connection_id = null, $form = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20032[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20032[]';
         $request = $this->repositoriesListRequest($source_host, $owner_name, $app_name, $vsts_account_name, $vsts_project_id, $service_connection_id, $form);
 
         try {
@@ -6361,7 +6361,7 @@ class BuildApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20032[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20032[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6423,7 +6423,7 @@ class BuildApi
      */
     public function repositoriesListAsyncWithHttpInfo($source_host, $owner_name, $app_name, $vsts_account_name = null, $vsts_project_id = null, $service_connection_id = null, $form = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20032[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20032[]';
         $request = $this->repositoriesListRequest($source_host, $owner_name, $app_name, $vsts_account_name, $vsts_project_id, $service_connection_id, $form);
 
         return $this->client
@@ -6630,7 +6630,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -6647,7 +6647,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6940,7 +6940,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -6956,7 +6956,7 @@ class BuildApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7238,9 +7238,9 @@ class BuildApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $include_inactive Include inactive configurations if none are active (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20033[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20033[]
      */
     public function repositoryConfigurationsList($owner_name, $app_name, $include_inactive = null)
     {
@@ -7255,13 +7255,13 @@ class BuildApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $include_inactive Include inactive configurations if none are active (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20033[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20033[], HTTP status code, HTTP response headers (array of strings)
      */
     public function repositoryConfigurationsListWithHttpInfo($owner_name, $app_name, $include_inactive = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20033[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20033[]';
         $request = $this->repositoryConfigurationsListRequest($owner_name, $app_name, $include_inactive);
 
         try {
@@ -7313,7 +7313,7 @@ class BuildApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20033[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20033[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7367,7 +7367,7 @@ class BuildApi
      */
     public function repositoryConfigurationsListAsyncWithHttpInfo($owner_name, $app_name, $include_inactive = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20033[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20033[]';
         $request = $this->repositoryConfigurationsListRequest($owner_name, $app_name, $include_inactive);
 
         return $this->client

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * PushApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,7 +108,7 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -152,7 +152,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -350,11 +350,11 @@ class PushApi
     /**
      * Operation pushDelete
      *
-     * @param  \Swagger\Client\Model\NotificationIds $notification_ids List of notification ids (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NotificationIds $notification_ids List of notification ids (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -366,11 +366,11 @@ class PushApi
     /**
      * Operation pushDeleteWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\NotificationIds $notification_ids List of notification ids (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NotificationIds $notification_ids List of notification ids (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -414,7 +414,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -429,7 +429,7 @@ class PushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\NotificationIds $notification_ids List of notification ids (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NotificationIds $notification_ids List of notification ids (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -451,7 +451,7 @@ class PushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\NotificationIds $notification_ids List of notification ids (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NotificationIds $notification_ids List of notification ids (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -489,7 +489,7 @@ class PushApi
     /**
      * Create request for operation 'pushDelete'
      *
-     * @param  \Swagger\Client\Model\NotificationIds $notification_ids List of notification ids (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NotificationIds $notification_ids List of notification ids (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -627,7 +627,7 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -642,7 +642,7 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -686,7 +686,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -888,7 +888,7 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -904,7 +904,7 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -948,7 +948,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1163,11 +1163,11 @@ class PushApi
     /**
      * Operation pushExportDevices
      *
-     * @param  \Swagger\Client\Model\Properties2 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties2 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1180,11 +1180,11 @@ class PushApi
     /**
      * Operation pushExportDevicesWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Properties2 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties2 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1250,7 +1250,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1265,7 +1265,7 @@ class PushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Properties2 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties2 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1287,7 +1287,7 @@ class PushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Properties2 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties2 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1339,7 +1339,7 @@ class PushApi
     /**
      * Create request for operation 'pushExportDevices'
      *
-     * @param  \Swagger\Client\Model\Properties2 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties2 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1478,9 +1478,9 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20037
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20037
      */
     public function pushExportDevicesStatus($export_id, $owner_name, $app_name)
     {
@@ -1495,13 +1495,13 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20037, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20037, HTTP status code, HTTP response headers (array of strings)
      */
     public function pushExportDevicesStatusWithHttpInfo($export_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20037';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20037';
         $request = $this->pushExportDevicesStatusRequest($export_id, $owner_name, $app_name);
 
         try {
@@ -1553,7 +1553,7 @@ class PushApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20037',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20037',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1561,7 +1561,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1607,7 +1607,7 @@ class PushApi
      */
     public function pushExportDevicesStatusAsyncWithHttpInfo($export_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20037';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20037';
         $request = $this->pushExportDevicesStatusRequest($export_id, $owner_name, $app_name);
 
         return $this->client
@@ -1794,9 +1794,9 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20035
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20035
      */
     public function pushGet($notification_id, $owner_name, $app_name)
     {
@@ -1811,13 +1811,13 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20035, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20035, HTTP status code, HTTP response headers (array of strings)
      */
     public function pushGetWithHttpInfo($notification_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20035';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20035';
         $request = $this->pushGetRequest($notification_id, $owner_name, $app_name);
 
         try {
@@ -1869,7 +1869,7 @@ class PushApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20035',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20035',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1877,7 +1877,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1923,7 +1923,7 @@ class PushApi
      */
     public function pushGetAsyncWithHttpInfo($notification_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20035';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20035';
         $request = $this->pushGetRequest($notification_id, $owner_name, $app_name);
 
         return $this->client
@@ -2109,7 +2109,7 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2125,7 +2125,7 @@ class PushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2191,7 +2191,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2411,9 +2411,9 @@ class PushApi
      * @param  string $inlinecount Controls whether or not to include a count of all the items across all pages. (optional, default to none)
      * @param  bool $include_archived Include arhived push notifications (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20036
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20036
      */
     public function pushList($owner_name, $app_name, $top = '30', $skiptoken = null, $orderby = 'count desc', $inlinecount = 'none', $include_archived = null)
     {
@@ -2432,13 +2432,13 @@ class PushApi
      * @param  string $inlinecount Controls whether or not to include a count of all the items across all pages. (optional, default to none)
      * @param  bool $include_archived Include arhived push notifications (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20036, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20036, HTTP status code, HTTP response headers (array of strings)
      */
     public function pushListWithHttpInfo($owner_name, $app_name, $top = '30', $skiptoken = null, $orderby = 'count desc', $inlinecount = 'none', $include_archived = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20036';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20036';
         $request = $this->pushListRequest($owner_name, $app_name, $top, $skiptoken, $orderby, $inlinecount, $include_archived);
 
         try {
@@ -2490,7 +2490,7 @@ class PushApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20036',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20036',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2498,7 +2498,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2552,7 +2552,7 @@ class PushApi
      */
     public function pushListAsyncWithHttpInfo($owner_name, $app_name, $top = '30', $skiptoken = null, $orderby = 'count desc', $inlinecount = 'none', $include_archived = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20036';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20036';
         $request = $this->pushListRequest($owner_name, $app_name, $top, $skiptoken, $orderby, $inlinecount, $include_archived);
 
         return $this->client
@@ -2752,11 +2752,11 @@ class PushApi
     /**
      * Operation pushSend
      *
-     * @param  \Swagger\Client\Model\Properties1 $properties Notification specifications. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties1 $properties Notification specifications. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2769,11 +2769,11 @@ class PushApi
     /**
      * Operation pushSendWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Properties1 $properties Notification specifications. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties1 $properties Notification specifications. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2839,7 +2839,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2854,7 +2854,7 @@ class PushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Properties1 $properties Notification specifications. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties1 $properties Notification specifications. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2876,7 +2876,7 @@ class PushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Properties1 $properties Notification specifications. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties1 $properties Notification specifications. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2928,7 +2928,7 @@ class PushApi
     /**
      * Create request for operation 'pushSend'
      *
-     * @param  \Swagger\Client\Model\Properties1 $properties Notification specifications. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties1 $properties Notification specifications. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -3063,11 +3063,11 @@ class PushApi
     /**
      * Operation pushSetConfig
      *
-     * @param  \Swagger\Client\Model\Properties $properties Notification configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties $properties Notification configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -3080,11 +3080,11 @@ class PushApi
     /**
      * Operation pushSetConfigWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Properties $properties Notification configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties $properties Notification configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3150,7 +3150,7 @@ class PushApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3165,7 +3165,7 @@ class PushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Properties $properties Notification configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties $properties Notification configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -3187,7 +3187,7 @@ class PushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Properties $properties Notification configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties $properties Notification configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -3239,7 +3239,7 @@ class PushApi
     /**
      * Create request for operation 'pushSetConfig'
      *
-     * @param  \Swagger\Client\Model\Properties $properties Notification configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties $properties Notification configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *

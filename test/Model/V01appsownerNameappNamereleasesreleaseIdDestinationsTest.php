@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace ZeC128\AppCenter;
 
 /**
  * V01appsownerNameappNamereleasesreleaseIdDestinationsTest Class Doc Comment
  *
  * @category    Class
  * @description A unique identifier for a destination. A destination can be identified by an ID (guid) or by a name. DestinationId encapsulates both options. A destination can be either a distribution group or a store.
- * @package     Swagger\Client
+ * @package     ZeC128\AppCenter
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

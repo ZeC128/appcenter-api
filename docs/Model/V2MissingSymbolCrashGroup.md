@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **app_ver** | **string** | application version | 
 **app_build** | **string** | application build | 
 **last_modified** | [**\DateTime**](\DateTime.md) | last update date for the group | 
-**missing_symbols** | [**\Swagger\Client\Model\V2MissingSymbolsInner[]**](V2MissingSymbolsInner.md) | list of missing symbols | 
+**missing_symbols** | [**\ZeC128\AppCenter\AppCenterApi\V2MissingSymbolsInner[]**](V2MissingSymbolsInner.md) | list of missing symbols | 
 **status** | **string** | group status | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

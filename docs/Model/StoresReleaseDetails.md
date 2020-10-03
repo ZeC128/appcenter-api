@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **uploaded_at** | **string** | UTC time in ISO 8601 format of the uploaded time. | [optional] 
 **download_url** | **string** | The URL that hosts the binary for this release. | [optional] 
 **install_url** | **string** | The href required to install a release on a mobile device. On iOS devices will be prefixed with &#x60;itms-services://?action&#x3D;download-manifest&amp;url&#x3D;&#x60; | [optional] 
-**distribution_stores** | [**\Swagger\Client\Model\V01appsownerNameappNamedistributionStoresstoreNamereleasesreleaseIdDistributionStores[]**](V01appsownerNameappNamedistributionStoresstoreNamereleasesreleaseIdDistributionStores.md) | a list of distribution stores that are associated with this release. | [optional] 
+**distribution_stores** | [**\ZeC128\AppCenter\AppCenterApi\V01appsownerNameappNamedistributionStoresstoreNamereleasesreleaseIdDistributionStores[]**](V01appsownerNameappNamedistributionStoresstoreNamereleasesreleaseIdDistributionStores.md) | a list of distribution stores that are associated with this release. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

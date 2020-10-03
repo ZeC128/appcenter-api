@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**details** | [**\Swagger\Client\Model\CrashDetails**](CrashDetails.md) |  | [optional] 
+**details** | [**\ZeC128\AppCenter\AppCenterApi\CrashDetails**](CrashDetails.md) |  | [optional] 
 **new_crash_group_id** | **string** |  | 
 **crash_id** | **string** |  | 
 **new_crash_id** | **string** |  | 
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **device_name** | **string** |  | [optional] 
 **os_version** | **string** |  | 
 **os_type** | **string** |  | [optional] 
-**stacktrace** | [**\Swagger\Client\Model\Stacktrace**](Stacktrace.md) |  | [optional] 
+**stacktrace** | [**\ZeC128\AppCenter\AppCenterApi\Stacktrace**](Stacktrace.md) |  | [optional] 
 **user_name** | **string** |  | 
 **user_email** | **string** |  | [optional] 
 

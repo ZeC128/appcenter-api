@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **last_occurrence** | [**\DateTime**](\DateTime.md) |  | 
 **exception** | **string** |  | [optional] 
 **crash_reason** | **string** |  | 
-**reason_frame** | [**\Swagger\Client\Model\InlineResponse20073ReasonFrame**](InlineResponse20073ReasonFrame.md) |  | [optional] 
+**reason_frame** | [**\ZeC128\AppCenter\AppCenterApi\InlineResponse20073ReasonFrame**](InlineResponse20073ReasonFrame.md) |  | [optional] 
 **fatal** | **bool** | Crash or handled exception | 
 **annotation** | **string** |  | 
 

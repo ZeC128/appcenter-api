@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * BillingApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class BillingApi
      * @param  string $period Type of period that should be included in the Billing Information (optional)
      * @param  bool $show_original_plans Controls whether the API should show the original plan when Azure Subscription is not enabled (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20016
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20016
      */
     public function billingAggregatedInformationGetAll($service = null, $period = null, $show_original_plans = null)
     {
@@ -111,13 +111,13 @@ class BillingApi
      * @param  string $period Type of period that should be included in the Billing Information (optional)
      * @param  bool $show_original_plans Controls whether the API should show the original plan when Azure Subscription is not enabled (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20016, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20016, HTTP status code, HTTP response headers (array of strings)
      */
     public function billingAggregatedInformationGetAllWithHttpInfo($service = null, $period = null, $show_original_plans = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20016';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20016';
         $request = $this->billingAggregatedInformationGetAllRequest($service, $period, $show_original_plans);
 
         try {
@@ -169,7 +169,7 @@ class BillingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20016',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20016',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -177,7 +177,7 @@ class BillingApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault3',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class BillingApi
      */
     public function billingAggregatedInformationGetAllAsyncWithHttpInfo($service = null, $period = null, $show_original_plans = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20016';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20016';
         $request = $this->billingAggregatedInformationGetAllRequest($service, $period, $show_original_plans);
 
         return $this->client
@@ -382,9 +382,9 @@ class BillingApi
      * @param  string $period Type of period that should be included in the Billing Information (optional)
      * @param  bool $show_original_plans Controls whether the API should show the original plan when Azure Subscription is not enabled (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20013
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20013
      */
     public function billingAggregatedInformationGetByApp($owner_name, $app_name, $service = null, $period = null, $show_original_plans = null)
     {
@@ -401,13 +401,13 @@ class BillingApi
      * @param  string $period Type of period that should be included in the Billing Information (optional)
      * @param  bool $show_original_plans Controls whether the API should show the original plan when Azure Subscription is not enabled (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
      */
     public function billingAggregatedInformationGetByAppWithHttpInfo($owner_name, $app_name, $service = null, $period = null, $show_original_plans = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20013';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20013';
         $request = $this->billingAggregatedInformationGetByAppRequest($owner_name, $app_name, $service, $period, $show_original_plans);
 
         try {
@@ -459,7 +459,7 @@ class BillingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20013',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20013',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -467,7 +467,7 @@ class BillingApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault3',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -517,7 +517,7 @@ class BillingApi
      */
     public function billingAggregatedInformationGetByAppAsyncWithHttpInfo($owner_name, $app_name, $service = null, $period = null, $show_original_plans = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20013';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20013';
         $request = $this->billingAggregatedInformationGetByAppRequest($owner_name, $app_name, $service, $period, $show_original_plans);
 
         return $this->client
@@ -705,9 +705,9 @@ class BillingApi
      * @param  string $period Type of period that should be included in the Billing Information (optional)
      * @param  bool $show_original_plans Controls whether the API should show the original plan when Azure Subscription is not enabled (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20013
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20013
      */
     public function billingAggregatedInformationGetForOrg($org_name, $service = null, $period = null, $show_original_plans = null)
     {
@@ -723,13 +723,13 @@ class BillingApi
      * @param  string $period Type of period that should be included in the Billing Information (optional)
      * @param  bool $show_original_plans Controls whether the API should show the original plan when Azure Subscription is not enabled (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
      */
     public function billingAggregatedInformationGetForOrgWithHttpInfo($org_name, $service = null, $period = null, $show_original_plans = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20013';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20013';
         $request = $this->billingAggregatedInformationGetForOrgRequest($org_name, $service, $period, $show_original_plans);
 
         try {
@@ -781,7 +781,7 @@ class BillingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20013',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20013',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -789,7 +789,7 @@ class BillingApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault3',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault3',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -837,7 +837,7 @@ class BillingApi
      */
     public function billingAggregatedInformationGetForOrgAsyncWithHttpInfo($org_name, $service = null, $period = null, $show_original_plans = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20013';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20013';
         $request = $this->billingAggregatedInformationGetForOrgRequest($org_name, $service, $period, $show_original_plans);
 
         return $this->client

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **provisioning_profile_file_id** | **string** |  | [optional] 
 **certificate_file_id** | **string** |  | [optional] 
 **provisioning_profile_upload_id** | **string** |  | [optional] 
-**app_extension_provisioning_profile_files** | [**\Swagger\Client\Model\V01appsownerNameappNamebranchesbranchconfigToolsetsXcodeAppExtensionProvisioningProfileFiles[]**](V01appsownerNameappNamebranchesbranchconfigToolsetsXcodeAppExtensionProvisioningProfileFiles.md) |  | [optional] 
+**app_extension_provisioning_profile_files** | [**\ZeC128\AppCenter\AppCenterApi\V01appsownerNameappNamebranchesbranchconfigToolsetsXcodeAppExtensionProvisioningProfileFiles[]**](V01appsownerNameappNamebranchesbranchconfigToolsetsXcodeAppExtensionProvisioningProfileFiles.md) |  | [optional] 
 **certificate_upload_id** | **string** |  | [optional] 
 **certificate_password** | **string** |  | [optional] 
 **scheme** | **string** |  | [optional] 

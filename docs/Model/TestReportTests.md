@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **test_name** | **string** |  | [optional] 
-**runs** | [**\Swagger\Client\Model\TestReportRuns[]**](TestReportRuns.md) |  | [optional] 
+**runs** | [**\ZeC128\AppCenter\AppCenterApi\TestReportRuns[]**](TestReportRuns.md) |  | [optional] 
 **peak_memory** | **float** |  | [optional] 
 **peak_duration** | **float** |  | [optional] 
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * ExportApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,13 +90,13 @@ class ExportApi
     /**
      * Operation exportConfigurationsCreate
      *
-     * @param  \Swagger\Client\Model\Properties4 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties4 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20039
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20039
      */
     public function exportConfigurationsCreate($properties, $owner_name, $app_name)
     {
@@ -107,17 +107,17 @@ class ExportApi
     /**
      * Operation exportConfigurationsCreateWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Properties4 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties4 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20039, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20039, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportConfigurationsCreateWithHttpInfo($properties, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20039';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20039';
         $request = $this->exportConfigurationsCreateRequest($properties, $owner_name, $app_name);
 
         try {
@@ -169,7 +169,7 @@ class ExportApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20039',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20039',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -177,7 +177,7 @@ class ExportApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class ExportApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Properties4 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties4 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -214,7 +214,7 @@ class ExportApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Properties4 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties4 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -223,7 +223,7 @@ class ExportApi
      */
     public function exportConfigurationsCreateAsyncWithHttpInfo($properties, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20039';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20039';
         $request = $this->exportConfigurationsCreateRequest($properties, $owner_name, $app_name);
 
         return $this->client
@@ -266,7 +266,7 @@ class ExportApi
     /**
      * Create request for operation 'exportConfigurationsCreate'
      *
-     * @param  \Swagger\Client\Model\Properties4 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties4 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -405,7 +405,7 @@ class ExportApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -421,7 +421,7 @@ class ExportApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -465,7 +465,7 @@ class ExportApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -684,7 +684,7 @@ class ExportApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -700,7 +700,7 @@ class ExportApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -744,7 +744,7 @@ class ExportApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -963,7 +963,7 @@ class ExportApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -979,7 +979,7 @@ class ExportApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1023,7 +1023,7 @@ class ExportApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1242,9 +1242,9 @@ class ExportApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20039
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20039
      */
     public function exportConfigurationsGet($export_configuration_id, $owner_name, $app_name)
     {
@@ -1259,13 +1259,13 @@ class ExportApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20039, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20039, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportConfigurationsGetWithHttpInfo($export_configuration_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20039';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20039';
         $request = $this->exportConfigurationsGetRequest($export_configuration_id, $owner_name, $app_name);
 
         try {
@@ -1317,7 +1317,7 @@ class ExportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20039',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20039',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1325,7 +1325,7 @@ class ExportApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1371,7 +1371,7 @@ class ExportApi
      */
     public function exportConfigurationsGetAsyncWithHttpInfo($export_configuration_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20039';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20039';
         $request = $this->exportConfigurationsGetRequest($export_configuration_id, $owner_name, $app_name);
 
         return $this->client
@@ -1557,9 +1557,9 @@ class ExportApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20040
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20040
      */
     public function exportConfigurationsList($owner_name, $app_name)
     {
@@ -1573,13 +1573,13 @@ class ExportApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20040, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20040, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportConfigurationsListWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20040';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20040';
         $request = $this->exportConfigurationsListRequest($owner_name, $app_name);
 
         try {
@@ -1631,7 +1631,7 @@ class ExportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20040',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20040',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1639,7 +1639,7 @@ class ExportApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1683,7 +1683,7 @@ class ExportApi
      */
     public function exportConfigurationsListAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20040';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20040';
         $request = $this->exportConfigurationsListRequest($owner_name, $app_name);
 
         return $this->client
@@ -1852,13 +1852,13 @@ class ExportApi
      * Operation exportConfigurationsPartialUpdate
      *
      * @param  string $export_configuration_id The id of the export configuration. (required)
-     * @param  \Swagger\Client\Model\Properties3 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties3 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20039
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20039
      */
     public function exportConfigurationsPartialUpdate($export_configuration_id, $properties, $owner_name, $app_name)
     {
@@ -1870,17 +1870,17 @@ class ExportApi
      * Operation exportConfigurationsPartialUpdateWithHttpInfo
      *
      * @param  string $export_configuration_id The id of the export configuration. (required)
-     * @param  \Swagger\Client\Model\Properties3 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties3 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20039, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20039, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportConfigurationsPartialUpdateWithHttpInfo($export_configuration_id, $properties, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20039';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20039';
         $request = $this->exportConfigurationsPartialUpdateRequest($export_configuration_id, $properties, $owner_name, $app_name);
 
         try {
@@ -1932,7 +1932,7 @@ class ExportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20039',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20039',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1940,7 +1940,7 @@ class ExportApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1956,7 +1956,7 @@ class ExportApi
      * 
      *
      * @param  string $export_configuration_id The id of the export configuration. (required)
-     * @param  \Swagger\Client\Model\Properties3 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties3 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1979,7 +1979,7 @@ class ExportApi
      * 
      *
      * @param  string $export_configuration_id The id of the export configuration. (required)
-     * @param  \Swagger\Client\Model\Properties3 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties3 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1988,7 +1988,7 @@ class ExportApi
      */
     public function exportConfigurationsPartialUpdateAsyncWithHttpInfo($export_configuration_id, $properties, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20039';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20039';
         $request = $this->exportConfigurationsPartialUpdateRequest($export_configuration_id, $properties, $owner_name, $app_name);
 
         return $this->client
@@ -2032,7 +2032,7 @@ class ExportApi
      * Create request for operation 'exportConfigurationsPartialUpdate'
      *
      * @param  string $export_configuration_id The id of the export configuration. (required)
-     * @param  \Swagger\Client\Model\Properties3 $properties Export configurations. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Properties3 $properties Export configurations. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *

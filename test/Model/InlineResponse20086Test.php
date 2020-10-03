@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace ZeC128\AppCenter;
 
 /**
  * InlineResponse20086Test Class Doc Comment
  *
  * @category    Class
  * @description Event property value counts during the time range in descending order.
- * @package     Swagger\Client
+ * @package     ZeC128\AppCenter
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

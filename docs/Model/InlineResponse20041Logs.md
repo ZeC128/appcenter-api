@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **event_name** | **string** | Event name. | [optional] 
 **message_id** | **string** | Message ID. | [optional] 
 **properties** | **map[string,string]** | event specific properties. | [optional] 
-**device** | [**\Swagger\Client\Model\InlineResponse20041Device**](InlineResponse20041Device.md) |  | 
+**device** | [**\ZeC128\AppCenter\AppCenterApi\InlineResponse20041Device**](InlineResponse20041Device.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

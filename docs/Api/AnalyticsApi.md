@@ -1,4 +1,4 @@
-# Swagger\Client\AnalyticsApi
+# ZeC128\AppCenter\AnalyticsApi
 
 All URIs are relative to *https://api.appcenter.ms*
 
@@ -59,11 +59,11 @@ Returns whether audience definition exists.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -105,7 +105,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsCrashCounts**
-> \Swagger\Client\Model\InlineResponse20097 analyticsCrashCounts($start, $owner_name, $app_name, $end, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20097 analyticsCrashCounts($start, $owner_name, $app_name, $end, $versions)
 
 Available for UWP apps only.
 
@@ -117,11 +117,11 @@ Count of crashes by day in the time range based the selected versions. Available
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20097**](../Model/InlineResponse20097.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20097**](../Model/InlineResponse20097.md)
 
 ### Authorization
 
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsCrashFreeDevicePercentages**
-> \Swagger\Client\Model\InlineResponse20093 analyticsCrashFreeDevicePercentages($start, $version, $owner_name, $app_name, $end)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20093 analyticsCrashFreeDevicePercentages($start, $version, $owner_name, $app_name, $end)
 
 
 
@@ -180,11 +180,11 @@ Percentage of crash-free device by day in the time range based on the selected v
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -217,7 +217,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20093**](../Model/InlineResponse20093.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20093**](../Model/InlineResponse20093.md)
 
 ### Authorization
 
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsCrashGroupCounts**
-> \Swagger\Client\Model\InlineResponse20097 analyticsCrashGroupCounts($crash_group_id, $version, $start, $owner_name, $app_name, $end)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20097 analyticsCrashGroupCounts($crash_group_id, $version, $start, $owner_name, $app_name, $end)
 
 Available for UWP apps only.
 
@@ -243,11 +243,11 @@ Count of crashes by day in the time range of the selected crash group with selec
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20097**](../Model/InlineResponse20097.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20097**](../Model/InlineResponse20097.md)
 
 ### Authorization
 
@@ -296,7 +296,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsCrashGroupModelCounts**
-> \Swagger\Client\Model\InlineResponse20096 analyticsCrashGroupModelCounts($crash_group_id, $version, $owner_name, $app_name, $top)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20096 analyticsCrashGroupModelCounts($crash_group_id, $version, $owner_name, $app_name, $top)
 
 Available for UWP apps only.
 
@@ -308,11 +308,11 @@ Top models of the selected crash group with selected version. Available for UWP 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -345,7 +345,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20096**](../Model/InlineResponse20096.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20096**](../Model/InlineResponse20096.md)
 
 ### Authorization
 
@@ -359,7 +359,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsCrashGroupOperatingSystemCounts**
-> \Swagger\Client\Model\InlineResponse20095 analyticsCrashGroupOperatingSystemCounts($crash_group_id, $version, $owner_name, $app_name, $top)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20095 analyticsCrashGroupOperatingSystemCounts($crash_group_id, $version, $owner_name, $app_name, $top)
 
 Available for UWP apps only.
 
@@ -371,11 +371,11 @@ Top OSes of the selected crash group with selected version. Available for UWP ap
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -408,7 +408,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20095**](../Model/InlineResponse20095.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20095**](../Model/InlineResponse20095.md)
 
 ### Authorization
 
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsCrashGroupTotals**
-> \Swagger\Client\Model\InlineResponse20094 analyticsCrashGroupTotals($crash_group_id, $version, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20094 analyticsCrashGroupTotals($crash_group_id, $version, $owner_name, $app_name)
 
 Available for UWP apps only.
 
@@ -434,11 +434,11 @@ Overall crashes and affected users count of the selected crash group with select
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -469,7 +469,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20094**](../Model/InlineResponse20094.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20094**](../Model/InlineResponse20094.md)
 
 ### Authorization
 
@@ -483,7 +483,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsCrashGroupsTotals**
-> \Swagger\Client\Model\InlineResponse20098[] analyticsCrashGroupsTotals($crash_groups, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20098[] analyticsCrashGroupsTotals($crash_groups, $owner_name, $app_name)
 
 
 
@@ -495,17 +495,17 @@ Overall crashes and affected users count of the selected crash groups with selec
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$crash_groups = new \Swagger\Client\Model\CrashGroups(); // \Swagger\Client\Model\CrashGroups | 
+$crash_groups = new \ZeC128\AppCenter\AppCenterApi\CrashGroups(); // \ZeC128\AppCenter\AppCenterApi\CrashGroups | 
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -522,13 +522,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **crash_groups** | [**\Swagger\Client\Model\CrashGroups**](../Model/CrashGroups.md)|  |
+ **crash_groups** | [**\ZeC128\AppCenter\AppCenterApi\CrashGroups**](../Model/CrashGroups.md)|  |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20098[]**](../Model/InlineResponse20098.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20098[]**](../Model/InlineResponse20098.md)
 
 ### Authorization
 
@@ -554,18 +554,18 @@ Creates or updates audience definition.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $audience_name = "audience_name_example"; // string | The name of the audience
-$audience = new \Swagger\Client\Model\Audience(); // \Swagger\Client\Model\Audience | Audience definition
+$audience = new \ZeC128\AppCenter\AppCenterApi\Audience(); // \ZeC128\AppCenter\AppCenterApi\Audience | Audience definition
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -583,7 +583,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **audience_name** | **string**| The name of the audience |
- **audience** | [**\Swagger\Client\Model\Audience**](../Model/Audience.md)| Audience definition |
+ **audience** | [**\ZeC128\AppCenter\AppCenterApi\Audience**](../Model/Audience.md)| Audience definition |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
@@ -615,11 +615,11 @@ Deletes audience definition.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -673,11 +673,11 @@ Count of active devices by interval in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -726,7 +726,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsDistributionReleaseCounts**
-> \Swagger\Client\Model\InlineResponse20092 analyticsDistributionReleaseCounts($releases, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20092 analyticsDistributionReleaseCounts($releases, $owner_name, $app_name)
 
 
 
@@ -738,17 +738,17 @@ Count of total downloads for the provided distribution releases.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$releases = new \Swagger\Client\Model\Releases(); // \Swagger\Client\Model\Releases | The releases to retrieve.
+$releases = new \ZeC128\AppCenter\AppCenterApi\Releases(); // \ZeC128\AppCenter\AppCenterApi\Releases | The releases to retrieve.
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -765,13 +765,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **releases** | [**\Swagger\Client\Model\Releases**](../Model/Releases.md)| The releases to retrieve. |
+ **releases** | [**\ZeC128\AppCenter\AppCenterApi\Releases**](../Model/Releases.md)| The releases to retrieve. |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20092**](../Model/InlineResponse20092.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20092**](../Model/InlineResponse20092.md)
 
 ### Authorization
 
@@ -785,7 +785,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsEventCount**
-> \Swagger\Client\Model\InlineResponse20088 analyticsEventCount($event_name, $start, $owner_name, $app_name, $end, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20088 analyticsEventCount($event_name, $start, $owner_name, $app_name, $end, $versions)
 
 
 
@@ -797,11 +797,11 @@ Count of events by interval in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -836,7 +836,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20088**](../Model/InlineResponse20088.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20088**](../Model/InlineResponse20088.md)
 
 ### Authorization
 
@@ -850,7 +850,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsEventDeviceCount**
-> \Swagger\Client\Model\InlineResponse20089 analyticsEventDeviceCount($event_name, $start, $owner_name, $app_name, $end, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20089 analyticsEventDeviceCount($event_name, $start, $owner_name, $app_name, $end, $versions)
 
 
 
@@ -862,11 +862,11 @@ Count of devices for an event by interval in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -901,7 +901,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20089**](../Model/InlineResponse20089.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20089**](../Model/InlineResponse20089.md)
 
 ### Authorization
 
@@ -915,7 +915,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsEventPerDeviceCount**
-> \Swagger\Client\Model\InlineResponse20091 analyticsEventPerDeviceCount($event_name, $start, $owner_name, $app_name, $end, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20091 analyticsEventPerDeviceCount($event_name, $start, $owner_name, $app_name, $end, $versions)
 
 
 
@@ -927,11 +927,11 @@ Count of events per device by interval in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -966,7 +966,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20091**](../Model/InlineResponse20091.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20091**](../Model/InlineResponse20091.md)
 
 ### Authorization
 
@@ -980,7 +980,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsEventPerSessionCount**
-> \Swagger\Client\Model\InlineResponse20090 analyticsEventPerSessionCount($event_name, $start, $owner_name, $app_name, $end, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20090 analyticsEventPerSessionCount($event_name, $start, $owner_name, $app_name, $end, $versions)
 
 
 
@@ -992,11 +992,11 @@ Count of events per session by interval in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1031,7 +1031,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20090**](../Model/InlineResponse20090.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20090**](../Model/InlineResponse20090.md)
 
 ### Authorization
 
@@ -1045,7 +1045,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsEventProperties**
-> \Swagger\Client\Model\InlineResponse20087 analyticsEventProperties($event_name, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20087 analyticsEventProperties($event_name, $owner_name, $app_name)
 
 
 
@@ -1057,11 +1057,11 @@ Event properties.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1090,7 +1090,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20087**](../Model/InlineResponse20087.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20087**](../Model/InlineResponse20087.md)
 
 ### Authorization
 
@@ -1104,7 +1104,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsEventPropertyCounts**
-> \Swagger\Client\Model\InlineResponse20086 analyticsEventPropertyCounts($event_name, $event_property_name, $start, $owner_name, $app_name, $end, $versions, $top)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20086 analyticsEventPropertyCounts($event_name, $event_property_name, $start, $owner_name, $app_name, $end, $versions, $top)
 
 
 
@@ -1116,11 +1116,11 @@ Event properties value counts during the time range in descending order.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1159,7 +1159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20086**](../Model/InlineResponse20086.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20086**](../Model/InlineResponse20086.md)
 
 ### Authorization
 
@@ -1185,11 +1185,11 @@ Count of active events in the time range ordered by event.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1258,11 +1258,11 @@ Delete the set of Events with the specified event names.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1316,11 +1316,11 @@ Delete the set of Events with the specified event names.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1362,7 +1362,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsGenericLogFlow**
-> \Swagger\Client\Model\InlineResponse20068 analyticsGenericLogFlow($owner_name, $app_name, $start)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20068 analyticsGenericLogFlow($owner_name, $app_name, $start)
 
 
 
@@ -1374,11 +1374,11 @@ Logs received between the specified start time and the current time. The API wil
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1407,7 +1407,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20068**](../Model/InlineResponse20068.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20068**](../Model/InlineResponse20068.md)
 
 ### Authorization
 
@@ -1433,11 +1433,11 @@ Gets audience definition.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1480,7 +1480,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsLanguageCounts**
-> \Swagger\Client\Model\InlineResponse20085 analyticsLanguageCounts($start, $owner_name, $app_name, $end, $top, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20085 analyticsLanguageCounts($start, $owner_name, $app_name, $end, $top, $versions)
 
 
 
@@ -1492,11 +1492,11 @@ Languages in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1531,7 +1531,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20085**](../Model/InlineResponse20085.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20085**](../Model/InlineResponse20085.md)
 
 ### Authorization
 
@@ -1557,11 +1557,11 @@ Get list of audiences.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1616,11 +1616,11 @@ Get list of custom properties.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1673,11 +1673,11 @@ Get list of device properties.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1730,11 +1730,11 @@ Get list of device property values.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1779,7 +1779,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsLogFlow**
-> \Swagger\Client\Model\InlineResponse20084 analyticsLogFlow($owner_name, $app_name, $start)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20084 analyticsLogFlow($owner_name, $app_name, $start)
 
 
 
@@ -1791,11 +1791,11 @@ Logs received between the specified start time and the current time. The API wil
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1824,7 +1824,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20084**](../Model/InlineResponse20084.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20084**](../Model/InlineResponse20084.md)
 
 ### Authorization
 
@@ -1838,7 +1838,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsModelCounts**
-> \Swagger\Client\Model\InlineResponse20083 analyticsModelCounts($start, $owner_name, $app_name, $end, $top, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20083 analyticsModelCounts($start, $owner_name, $app_name, $end, $top, $versions)
 
 
 
@@ -1850,11 +1850,11 @@ Models in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1889,7 +1889,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20083**](../Model/InlineResponse20083.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20083**](../Model/InlineResponse20083.md)
 
 ### Authorization
 
@@ -1903,7 +1903,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsOperatingSystemCounts**
-> \Swagger\Client\Model\InlineResponse20082 analyticsOperatingSystemCounts($start, $owner_name, $app_name, $end, $top, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20082 analyticsOperatingSystemCounts($start, $owner_name, $app_name, $end, $top, $versions)
 
 
 
@@ -1915,11 +1915,11 @@ OSes in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1954,7 +1954,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20082**](../Model/InlineResponse20082.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20082**](../Model/InlineResponse20082.md)
 
 ### Authorization
 
@@ -1968,7 +1968,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsPerDeviceCounts**
-> \Swagger\Client\Model\InlineResponse20079 analyticsPerDeviceCounts($start, $interval, $owner_name, $app_name, $end, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20079 analyticsPerDeviceCounts($start, $interval, $owner_name, $app_name, $end, $versions)
 
 
 
@@ -1980,11 +1980,11 @@ Count of sessions per device in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -2019,7 +2019,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20079**](../Model/InlineResponse20079.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20079**](../Model/InlineResponse20079.md)
 
 ### Authorization
 
@@ -2045,11 +2045,11 @@ Places in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -2098,7 +2098,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsSessionCounts**
-> \Swagger\Client\Model\InlineResponse20081[] analyticsSessionCounts($start, $interval, $owner_name, $app_name, $end, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20081[] analyticsSessionCounts($start, $interval, $owner_name, $app_name, $end, $versions)
 
 
 
@@ -2110,11 +2110,11 @@ Count of sessions in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -2149,7 +2149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20081[]**](../Model/InlineResponse20081.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20081[]**](../Model/InlineResponse20081.md)
 
 ### Authorization
 
@@ -2163,7 +2163,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **analyticsSessionDurationsDistribution**
-> \Swagger\Client\Model\InlineResponse20080 analyticsSessionDurationsDistribution($start, $owner_name, $app_name, $end, $versions)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20080 analyticsSessionDurationsDistribution($start, $owner_name, $app_name, $end, $versions)
 
 
 
@@ -2175,11 +2175,11 @@ Gets session duration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -2212,7 +2212,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20080**](../Model/InlineResponse20080.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20080**](../Model/InlineResponse20080.md)
 
 ### Authorization
 
@@ -2238,17 +2238,17 @@ Tests audience definition.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$audience = new \Swagger\Client\Model\Audience1(); // \Swagger\Client\Model\Audience1 | Audience definition
+$audience = new \ZeC128\AppCenter\AppCenterApi\Audience1(); // \ZeC128\AppCenter\AppCenterApi\Audience1 | Audience definition
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -2265,7 +2265,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **audience** | [**\Swagger\Client\Model\Audience1**](../Model/Audience1.md)| Audience definition |
+ **audience** | [**\ZeC128\AppCenter\AppCenterApi\Audience1**](../Model/Audience1.md)| Audience definition |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
@@ -2297,11 +2297,11 @@ Count of active versions in the time range ordered by version.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -2362,11 +2362,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -2407,7 +2407,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **crashesListSessionLogs**
-> \Swagger\Client\Model\InlineResponse20068 crashesListSessionLogs($crash_id, $owner_name, $app_name, $date)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20068 crashesListSessionLogs($crash_id, $owner_name, $app_name, $date)
 
 
 
@@ -2419,11 +2419,11 @@ Get session logs by crash ID
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -2454,7 +2454,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20068**](../Model/InlineResponse20068.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20068**](../Model/InlineResponse20068.md)
 
 ### Authorization
 
@@ -2480,11 +2480,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\AnalyticsApi(
+$apiInstance = new ZeC128\AppCenter\Api\AnalyticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

@@ -15,9 +15,9 @@ Name | Type | Description | Notes
 **file_extension** | **string** | The file extension of the asset. Does not include the initial period. | [optional] 
 **upload_id** | **string** | The upload id associated with the release, to map to the releases upload table. | 
 **icon_asset_id** | **string** | The assetId associated with the icon uploaded to app center file upload service. | [optional] 
-**ipa_uuids** | [**\Swagger\Client\Model\ReleaseCreateRequestIpaUuids[]**](ReleaseCreateRequestIpaUuids.md) | A list of UUIDs for architectures for an iOS app. | [optional] 
-**provision** | [**\Swagger\Client\Model\ReleaseCreateRequestProvision**](ReleaseCreateRequestProvision.md) |  | [optional] 
-**appex_provisioning_profiles** | [**\Swagger\Client\Model\ReleaseCreateRequestProvision[]**](ReleaseCreateRequestProvision.md) | iOS app extension provisioning profiles included in the release. | [optional] 
+**ipa_uuids** | [**\ZeC128\AppCenter\AppCenterApi\ReleaseCreateRequestIpaUuids[]**](ReleaseCreateRequestIpaUuids.md) | A list of UUIDs for architectures for an iOS app. | [optional] 
+**provision** | [**\ZeC128\AppCenter\AppCenterApi\ReleaseCreateRequestProvision**](ReleaseCreateRequestProvision.md) |  | [optional] 
+**appex_provisioning_profiles** | [**\ZeC128\AppCenter\AppCenterApi\ReleaseCreateRequestProvision[]**](ReleaseCreateRequestProvision.md) | iOS app extension provisioning profiles included in the release. | [optional] 
 **proxy_flow** | **bool** | If true this release was uploaded to the AKS upload proxy | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * AccountApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $api_token_id The unique ID (UUID) of the api token (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,7 +110,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $api_token_id The unique ID (UUID) of the api token (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -154,7 +154,7 @@ class AccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -162,7 +162,7 @@ class AccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -170,7 +170,7 @@ class AccountApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -387,9 +387,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20078[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20078[]
      */
     public function appApiTokensList($owner_name, $app_name)
     {
@@ -403,13 +403,13 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20078[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20078[], HTTP status code, HTTP response headers (array of strings)
      */
     public function appApiTokensListWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20078[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20078[]';
         $request = $this->appApiTokensListRequest($owner_name, $app_name);
 
         try {
@@ -461,7 +461,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20078[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20078[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -469,7 +469,7 @@ class AccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -477,7 +477,7 @@ class AccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class AccountApi
      */
     public function appApiTokensListAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20078[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20078[]';
         $request = $this->appApiTokensListRequest($owner_name, $app_name);
 
         return $this->client
@@ -690,9 +690,9 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Description $description Description of the token (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Description $description Description of the token (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -707,9 +707,9 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Description $description Description of the token (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Description $description Description of the token (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -775,7 +775,7 @@ class AccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -783,7 +783,7 @@ class AccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -800,7 +800,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Description $description Description of the token (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Description $description Description of the token (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -822,7 +822,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Description $description Description of the token (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Description $description Description of the token (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -874,7 +874,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Description $description Description of the token (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Description $description Description of the token (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1002,7 +1002,7 @@ class AccountApi
      *
      * @param  string $invitation_token The app invitation token that was sent to the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1016,7 +1016,7 @@ class AccountApi
      *
      * @param  string $invitation_token The app invitation token that was sent to the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1060,7 +1060,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1243,9 +1243,9 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\UserEmail3 $user_email The email of the user to invite (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail3 $user_email The email of the user to invite (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1259,9 +1259,9 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\UserEmail3 $user_email The email of the user to invite (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail3 $user_email The email of the user to invite (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1305,7 +1305,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1322,7 +1322,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\UserEmail3 $user_email The email of the user to invite (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail3 $user_email The email of the user to invite (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1344,7 +1344,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\UserEmail3 $user_email The email of the user to invite (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail3 $user_email The email of the user to invite (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1382,7 +1382,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\UserEmail3 $user_email The email of the user to invite (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail3 $user_email The email of the user to invite (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1513,7 +1513,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The email of the user to invite (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1529,7 +1529,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The email of the user to invite (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1573,7 +1573,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1792,7 +1792,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The email of the user to invite (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1808,7 +1808,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The email of the user to invite (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1852,7 +1852,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2070,7 +2070,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2086,7 +2086,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2152,7 +2152,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2366,7 +2366,7 @@ class AccountApi
      *
      * @param  string $invitation_token The app invitation token that was sent to the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2380,7 +2380,7 @@ class AccountApi
      *
      * @param  string $invitation_token The app invitation token that was sent to the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2424,7 +2424,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2608,9 +2608,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The email of the user to invite (required)
-     * @param  \Swagger\Client\Model\UserInvitationPermissionsData $user_invitation_permissions_data The value to update the user permission in the invite. (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserInvitationPermissionsData $user_invitation_permissions_data The value to update the user permission in the invite. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2625,9 +2625,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The email of the user to invite (required)
-     * @param  \Swagger\Client\Model\UserInvitationPermissionsData $user_invitation_permissions_data The value to update the user permission in the invite. (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserInvitationPermissionsData $user_invitation_permissions_data The value to update the user permission in the invite. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2671,7 +2671,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2689,7 +2689,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The email of the user to invite (required)
-     * @param  \Swagger\Client\Model\UserInvitationPermissionsData $user_invitation_permissions_data The value to update the user permission in the invite. (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserInvitationPermissionsData $user_invitation_permissions_data The value to update the user permission in the invite. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2712,7 +2712,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The email of the user to invite (required)
-     * @param  \Swagger\Client\Model\UserInvitationPermissionsData $user_invitation_permissions_data The value to update the user permission in the invite. (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserInvitationPermissionsData $user_invitation_permissions_data The value to update the user permission in the invite. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2751,7 +2751,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The email of the user to invite (required)
-     * @param  \Swagger\Client\Model\UserInvitationPermissionsData $user_invitation_permissions_data The value to update the user permission in the invite. (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserInvitationPermissionsData $user_invitation_permissions_data The value to update the user permission in the invite. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2892,9 +2892,9 @@ class AccountApi
     /**
      * Operation appsCreate
      *
-     * @param  \Swagger\Client\Model\App3 $app The data for the app (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App3 $app The data for the app (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2907,9 +2907,9 @@ class AccountApi
     /**
      * Operation appsCreateWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\App3 $app The data for the app (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App3 $app The data for the app (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2975,7 +2975,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2990,7 +2990,7 @@ class AccountApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\App3 $app The data for the app (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App3 $app The data for the app (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3010,7 +3010,7 @@ class AccountApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\App3 $app The data for the app (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App3 $app The data for the app (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3060,7 +3060,7 @@ class AccountApi
     /**
      * Create request for operation 'appsCreate'
      *
-     * @param  \Swagger\Client\Model\App3 $app The data for the app (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App3 $app The data for the app (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3166,9 +3166,9 @@ class AccountApi
      * Operation appsCreateForOrg
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\App1 $app The data for the app (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App1 $app The data for the app (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -3182,9 +3182,9 @@ class AccountApi
      * Operation appsCreateForOrgWithHttpInfo
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\App1 $app The data for the app (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App1 $app The data for the app (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3258,7 +3258,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3274,7 +3274,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\App1 $app The data for the app (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App1 $app The data for the app (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3295,7 +3295,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\App1 $app The data for the app (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App1 $app The data for the app (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3346,7 +3346,7 @@ class AccountApi
      * Create request for operation 'appsCreateForOrg'
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\App1 $app The data for the app (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App1 $app The data for the app (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3468,7 +3468,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $owner_name The name of the owner (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3483,7 +3483,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $owner_name The name of the owner (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3527,7 +3527,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3728,7 +3728,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -3744,7 +3744,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3810,7 +3810,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4025,7 +4025,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -4041,7 +4041,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4107,7 +4107,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4322,7 +4322,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object[]
      */
@@ -4338,7 +4338,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -4404,7 +4404,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4619,7 +4619,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $owner_name The name of the owner (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object[]
      */
@@ -4635,7 +4635,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $owner_name The name of the owner (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -4701,7 +4701,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4915,7 +4915,7 @@ class AccountApi
      *
      * @param  string $order_by The name of the attribute by which to order the response by. By default, apps are in order of creation. All results are ordered in ascending order. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object[]
      */
@@ -4930,7 +4930,7 @@ class AccountApi
      *
      * @param  string $order_by The name of the attribute by which to order the response by. By default, apps are in order of creation. All results are ordered in ascending order. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -4996,7 +4996,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5183,7 +5183,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object[]
      */
@@ -5198,7 +5198,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -5264,7 +5264,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5462,9 +5462,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20020[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20020[]
      */
     public function appsListTesters($owner_name, $app_name)
     {
@@ -5478,13 +5478,13 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20020[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20020[], HTTP status code, HTTP response headers (array of strings)
      */
     public function appsListTestersWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20020[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20020[]';
         $request = $this->appsListTestersRequest($owner_name, $app_name);
 
         try {
@@ -5536,7 +5536,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20020[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20020[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5544,7 +5544,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5588,7 +5588,7 @@ class AccountApi
      */
     public function appsListTestersAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20020[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20020[]';
         $request = $this->appsListTestersRequest($owner_name, $app_name);
 
         return $this->client
@@ -5760,7 +5760,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The user email of the user to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5776,7 +5776,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The user email of the user to delete (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5820,7 +5820,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6039,7 +6039,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $destination_owner_name The name of the owner (user or organization) to which the app is being transferred (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -6056,7 +6056,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $destination_owner_name The name of the owner (user or organization) to which the app is being transferred (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6122,7 +6122,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6354,7 +6354,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -6370,7 +6370,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6436,7 +6436,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6650,9 +6650,9 @@ class AccountApi
      *
      * @param  string $app_name The name of the application (required)
      * @param  string $owner_name The name of the owner (required)
-     * @param  \Swagger\Client\Model\App2 $app The partial data for the app (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App2 $app The partial data for the app (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -6667,9 +6667,9 @@ class AccountApi
      *
      * @param  string $app_name The name of the application (required)
      * @param  string $owner_name The name of the owner (required)
-     * @param  \Swagger\Client\Model\App2 $app The partial data for the app (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App2 $app The partial data for the app (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6735,7 +6735,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6752,7 +6752,7 @@ class AccountApi
      *
      * @param  string $app_name The name of the application (required)
      * @param  string $owner_name The name of the owner (required)
-     * @param  \Swagger\Client\Model\App2 $app The partial data for the app (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App2 $app The partial data for the app (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6774,7 +6774,7 @@ class AccountApi
      *
      * @param  string $app_name The name of the application (required)
      * @param  string $owner_name The name of the owner (required)
-     * @param  \Swagger\Client\Model\App2 $app The partial data for the app (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App2 $app The partial data for the app (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6826,7 +6826,7 @@ class AccountApi
      *
      * @param  string $app_name The name of the application (required)
      * @param  string $owner_name The name of the owner (required)
-     * @param  \Swagger\Client\Model\App2 $app The partial data for the app (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App2 $app The partial data for the app (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6957,7 +6957,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  \SplFileObject $avatar The image for an app avatar to upload. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -6974,7 +6974,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  \SplFileObject $avatar The image for an app avatar to upload. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7040,7 +7040,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7263,9 +7263,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The user email of the user to patch (required)
-     * @param  \Swagger\Client\Model\UserAppPermissionsData $user_app_permissions_data The value to update the user permission for the app. (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserAppPermissionsData $user_app_permissions_data The value to update the user permission for the app. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7280,9 +7280,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The user email of the user to patch (required)
-     * @param  \Swagger\Client\Model\UserAppPermissionsData $user_app_permissions_data The value to update the user permission for the app. (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserAppPermissionsData $user_app_permissions_data The value to update the user permission for the app. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7326,7 +7326,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7344,7 +7344,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The user email of the user to patch (required)
-     * @param  \Swagger\Client\Model\UserAppPermissionsData $user_app_permissions_data The value to update the user permission for the app. (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserAppPermissionsData $user_app_permissions_data The value to update the user permission for the app. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7367,7 +7367,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The user email of the user to patch (required)
-     * @param  \Swagger\Client\Model\UserAppPermissionsData $user_app_permissions_data The value to update the user permission for the app. (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserAppPermissionsData $user_app_permissions_data The value to update the user permission for the app. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7406,7 +7406,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $user_email The user email of the user to patch (required)
-     * @param  \Swagger\Client\Model\UserAppPermissionsData $user_app_permissions_data The value to update the user permission for the app. (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserAppPermissionsData $user_app_permissions_data The value to update the user permission for the app. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7551,7 +7551,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7567,7 +7567,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7611,7 +7611,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7828,9 +7828,9 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\AzureSubscriptionToAppData $azure_subscription_to_app_data The azure subscription data needed to be link to the app. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\AzureSubscriptionToAppData $azure_subscription_to_app_data The azure subscription data needed to be link to the app. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7844,9 +7844,9 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\AzureSubscriptionToAppData $azure_subscription_to_app_data The azure subscription data needed to be link to the app. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\AzureSubscriptionToAppData $azure_subscription_to_app_data The azure subscription data needed to be link to the app. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7890,7 +7890,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7907,7 +7907,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\AzureSubscriptionToAppData $azure_subscription_to_app_data The azure subscription data needed to be link to the app. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\AzureSubscriptionToAppData $azure_subscription_to_app_data The azure subscription data needed to be link to the app. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7929,7 +7929,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\AzureSubscriptionToAppData $azure_subscription_to_app_data The azure subscription data needed to be link to the app. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\AzureSubscriptionToAppData $azure_subscription_to_app_data The azure subscription data needed to be link to the app. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7967,7 +7967,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\AzureSubscriptionToAppData $azure_subscription_to_app_data The azure subscription data needed to be link to the app. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\AzureSubscriptionToAppData $azure_subscription_to_app_data The azure subscription data needed to be link to the app. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -8103,9 +8103,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20012[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]
      */
     public function azureSubscriptionListForApp($owner_name, $app_name)
     {
@@ -8119,13 +8119,13 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20012[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20012[], HTTP status code, HTTP response headers (array of strings)
      */
     public function azureSubscriptionListForAppWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20012[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]';
         $request = $this->azureSubscriptionListForAppRequest($owner_name, $app_name);
 
         try {
@@ -8177,7 +8177,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20012[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8185,7 +8185,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8229,7 +8229,7 @@ class AccountApi
      */
     public function azureSubscriptionListForAppAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20012[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]';
         $request = $this->azureSubscriptionListForAppRequest($owner_name, $app_name);
 
         return $this->client
@@ -8399,9 +8399,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20012[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]
      */
     public function azureSubscriptionListForOrg($org_name)
     {
@@ -8414,13 +8414,13 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20012[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20012[], HTTP status code, HTTP response headers (array of strings)
      */
     public function azureSubscriptionListForOrgWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20012[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]';
         $request = $this->azureSubscriptionListForOrgRequest($org_name);
 
         try {
@@ -8472,7 +8472,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20012[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8480,7 +8480,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8522,7 +8522,7 @@ class AccountApi
      */
     public function azureSubscriptionListForOrgAsyncWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20012[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]';
         $request = $this->azureSubscriptionListForOrgRequest($org_name);
 
         return $this->client
@@ -8676,9 +8676,9 @@ class AccountApi
      * Operation azureSubscriptionListForUser
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20012[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]
      */
     public function azureSubscriptionListForUser()
     {
@@ -8690,13 +8690,13 @@ class AccountApi
      * Operation azureSubscriptionListForUserWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20012[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20012[], HTTP status code, HTTP response headers (array of strings)
      */
     public function azureSubscriptionListForUserWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20012[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]';
         $request = $this->azureSubscriptionListForUserRequest();
 
         try {
@@ -8748,7 +8748,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20012[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8756,7 +8756,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8796,7 +8796,7 @@ class AccountApi
      */
     public function azureSubscriptionListForUserAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20012[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20012[]';
         $request = $this->azureSubscriptionListForUserRequest();
 
         return $this->client
@@ -8935,7 +8935,7 @@ class AccountApi
      * Operation distributionGroupInvitationsAcceptAll
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -8948,7 +8948,7 @@ class AccountApi
      * Operation distributionGroupInvitationsAcceptAllWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8992,7 +8992,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9158,9 +9158,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Apps1 $apps The name of the apps to be added to the distribution group. The apps have to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Apps1 $apps The name of the apps to be added to the distribution group. The apps have to be owned by the organization. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -9174,9 +9174,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Apps1 $apps The name of the apps to be added to the distribution group. The apps have to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Apps1 $apps The name of the apps to be added to the distribution group. The apps have to be owned by the organization. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9229,7 +9229,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Apps1 $apps The name of the apps to be added to the distribution group. The apps have to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Apps1 $apps The name of the apps to be added to the distribution group. The apps have to be owned by the organization. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -9251,7 +9251,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Apps1 $apps The name of the apps to be added to the distribution group. The apps have to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Apps1 $apps The name of the apps to be added to the distribution group. The apps have to be owned by the organization. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -9289,7 +9289,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Apps1 $apps The name of the apps to be added to the distribution group. The apps have to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Apps1 $apps The name of the apps to be added to the distribution group. The apps have to be owned by the organization. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -9425,11 +9425,11 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members4 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members4 $members The list of members to add (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20011[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20011[]
      */
     public function distributionGroupsAddUser($owner_name, $app_name, $distribution_group_name, $members)
     {
@@ -9443,15 +9443,15 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members4 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members4 $members The list of members to add (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20011[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20011[], HTTP status code, HTTP response headers (array of strings)
      */
     public function distributionGroupsAddUserWithHttpInfo($owner_name, $app_name, $distribution_group_name, $members)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20011[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20011[]';
         $request = $this->distributionGroupsAddUserRequest($owner_name, $app_name, $distribution_group_name, $members);
 
         try {
@@ -9503,7 +9503,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20011[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20011[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9511,7 +9511,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9529,7 +9529,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members4 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members4 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -9552,14 +9552,14 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members4 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members4 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function distributionGroupsAddUserAsyncWithHttpInfo($owner_name, $app_name, $distribution_group_name, $members)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20011[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20011[]';
         $request = $this->distributionGroupsAddUserRequest($owner_name, $app_name, $distribution_group_name, $members);
 
         return $this->client
@@ -9605,7 +9605,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members4 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members4 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -9754,11 +9754,11 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\MemberEmails $member_emails list of user email addresses that should get added as members to the specified group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\MemberEmails $member_emails list of user email addresses that should get added as members to the specified group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20011[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20011[]
      */
     public function distributionGroupsAddUsersForOrg($org_name, $distribution_group_name, $member_emails)
     {
@@ -9771,15 +9771,15 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\MemberEmails $member_emails list of user email addresses that should get added as members to the specified group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\MemberEmails $member_emails list of user email addresses that should get added as members to the specified group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20011[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20011[], HTTP status code, HTTP response headers (array of strings)
      */
     public function distributionGroupsAddUsersForOrgWithHttpInfo($org_name, $distribution_group_name, $member_emails)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20011[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20011[]';
         $request = $this->distributionGroupsAddUsersForOrgRequest($org_name, $distribution_group_name, $member_emails);
 
         try {
@@ -9831,7 +9831,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20011[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20011[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9839,7 +9839,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9856,7 +9856,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\MemberEmails $member_emails list of user email addresses that should get added as members to the specified group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\MemberEmails $member_emails list of user email addresses that should get added as members to the specified group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -9878,14 +9878,14 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\MemberEmails $member_emails list of user email addresses that should get added as members to the specified group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\MemberEmails $member_emails list of user email addresses that should get added as members to the specified group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function distributionGroupsAddUsersForOrgAsyncWithHttpInfo($org_name, $distribution_group_name, $member_emails)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20011[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20011[]';
         $request = $this->distributionGroupsAddUsersForOrgRequest($org_name, $distribution_group_name, $member_emails);
 
         return $this->client
@@ -9930,7 +9930,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\MemberEmails $member_emails list of user email addresses that should get added as members to the specified group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\MemberEmails $member_emails list of user email addresses that should get added as members to the specified group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -10065,9 +10065,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Apps $apps The name of the apps to be deleted from the distribution group. The apps have to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Apps $apps The name of the apps to be deleted from the distribution group. The apps have to be owned by the organization. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -10081,9 +10081,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Apps $apps The name of the apps to be deleted from the distribution group. The apps have to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Apps $apps The name of the apps to be deleted from the distribution group. The apps have to be owned by the organization. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10136,7 +10136,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Apps $apps The name of the apps to be deleted from the distribution group. The apps have to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Apps $apps The name of the apps to be deleted from the distribution group. The apps have to be owned by the organization. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10158,7 +10158,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Apps $apps The name of the apps to be deleted from the distribution group. The apps have to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Apps $apps The name of the apps to be deleted from the distribution group. The apps have to be owned by the organization. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10196,7 +10196,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Apps $apps The name of the apps to be deleted from the distribution group. The apps have to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Apps $apps The name of the apps to be deleted from the distribution group. The apps have to be owned by the organization. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -10331,9 +10331,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members1 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members1 $members The list of members to add (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -10347,9 +10347,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members1 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members1 $members The list of members to add (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10402,7 +10402,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members1 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members1 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10424,7 +10424,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members1 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members1 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10462,7 +10462,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members1 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members1 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -10597,9 +10597,9 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DistributionGroup3 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup3 $distribution_group The attributes to update for the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -10614,9 +10614,9 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DistributionGroup3 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup3 $distribution_group The attributes to update for the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10682,7 +10682,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10699,7 +10699,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DistributionGroup3 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup3 $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10721,7 +10721,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DistributionGroup3 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup3 $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10773,7 +10773,7 @@ class AccountApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DistributionGroup3 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup3 $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -10907,9 +10907,9 @@ class AccountApi
      * Operation distributionGroupsCreateForOrg
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\DistributionGroup1 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup1 $distribution_group The attributes to update for the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -10923,9 +10923,9 @@ class AccountApi
      * Operation distributionGroupsCreateForOrgWithHttpInfo
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\DistributionGroup1 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup1 $distribution_group The attributes to update for the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10991,7 +10991,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11007,7 +11007,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\DistributionGroup1 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup1 $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11028,7 +11028,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\DistributionGroup1 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup1 $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11079,7 +11079,7 @@ class AccountApi
      * Create request for operation 'distributionGroupsCreateForOrg'
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\DistributionGroup1 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup1 $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -11202,7 +11202,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -11218,7 +11218,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -11262,7 +11262,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11480,7 +11480,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -11495,7 +11495,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -11539,7 +11539,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11740,7 +11740,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  float $apps_limit The max number of apps to include in the response (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object[]
      */
@@ -11756,7 +11756,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  float $apps_limit The max number of apps to include in the response (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -11822,7 +11822,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12028,7 +12028,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -12045,7 +12045,7 @@ class AccountApi
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12111,7 +12111,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12343,7 +12343,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object[]
      */
@@ -12359,7 +12359,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -12632,7 +12632,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -12648,7 +12648,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12714,7 +12714,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12929,9 +12929,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse201[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse201[]
      */
     public function distributionGroupsList($owner_name, $app_name)
     {
@@ -12945,13 +12945,13 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse201[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse201[], HTTP status code, HTTP response headers (array of strings)
      */
     public function distributionGroupsListWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse201[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse201[]';
         $request = $this->distributionGroupsListRequest($owner_name, $app_name);
 
         try {
@@ -13003,7 +13003,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse201[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse201[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13011,7 +13011,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13055,7 +13055,7 @@ class AccountApi
      */
     public function distributionGroupsListAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse201[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse201[]';
         $request = $this->distributionGroupsListRequest($owner_name, $app_name);
 
         return $this->client
@@ -13225,9 +13225,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2007[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2007[]
      */
     public function distributionGroupsListAllTestersForOrg($org_name)
     {
@@ -13240,13 +13240,13 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2007[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2007[], HTTP status code, HTTP response headers (array of strings)
      */
     public function distributionGroupsListAllTestersForOrgWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2007[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2007[]';
         $request = $this->distributionGroupsListAllTestersForOrgRequest($org_name);
 
         try {
@@ -13298,7 +13298,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2007[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2007[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13306,7 +13306,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13348,7 +13348,7 @@ class AccountApi
      */
     public function distributionGroupsListAllTestersForOrgAsyncWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2007[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2007[]';
         $request = $this->distributionGroupsListAllTestersForOrgRequest($org_name);
 
         return $this->client
@@ -13503,9 +13503,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse201[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse201[]
      */
     public function distributionGroupsListForOrg($org_name)
     {
@@ -13518,13 +13518,13 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse201[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse201[], HTTP status code, HTTP response headers (array of strings)
      */
     public function distributionGroupsListForOrgWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse201[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse201[]';
         $request = $this->distributionGroupsListForOrgRequest($org_name);
 
         try {
@@ -13576,7 +13576,7 @@ class AccountApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse201[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse201[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13584,7 +13584,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13626,7 +13626,7 @@ class AccountApi
      */
     public function distributionGroupsListForOrgAsyncWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse201[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse201[]';
         $request = $this->distributionGroupsListForOrgRequest($org_name);
 
         return $this->client
@@ -13784,9 +13784,9 @@ class AccountApi
      * @param  string $distribution_group_name The name of the distribution group (required)
      * @param  bool $exclude_pending_invitations Whether to exclude pending invitations in the response (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20010[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20010[]
      */
     public function distributionGroupsListUsers($owner_name, $app_name, $distribution_group_name, $exclude_pending_invitations = null)
     {
@@ -13802,13 +13802,13 @@ class AccountApi
      * @param  string $distribution_group_name The name of the distribution group (required)
      * @param  bool $exclude_pending_invitations Whether to exclude pending invitations in the response (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20010[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20010[], HTTP status code, HTTP response headers (array of strings)
      */
     public function distributionGroupsListUsersWithHttpInfo($owner_name, $app_name, $distribution_group_name, $exclude_pending_invitations = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20010[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20010[]';
         $request = $this->distributionGroupsListUsersRequest($owner_name, $app_name, $distribution_group_name, $exclude_pending_invitations);
 
         try {
@@ -13860,7 +13860,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20010[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20010[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13868,7 +13868,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13916,7 +13916,7 @@ class AccountApi
      */
     public function distributionGroupsListUsersAsyncWithHttpInfo($owner_name, $app_name, $distribution_group_name, $exclude_pending_invitations = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20010[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20010[]';
         $request = $this->distributionGroupsListUsersRequest($owner_name, $app_name, $distribution_group_name, $exclude_pending_invitations);
 
         return $this->client
@@ -14107,9 +14107,9 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20010[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20010[]
      */
     public function distributionGroupsListUsersForOrg($org_name, $distribution_group_name)
     {
@@ -14123,13 +14123,13 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20010[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20010[], HTTP status code, HTTP response headers (array of strings)
      */
     public function distributionGroupsListUsersForOrgWithHttpInfo($org_name, $distribution_group_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20010[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20010[]';
         $request = $this->distributionGroupsListUsersForOrgRequest($org_name, $distribution_group_name);
 
         try {
@@ -14181,7 +14181,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20010[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20010[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14189,7 +14189,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14233,7 +14233,7 @@ class AccountApi
      */
     public function distributionGroupsListUsersForOrgAsyncWithHttpInfo($org_name, $distribution_group_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20010[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20010[]';
         $request = $this->distributionGroupsListUsersForOrgRequest($org_name, $distribution_group_name);
 
         return $this->client
@@ -14403,9 +14403,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\DistributionGroup $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup $distribution_group The attributes to update for the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -14420,9 +14420,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\DistributionGroup $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup $distribution_group The attributes to update for the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -14488,7 +14488,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14505,7 +14505,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\DistributionGroup $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14527,7 +14527,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\DistributionGroup $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14579,7 +14579,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\DistributionGroup $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -14715,11 +14715,11 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members3 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members3 $members The list of members to add (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20063[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20063[]
      */
     public function distributionGroupsRemoveUser($owner_name, $app_name, $distribution_group_name, $members)
     {
@@ -14733,15 +14733,15 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members3 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members3 $members The list of members to add (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20063[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20063[], HTTP status code, HTTP response headers (array of strings)
      */
     public function distributionGroupsRemoveUserWithHttpInfo($owner_name, $app_name, $distribution_group_name, $members)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20063[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20063[]';
         $request = $this->distributionGroupsRemoveUserRequest($owner_name, $app_name, $distribution_group_name, $members);
 
         try {
@@ -14793,7 +14793,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20063[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20063[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14801,7 +14801,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14819,7 +14819,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members3 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members3 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -14842,14 +14842,14 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members3 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members3 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function distributionGroupsRemoveUserAsyncWithHttpInfo($owner_name, $app_name, $distribution_group_name, $members)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20063[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20063[]';
         $request = $this->distributionGroupsRemoveUserRequest($owner_name, $app_name, $distribution_group_name, $members);
 
         return $this->client
@@ -14895,7 +14895,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members3 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members3 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -15045,9 +15045,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members2 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members2 $members The list of members to add (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -15062,9 +15062,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members2 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members2 $members The list of members to add (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -15108,7 +15108,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -15126,7 +15126,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members2 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members2 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15149,7 +15149,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members2 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members2 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15188,7 +15188,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members2 $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members2 $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -15337,9 +15337,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members $members The list of members to add (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -15353,9 +15353,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members $members The list of members to add (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -15399,7 +15399,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -15416,7 +15416,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15438,7 +15438,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15476,7 +15476,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\Members $members The list of members to add (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Members $members The list of members to add (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -15612,9 +15612,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\DistributionGroup2 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup2 $distribution_group The attributes to update for the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -15630,9 +15630,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\DistributionGroup2 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup2 $distribution_group The attributes to update for the distribution group (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -15698,7 +15698,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -15716,7 +15716,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\DistributionGroup2 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup2 $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15739,7 +15739,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\DistributionGroup2 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup2 $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -15792,7 +15792,7 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  string $distribution_group_name The name of the distribution group (required)
-     * @param  \Swagger\Client\Model\DistributionGroup2 $distribution_group The attributes to update for the distribution group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DistributionGroup2 $distribution_group The attributes to update for the distribution group (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -15940,9 +15940,9 @@ class AccountApi
      * Operation invitationsSent
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20015[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20015[]
      */
     public function invitationsSent()
     {
@@ -15954,13 +15954,13 @@ class AccountApi
      * Operation invitationsSentWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20015[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20015[], HTTP status code, HTTP response headers (array of strings)
      */
     public function invitationsSentWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20015[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20015[]';
         $request = $this->invitationsSentRequest();
 
         try {
@@ -16012,7 +16012,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20015[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20015[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16020,7 +16020,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16060,7 +16060,7 @@ class AccountApi
      */
     public function invitationsSentAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20015[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20015[]';
         $request = $this->invitationsSentRequest();
 
         return $this->client
@@ -16201,7 +16201,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -16216,7 +16216,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -16260,7 +16260,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16460,7 +16460,7 @@ class AccountApi
      *
      * @param  string $invitation_token The app invitation token that was sent to the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -16474,7 +16474,7 @@ class AccountApi
      *
      * @param  string $invitation_token The app invitation token that was sent to the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -16518,7 +16518,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16700,9 +16700,9 @@ class AccountApi
      * Operation orgInvitationsCreate
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail1 $user_email The email of the user to invite (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail1 $user_email The email of the user to invite (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -16715,9 +16715,9 @@ class AccountApi
      * Operation orgInvitationsCreateWithHttpInfo
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail1 $user_email The email of the user to invite (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail1 $user_email The email of the user to invite (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -16761,7 +16761,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16777,7 +16777,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail1 $user_email The email of the user to invite (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail1 $user_email The email of the user to invite (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -16798,7 +16798,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail1 $user_email The email of the user to invite (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail1 $user_email The email of the user to invite (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -16835,7 +16835,7 @@ class AccountApi
      * Create request for operation 'orgInvitationsCreate'
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail1 $user_email The email of the user to invite (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail1 $user_email The email of the user to invite (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -16949,9 +16949,9 @@ class AccountApi
      * Operation orgInvitationsDelete
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail2 $user_email The email of the user whose invitation should be removed (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail2 $user_email The email of the user whose invitation should be removed (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -16964,9 +16964,9 @@ class AccountApi
      * Operation orgInvitationsDeleteWithHttpInfo
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail2 $user_email The email of the user whose invitation should be removed (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail2 $user_email The email of the user whose invitation should be removed (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -17010,7 +17010,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -17026,7 +17026,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail2 $user_email The email of the user whose invitation should be removed (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail2 $user_email The email of the user whose invitation should be removed (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17047,7 +17047,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail2 $user_email The email of the user whose invitation should be removed (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail2 $user_email The email of the user whose invitation should be removed (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17084,7 +17084,7 @@ class AccountApi
      * Create request for operation 'orgInvitationsDelete'
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail2 $user_email The email of the user whose invitation should be removed (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail2 $user_email The email of the user whose invitation should be removed (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -17199,9 +17199,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2009[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2009[]
      */
     public function orgInvitationsListPending($org_name)
     {
@@ -17214,13 +17214,13 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2009[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2009[], HTTP status code, HTTP response headers (array of strings)
      */
     public function orgInvitationsListPendingWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2009[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2009[]';
         $request = $this->orgInvitationsListPendingRequest($org_name);
 
         try {
@@ -17272,7 +17272,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2009[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2009[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -17280,7 +17280,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -17322,7 +17322,7 @@ class AccountApi
      */
     public function orgInvitationsListPendingAsyncWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2009[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2009[]';
         $request = $this->orgInvitationsListPendingRequest($org_name);
 
         return $this->client
@@ -17477,7 +17477,7 @@ class AccountApi
      *
      * @param  string $invitation_token The app invitation token that was sent to the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -17491,7 +17491,7 @@ class AccountApi
      *
      * @param  string $invitation_token The app invitation token that was sent to the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -17535,7 +17535,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -17718,9 +17718,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
-     * @param  \Swagger\Client\Model\Role $role The role of the user to be added (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Role $role The role of the user to be added (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -17734,9 +17734,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
-     * @param  \Swagger\Client\Model\Role $role The role of the user to be added (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Role $role The role of the user to be added (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -17780,7 +17780,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -17797,7 +17797,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
-     * @param  \Swagger\Client\Model\Role $role The role of the user to be added (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Role $role The role of the user to be added (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17819,7 +17819,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
-     * @param  \Swagger\Client\Model\Role $role The role of the user to be added (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Role $role The role of the user to be added (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -17857,7 +17857,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
-     * @param  \Swagger\Client\Model\Role $role The role of the user to be added (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Role $role The role of the user to be added (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -17986,9 +17986,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
-     * @param  \Swagger\Client\Model\UserRole $user_role The new role of the user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserRole $user_role The new role of the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -18002,9 +18002,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
-     * @param  \Swagger\Client\Model\UserRole $user_role The new role of the user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserRole $user_role The new role of the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -18048,7 +18048,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -18065,7 +18065,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
-     * @param  \Swagger\Client\Model\UserRole $user_role The new role of the user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserRole $user_role The new role of the user (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18087,7 +18087,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
-     * @param  \Swagger\Client\Model\UserRole $user_role The new role of the user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserRole $user_role The new role of the user (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18125,7 +18125,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $email The email address of the user to send the password reset mail to. (required)
-     * @param  \Swagger\Client\Model\UserRole $user_role The new role of the user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserRole $user_role The new role of the user (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -18260,7 +18260,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -18275,7 +18275,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -18341,7 +18341,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -18539,7 +18539,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  \SplFileObject $avatar The image for an Organization avatar to upload. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -18555,7 +18555,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  \SplFileObject $avatar The image for an Organization avatar to upload. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -18621,7 +18621,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -18824,9 +18824,9 @@ class AccountApi
     /**
      * Operation organizationsCreateOrUpdate
      *
-     * @param  \Swagger\Client\Model\Organization $organization The organization data (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Organization $organization The organization data (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -18839,9 +18839,9 @@ class AccountApi
     /**
      * Operation organizationsCreateOrUpdateWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Organization $organization The organization data (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Organization $organization The organization data (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -18907,7 +18907,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -18922,7 +18922,7 @@ class AccountApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Organization $organization The organization data (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Organization $organization The organization data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18942,7 +18942,7 @@ class AccountApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Organization $organization The organization data (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Organization $organization The organization data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -18992,7 +18992,7 @@ class AccountApi
     /**
      * Create request for operation 'organizationsCreateOrUpdate'
      *
-     * @param  \Swagger\Client\Model\Organization $organization The organization data (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Organization $organization The organization data (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -19099,7 +19099,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -19113,7 +19113,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -19157,7 +19157,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -19340,7 +19340,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -19355,7 +19355,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -19421,7 +19421,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -19617,9 +19617,9 @@ class AccountApi
      * Operation organizationsList
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20014[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20014[]
      */
     public function organizationsList()
     {
@@ -19631,13 +19631,13 @@ class AccountApi
      * Operation organizationsListWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20014[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20014[], HTTP status code, HTTP response headers (array of strings)
      */
     public function organizationsListWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20014[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20014[]';
         $request = $this->organizationsListRequest();
 
         try {
@@ -19689,7 +19689,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20014[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20014[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -19697,7 +19697,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -19737,7 +19737,7 @@ class AccountApi
      */
     public function organizationsListAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20014[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20014[]';
         $request = $this->organizationsListRequest();
 
         return $this->client
@@ -19876,9 +19876,9 @@ class AccountApi
      * Operation organizationsListAdministered
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20099
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20099
      */
     public function organizationsListAdministered()
     {
@@ -19890,13 +19890,13 @@ class AccountApi
      * Operation organizationsListAdministeredWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20099, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20099, HTTP status code, HTTP response headers (array of strings)
      */
     public function organizationsListAdministeredWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20099';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20099';
         $request = $this->organizationsListAdministeredRequest();
 
         try {
@@ -19948,7 +19948,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20099',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20099',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -19956,7 +19956,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -19996,7 +19996,7 @@ class AccountApi
      */
     public function organizationsListAdministeredAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20099';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20099';
         $request = $this->organizationsListAdministeredRequest();
 
         return $this->client
@@ -20135,9 +20135,9 @@ class AccountApi
      * Operation organizationsUpdate
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\Org $org The data for the org (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Org $org The data for the org (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -20151,9 +20151,9 @@ class AccountApi
      * Operation organizationsUpdateWithHttpInfo
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\Org $org The data for the org (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Org $org The data for the org (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -20219,7 +20219,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -20235,7 +20235,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\Org $org The data for the org (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Org $org The data for the org (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -20256,7 +20256,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\Org $org The data for the org (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Org $org The data for the org (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -20307,7 +20307,7 @@ class AccountApi
      * Create request for operation 'organizationsUpdate'
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\Org $org The data for the org (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Org $org The data for the org (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -20427,9 +20427,9 @@ class AccountApi
      * Operation sharedconnectionConnections
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2001[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2001[]
      */
     public function sharedconnectionConnections()
     {
@@ -20441,13 +20441,13 @@ class AccountApi
      * Operation sharedconnectionConnectionsWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2001[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2001[], HTTP status code, HTTP response headers (array of strings)
      */
     public function sharedconnectionConnectionsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2001[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2001[]';
         $request = $this->sharedconnectionConnectionsRequest();
 
         try {
@@ -20499,7 +20499,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2001[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2001[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -20547,7 +20547,7 @@ class AccountApi
      */
     public function sharedconnectionConnectionsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2001[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2001[]';
         $request = $this->sharedconnectionConnectionsRequest();
 
         return $this->client
@@ -20687,9 +20687,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\App $app The name of the app to be added to the team. The app has to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App $app The name of the app to be added to the team. The app has to be owned by the organization. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -20704,9 +20704,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\App $app The name of the app to be added to the team. The app has to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App $app The name of the app to be added to the team. The app has to be owned by the organization. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -20772,7 +20772,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -20789,7 +20789,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\App $app The name of the app to be added to the team. The app has to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App $app The name of the app to be added to the team. The app has to be owned by the organization. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -20811,7 +20811,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\App $app The name of the app to be added to the team. The app has to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App $app The name of the app to be added to the team. The app has to be owned by the organization. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -20863,7 +20863,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\App $app The name of the app to be added to the team. The app has to be owned by the organization. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\App $app The name of the app to be added to the team. The app has to be owned by the organization. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -20998,9 +20998,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail $user_email The email of the user to add to the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail $user_email The email of the user to add to the team (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -21015,9 +21015,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail $user_email The email of the user to add to the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail $user_email The email of the user to add to the team (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -21083,7 +21083,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -21100,7 +21100,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail $user_email The email of the user to add to the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail $user_email The email of the user to add to the team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -21122,7 +21122,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail $user_email The email of the user to add to the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail $user_email The email of the user to add to the team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -21174,7 +21174,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\UserEmail $user_email The email of the user to add to the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UserEmail $user_email The email of the user to add to the team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -21302,11 +21302,11 @@ class AccountApi
      * Operation teamsCreateTeam
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\Team2 $team The information used to create the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team2 $team The information used to create the team (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2008[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2008[]
      */
     public function teamsCreateTeam($org_name, $team = null)
     {
@@ -21318,15 +21318,15 @@ class AccountApi
      * Operation teamsCreateTeamWithHttpInfo
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\Team2 $team The information used to create the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team2 $team The information used to create the team (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2008[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2008[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamsCreateTeamWithHttpInfo($org_name, $team = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2008[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2008[]';
         $request = $this->teamsCreateTeamRequest($org_name, $team);
 
         try {
@@ -21378,7 +21378,7 @@ class AccountApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2008[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2008[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -21386,7 +21386,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -21402,7 +21402,7 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\Team2 $team The information used to create the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team2 $team The information used to create the team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -21423,14 +21423,14 @@ class AccountApi
      * 
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\Team2 $team The information used to create the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team2 $team The information used to create the team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function teamsCreateTeamAsyncWithHttpInfo($org_name, $team = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2008[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2008[]';
         $request = $this->teamsCreateTeamRequest($org_name, $team);
 
         return $this->client
@@ -21474,7 +21474,7 @@ class AccountApi
      * Create request for operation 'teamsCreateTeam'
      *
      * @param  string $org_name The organization&#39;s name (required)
-     * @param  \Swagger\Client\Model\Team2 $team The information used to create the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team2 $team The information used to create the team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -21590,7 +21590,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -21605,7 +21605,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -21649,7 +21649,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -21850,7 +21850,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -21866,7 +21866,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -21932,7 +21932,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -22147,7 +22147,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -22163,7 +22163,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -22229,7 +22229,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -22443,9 +22443,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2008[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2008[]
      */
     public function teamsListAll($org_name)
     {
@@ -22458,13 +22458,13 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2008[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2008[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamsListAllWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2008[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2008[]';
         $request = $this->teamsListAllRequest($org_name);
 
         try {
@@ -22516,7 +22516,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2008[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2008[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -22524,7 +22524,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -22566,7 +22566,7 @@ class AccountApi
      */
     public function teamsListAllAsyncWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2008[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2008[]';
         $request = $this->teamsListAllRequest($org_name);
 
         return $this->client
@@ -22722,7 +22722,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object[]
      */
@@ -22738,7 +22738,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -22804,7 +22804,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -23020,7 +23020,7 @@ class AccountApi
      * @param  string $team_name The team&#39;s name (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -23036,7 +23036,7 @@ class AccountApi
      * @param  string $team_name The team&#39;s name (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -23080,7 +23080,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -23299,7 +23299,7 @@ class AccountApi
      * @param  string $team_name The team&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -23315,7 +23315,7 @@ class AccountApi
      * @param  string $team_name The team&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -23359,7 +23359,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -23576,9 +23576,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\Team1 $team The information used to update the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team1 $team The information used to update the team (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -23593,9 +23593,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\Team1 $team The information used to update the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team1 $team The information used to update the team (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -23661,7 +23661,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -23678,7 +23678,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\Team1 $team The information used to update the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team1 $team The information used to update the team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -23700,7 +23700,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\Team1 $team The information used to update the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team1 $team The information used to update the team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -23752,7 +23752,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
-     * @param  \Swagger\Client\Model\Team1 $team The information used to update the team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team1 $team The information used to update the team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -23882,9 +23882,9 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Team $team team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team $team team (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -23900,9 +23900,9 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Team $team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team $team (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -23968,7 +23968,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -23986,7 +23986,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Team $team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team $team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -24009,7 +24009,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Team $team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team $team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -24062,7 +24062,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $team_name The team&#39;s name (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Team $team (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Team $team (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -24205,7 +24205,7 @@ class AccountApi
      *
      * @param  string $api_token_id The unique ID (UUID) of the api token (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -24219,7 +24219,7 @@ class AccountApi
      *
      * @param  string $api_token_id The unique ID (UUID) of the api token (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -24263,7 +24263,7 @@ class AccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -24271,7 +24271,7 @@ class AccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -24279,7 +24279,7 @@ class AccountApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -24460,9 +24460,9 @@ class AccountApi
      * Operation userApiTokensList
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20078[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20078[]
      */
     public function userApiTokensList()
     {
@@ -24474,13 +24474,13 @@ class AccountApi
      * Operation userApiTokensListWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20078[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20078[], HTTP status code, HTTP response headers (array of strings)
      */
     public function userApiTokensListWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20078[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20078[]';
         $request = $this->userApiTokensListRequest();
 
         try {
@@ -24532,7 +24532,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20078[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20078[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -24540,7 +24540,7 @@ class AccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -24548,7 +24548,7 @@ class AccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -24588,7 +24588,7 @@ class AccountApi
      */
     public function userApiTokensListAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20078[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20078[]';
         $request = $this->userApiTokensListRequest();
 
         return $this->client
@@ -24725,9 +24725,9 @@ class AccountApi
     /**
      * Operation userApiTokensNew
      *
-     * @param  \Swagger\Client\Model\Description1 $description Description of the token (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Description1 $description Description of the token (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -24740,9 +24740,9 @@ class AccountApi
     /**
      * Operation userApiTokensNewWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Description1 $description Description of the token (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Description1 $description Description of the token (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -24808,7 +24808,7 @@ class AccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -24816,7 +24816,7 @@ class AccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -24831,7 +24831,7 @@ class AccountApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Description1 $description Description of the token (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Description1 $description Description of the token (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -24851,7 +24851,7 @@ class AccountApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Description1 $description Description of the token (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Description1 $description Description of the token (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -24901,7 +24901,7 @@ class AccountApi
     /**
      * Create request for operation 'userApiTokensNew'
      *
-     * @param  \Swagger\Client\Model\Description1 $description Description of the token (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Description1 $description Description of the token (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -25000,7 +25000,7 @@ class AccountApi
      * Operation usersGet
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -25014,7 +25014,7 @@ class AccountApi
      * Operation usersGetWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -25080,7 +25080,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -25261,7 +25261,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -25277,7 +25277,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -25343,7 +25343,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -25556,7 +25556,7 @@ class AccountApi
      * Operation usersGetUserMetadata
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -25570,7 +25570,7 @@ class AccountApi
      * Operation usersGetUserMetadataWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -25636,7 +25636,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault1',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -25817,9 +25817,9 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20020[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20020[]
      */
     public function usersList($owner_name, $app_name)
     {
@@ -25833,13 +25833,13 @@ class AccountApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20020[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20020[], HTTP status code, HTTP response headers (array of strings)
      */
     public function usersListWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20020[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20020[]';
         $request = $this->usersListRequest($owner_name, $app_name);
 
         try {
@@ -25891,7 +25891,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20020[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20020[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -25899,7 +25899,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -25943,7 +25943,7 @@ class AccountApi
      */
     public function usersListAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20020[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20020[]';
         $request = $this->usersListRequest($owner_name, $app_name);
 
         return $this->client
@@ -26113,9 +26113,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2006[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2006[]
      */
     public function usersListForOrg($org_name)
     {
@@ -26128,13 +26128,13 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2006[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2006[], HTTP status code, HTTP response headers (array of strings)
      */
     public function usersListForOrgWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2006[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2006[]';
         $request = $this->usersListForOrgRequest($org_name);
 
         try {
@@ -26186,7 +26186,7 @@ class AccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2006[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2006[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -26194,7 +26194,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -26236,7 +26236,7 @@ class AccountApi
      */
     public function usersListForOrgAsyncWithHttpInfo($org_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2006[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2006[]';
         $request = $this->usersListForOrgRequest($org_name);
 
         return $this->client
@@ -26392,7 +26392,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -26407,7 +26407,7 @@ class AccountApi
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -26451,7 +26451,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -26649,9 +26649,9 @@ class AccountApi
     /**
      * Operation usersUpdate
      *
-     * @param  \Swagger\Client\Model\User $user The data for the created user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\User $user The data for the created user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -26664,9 +26664,9 @@ class AccountApi
     /**
      * Operation usersUpdateWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\User $user The data for the created user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\User $user The data for the created user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -26732,7 +26732,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -26747,7 +26747,7 @@ class AccountApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\User $user The data for the created user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\User $user The data for the created user (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -26767,7 +26767,7 @@ class AccountApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\User $user The data for the created user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\User $user The data for the created user (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -26817,7 +26817,7 @@ class AccountApi
     /**
      * Create request for operation 'usersUpdate'
      *
-     * @param  \Swagger\Client\Model\User $user The data for the created user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\User $user The data for the created user (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -26924,9 +26924,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
-     * @param  \Swagger\Client\Model\OrganizationUser $organization_user organization_user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\OrganizationUser $organization_user organization_user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -26941,9 +26941,9 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
-     * @param  \Swagger\Client\Model\OrganizationUser $organization_user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\OrganizationUser $organization_user (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -27009,7 +27009,7 @@ class AccountApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -27026,7 +27026,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
-     * @param  \Swagger\Client\Model\OrganizationUser $organization_user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\OrganizationUser $organization_user (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -27048,7 +27048,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
-     * @param  \Swagger\Client\Model\OrganizationUser $organization_user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\OrganizationUser $organization_user (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -27100,7 +27100,7 @@ class AccountApi
      *
      * @param  string $org_name The organization&#39;s name (required)
      * @param  string $user_name The slug name of the user (required)
-     * @param  \Swagger\Client\Model\OrganizationUser $organization_user (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\OrganizationUser $organization_user (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

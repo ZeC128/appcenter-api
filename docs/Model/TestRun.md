@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **state** | **string** | Deprecated. Use runStatus instead. | [optional] 
 **status** | **string** | Deprecated. Use resultStatus instead. | [optional] 
 **description** | **string** | Human readable explanation of the current test status | [optional] 
-**stats** | [**\Swagger\Client\Model\TestRunStatistics**](TestRunStatistics.md) |  | [optional] 
+**stats** | [**\ZeC128\AppCenter\AppCenterApi\TestRunStatistics**](TestRunStatistics.md) |  | [optional] 
 **test_type** | **string** | The name of the test framework used to run this test | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

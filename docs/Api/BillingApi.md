@@ -1,4 +1,4 @@
-# Swagger\Client\BillingApi
+# ZeC128\AppCenter\BillingApi
 
 All URIs are relative to *https://api.appcenter.ms*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **billingAggregatedInformationGetAll**
-> \Swagger\Client\Model\InlineResponse20016 billingAggregatedInformationGetAll($service, $period, $show_original_plans)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20016 billingAggregatedInformationGetAll($service, $period, $show_original_plans)
 
 
 
@@ -22,11 +22,11 @@ Aggregated Billing Information for the requesting user and the organizations in 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new ZeC128\AppCenter\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20016**](../Model/InlineResponse20016.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20016**](../Model/InlineResponse20016.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingAggregatedInformationGetByApp**
-> \Swagger\Client\Model\InlineResponse20013 billingAggregatedInformationGetByApp($owner_name, $app_name, $service, $period, $show_original_plans)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20013 billingAggregatedInformationGetByApp($owner_name, $app_name, $service, $period, $show_original_plans)
 
 
 
@@ -81,11 +81,11 @@ Aggregated Billing Information for owner of a given app.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new ZeC128\AppCenter\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20013**](../Model/InlineResponse20013.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingAggregatedInformationGetForOrg**
-> \Swagger\Client\Model\InlineResponse20013 billingAggregatedInformationGetForOrg($org_name, $service, $period, $show_original_plans)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20013 billingAggregatedInformationGetForOrg($org_name, $service, $period, $show_original_plans)
 
 
 
@@ -144,11 +144,11 @@ Aggregated Billing Information for a given Organization.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new ZeC128\AppCenter\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20013**](../Model/InlineResponse20013.md)
 
 ### Authorization
 

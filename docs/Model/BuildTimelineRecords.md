@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **result** | **string** |  | [optional] 
 **error_count** | **float** |  | [optional] 
 **warning_count** | **float** |  | [optional] 
-**issues** | [**\Swagger\Client\Model\BuildTimelineIssues[]**](BuildTimelineIssues.md) |  | [optional] 
+**issues** | [**\ZeC128\AppCenter\AppCenterApi\BuildTimelineIssues[]**](BuildTimelineIssues.md) |  | [optional] 
 **start_time** | **string** |  | [optional] 
 **finish_time** | **string** |  | [optional] 
 **type** | **string** |  | [optional] 

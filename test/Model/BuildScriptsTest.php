@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace ZeC128\AppCenter;
 
 /**
  * BuildScriptsTest Class Doc Comment
  *
  * @category    Class
  * @description A collection of detected pre/post buildscripts for current platform toolset
- * @package     Swagger\Client
+ * @package     ZeC128\AppCenter
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

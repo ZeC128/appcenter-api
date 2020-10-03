@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace ZeC128\AppCenter;
 
 /**
  * PageLogTest Class Doc Comment
  *
  * @category    Class
  * @description Page view log (as in screens or activities).
- * @package     Swagger\Client
+ * @package     ZeC128\AppCenter
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

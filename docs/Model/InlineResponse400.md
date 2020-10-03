@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**destinations** | [**\Swagger\Client\Model\InlineResponse400Destinations[]**](InlineResponse400Destinations.md) |  | [optional] 
+**destinations** | [**\ZeC128\AppCenter\AppCenterApi\InlineResponse400Destinations[]**](InlineResponse400Destinations.md) |  | [optional] 
 **mandatory_update** | **bool** |  | [optional] 
 **release_notes** | **string** |  | [optional] 
 

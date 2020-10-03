@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * AlertingApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class AlertingApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -111,7 +111,7 @@ class AlertingApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -177,7 +177,7 @@ class AlertingApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -409,7 +409,7 @@ class AlertingApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -425,7 +425,7 @@ class AlertingApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -491,7 +491,7 @@ class AlertingApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -706,9 +706,9 @@ class AlertingApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20038
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20038
      */
     public function notificationsGetAppEmailSettings($owner_name, $app_name)
     {
@@ -722,13 +722,13 @@ class AlertingApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20038, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20038, HTTP status code, HTTP response headers (array of strings)
      */
     public function notificationsGetAppEmailSettingsWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20038';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20038';
         $request = $this->notificationsGetAppEmailSettingsRequest($owner_name, $app_name);
 
         try {
@@ -780,7 +780,7 @@ class AlertingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20038',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20038',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -788,7 +788,7 @@ class AlertingApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -832,7 +832,7 @@ class AlertingApi
      */
     public function notificationsGetAppEmailSettingsAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20038';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20038';
         $request = $this->notificationsGetAppEmailSettingsRequest($owner_name, $app_name);
 
         return $this->client
@@ -1001,9 +1001,9 @@ class AlertingApi
      * Operation notificationsGetUserEmailSettings
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse200
      */
     public function notificationsGetUserEmailSettings()
     {
@@ -1015,13 +1015,13 @@ class AlertingApi
      * Operation notificationsGetUserEmailSettingsWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
     public function notificationsGetUserEmailSettingsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse200';
         $request = $this->notificationsGetUserEmailSettingsRequest();
 
         try {
@@ -1073,7 +1073,7 @@ class AlertingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse200',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse200',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1081,7 +1081,7 @@ class AlertingApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1121,7 +1121,7 @@ class AlertingApi
      */
     public function notificationsGetUserEmailSettingsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse200';
         $request = $this->notificationsGetUserEmailSettingsRequest();
 
         return $this->client
@@ -1262,7 +1262,7 @@ class AlertingApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1278,7 +1278,7 @@ class AlertingApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1344,7 +1344,7 @@ class AlertingApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

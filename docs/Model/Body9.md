@@ -10,10 +10,10 @@ Name | Type | Description | Notes
 **destination_type** | **string** | Not used anymore. | [optional] 
 **release_notes** | **string** | Release notes for this release. | [optional] 
 **mandatory_update** | **bool** | A boolean which determines whether this version should be a mandatory update or not. | [optional] 
-**destinations** | [**\Swagger\Client\Model\V01appsownerNameappNamereleasesreleaseIdDestinations[]**](V01appsownerNameappNamereleasesreleaseIdDestinations.md) | Distribute this release under the following list of destinations (store groups or distribution groups). | [optional] 
-**build** | [**\Swagger\Client\Model\V01appsownerNameappNamereleasesreleaseIdBuild**](V01appsownerNameappNamereleasesreleaseIdBuild.md) |  | [optional] 
+**destinations** | [**\ZeC128\AppCenter\AppCenterApi\V01appsownerNameappNamereleasesreleaseIdDestinations[]**](V01appsownerNameappNamereleasesreleaseIdDestinations.md) | Distribute this release under the following list of destinations (store groups or distribution groups). | [optional] 
+**build** | [**\ZeC128\AppCenter\AppCenterApi\V01appsownerNameappNamereleasesreleaseIdBuild**](V01appsownerNameappNamereleasesreleaseIdBuild.md) |  | [optional] 
 **notify_testers** | **bool** | A boolean which determines whether to notify testers of a new release, default to true. | [optional] [default to true]
-**metadata** | [**\Swagger\Client\Model\V01appsownerNameappNamereleasesreleaseIdMetadata**](V01appsownerNameappNamereleasesreleaseIdMetadata.md) |  | [optional] 
+**metadata** | [**\ZeC128\AppCenter\AppCenterApi\V01appsownerNameappNamereleasesreleaseIdMetadata**](V01appsownerNameappNamereleasesreleaseIdMetadata.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

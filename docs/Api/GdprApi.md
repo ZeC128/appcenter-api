@@ -1,4 +1,4 @@
-# Swagger\Client\GdprApi
+# ZeC128\AppCenter\GdprApi
 
 All URIs are relative to *https://api.appcenter.ms*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **dataSubjectRightCancelDeleteRequest**
-> \Swagger\Client\Model\InlineResponse202 dataSubjectRightCancelDeleteRequest($token, $email)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse202 dataSubjectRightCancelDeleteRequest($token, $email)
 
 
 
@@ -23,18 +23,18 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\GdprApi(
+$apiInstance = new ZeC128\AppCenter\Api\GdprApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $token = "token_example"; // string | Unique request ID (GUID)
-$email = new \Swagger\Client\Model\Email(); // \Swagger\Client\Model\Email | 
+$email = new \ZeC128\AppCenter\AppCenterApi\Email(); // \ZeC128\AppCenter\AppCenterApi\Email | 
 
 try {
     $result = $apiInstance->dataSubjectRightCancelDeleteRequest($token, $email);
@@ -50,11 +50,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **token** | [**string**](../Model/.md)| Unique request ID (GUID) |
- **email** | [**\Swagger\Client\Model\Email**](../Model/Email.md)|  | [optional]
+ **email** | [**\ZeC128\AppCenter\AppCenterApi\Email**](../Model/Email.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse202**](../Model/InlineResponse202.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse202**](../Model/InlineResponse202.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dataSubjectRightCancelExportRequest**
-> \Swagger\Client\Model\InlineResponse202 dataSubjectRightCancelExportRequest($token)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse202 dataSubjectRightCancelExportRequest($token)
 
 
 
@@ -78,11 +78,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\GdprApi(
+$apiInstance = new ZeC128\AppCenter\Api\GdprApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse202**](../Model/InlineResponse202.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse202**](../Model/InlineResponse202.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dataSubjectRightDeleteRequest**
-> \Swagger\Client\Model\InlineResponse202 dataSubjectRightDeleteRequest()
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse202 dataSubjectRightDeleteRequest()
 
 
 
@@ -131,11 +131,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\GdprApi(
+$apiInstance = new ZeC128\AppCenter\Api\GdprApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -156,7 +156,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse202**](../Model/InlineResponse202.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse202**](../Model/InlineResponse202.md)
 
 ### Authorization
 
@@ -170,7 +170,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dataSubjectRightDeleteStatusRequest**
-> \Swagger\Client\Model\InlineResponse2002 dataSubjectRightDeleteStatusRequest($token, $email)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse2002 dataSubjectRightDeleteStatusRequest($token, $email)
 
 
 
@@ -180,11 +180,11 @@ This endpoint does not need any parameter.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\GdprApi(
+$apiInstance = new ZeC128\AppCenter\Api\GdprApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -211,7 +211,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -225,7 +225,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dataSubjectRightExportRequest**
-> \Swagger\Client\Model\InlineResponse202 dataSubjectRightExportRequest()
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse202 dataSubjectRightExportRequest()
 
 
 
@@ -235,11 +235,11 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\GdprApi(
+$apiInstance = new ZeC128\AppCenter\Api\GdprApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -260,7 +260,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse202**](../Model/InlineResponse202.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse202**](../Model/InlineResponse202.md)
 
 ### Authorization
 
@@ -274,7 +274,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dataSubjectRightExportStatusRequest**
-> \Swagger\Client\Model\InlineResponse2002 dataSubjectRightExportStatusRequest($token)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse2002 dataSubjectRightExportStatusRequest($token)
 
 
 
@@ -284,11 +284,11 @@ This endpoint does not need any parameter.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\GdprApi(
+$apiInstance = new ZeC128\AppCenter\Api\GdprApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -313,7 +313,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 

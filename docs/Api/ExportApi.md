@@ -1,4 +1,4 @@
-# Swagger\Client\ExportApi
+# ZeC128\AppCenter\ExportApi
 
 All URIs are relative to *https://api.appcenter.ms*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **exportConfigurationsCreate**
-> \Swagger\Client\Model\InlineResponse20039 exportConfigurationsCreate($properties, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20039 exportConfigurationsCreate($properties, $owner_name, $app_name)
 
 
 
@@ -26,17 +26,17 @@ Create new export configuration
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ExportApi(
+$apiInstance = new ZeC128\AppCenter\Api\ExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$properties = new \Swagger\Client\Model\Properties4(); // \Swagger\Client\Model\Properties4 | Export configurations.
+$properties = new \ZeC128\AppCenter\AppCenterApi\Properties4(); // \ZeC128\AppCenter\AppCenterApi\Properties4 | Export configurations.
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -53,13 +53,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **properties** | [**\Swagger\Client\Model\Properties4**](../Model/Properties4.md)| Export configurations. |
+ **properties** | [**\ZeC128\AppCenter\AppCenterApi\Properties4**](../Model/Properties4.md)| Export configurations. |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20039**](../Model/InlineResponse20039.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20039**](../Model/InlineResponse20039.md)
 
 ### Authorization
 
@@ -85,11 +85,11 @@ Delete export configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ExportApi(
+$apiInstance = new ZeC128\AppCenter\Api\ExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -143,11 +143,11 @@ Disable export configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ExportApi(
+$apiInstance = new ZeC128\AppCenter\Api\ExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -201,11 +201,11 @@ Enable export configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ExportApi(
+$apiInstance = new ZeC128\AppCenter\Api\ExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -247,7 +247,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **exportConfigurationsGet**
-> \Swagger\Client\Model\InlineResponse20039 exportConfigurationsGet($export_configuration_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20039 exportConfigurationsGet($export_configuration_id, $owner_name, $app_name)
 
 
 
@@ -259,11 +259,11 @@ Get export configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ExportApi(
+$apiInstance = new ZeC128\AppCenter\Api\ExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -292,7 +292,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20039**](../Model/InlineResponse20039.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20039**](../Model/InlineResponse20039.md)
 
 ### Authorization
 
@@ -306,7 +306,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **exportConfigurationsList**
-> \Swagger\Client\Model\InlineResponse20040 exportConfigurationsList($owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20040 exportConfigurationsList($owner_name, $app_name)
 
 
 
@@ -318,11 +318,11 @@ List export configurations.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ExportApi(
+$apiInstance = new ZeC128\AppCenter\Api\ExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -349,7 +349,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20040**](../Model/InlineResponse20040.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20040**](../Model/InlineResponse20040.md)
 
 ### Authorization
 
@@ -363,7 +363,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **exportConfigurationsPartialUpdate**
-> \Swagger\Client\Model\InlineResponse20039 exportConfigurationsPartialUpdate($export_configuration_id, $properties, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20039 exportConfigurationsPartialUpdate($export_configuration_id, $properties, $owner_name, $app_name)
 
 
 
@@ -375,18 +375,18 @@ Partially update export configuration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ExportApi(
+$apiInstance = new ZeC128\AppCenter\Api\ExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $export_configuration_id = "export_configuration_id_example"; // string | The id of the export configuration.
-$properties = new \Swagger\Client\Model\Properties3(); // \Swagger\Client\Model\Properties3 | Export configurations.
+$properties = new \ZeC128\AppCenter\AppCenterApi\Properties3(); // \ZeC128\AppCenter\AppCenterApi\Properties3 | Export configurations.
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -404,13 +404,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **export_configuration_id** | **string**| The id of the export configuration. |
- **properties** | [**\Swagger\Client\Model\Properties3**](../Model/Properties3.md)| Export configurations. |
+ **properties** | [**\ZeC128\AppCenter\AppCenterApi\Properties3**](../Model/Properties3.md)| Export configurations. |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20039**](../Model/InlineResponse20039.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20039**](../Model/InlineResponse20039.md)
 
 ### Authorization
 

@@ -1,14 +1,14 @@
 {
-    "name": "zec128/appcenter-by-swagger",
+    "name": "ZeC128/appcenter-api",
+    "version": "1.1.0",
     "description": "",
-    "version": "1.0.0",
     "keywords": [
         "swagger",
         "php",
         "sdk",
         "api"
     ],
-    "homepage": "https://sofa1.at",
+    "homepage": "http://swagger.io",
     "license": "proprietary",
     "authors": [
         {
@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~2.12"
     },
     "autoload": {
-        "psr-4": { "Swagger\\Client\\" : "lib/" }
+        "psr-4": { "ZeC128\\AppCenter\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Swagger\\Client\\" : "test/" }
+        "psr-4": { "ZeC128\\AppCenter\\" : "test/" }
     }
 }

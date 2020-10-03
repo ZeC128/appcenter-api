@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **avg_cpu** | **float** |  | [optional] 
 **avg_mem** | **float** |  | [optional] 
-**samples** | [**\Swagger\Client\Model\PerformanceReportPerformanceDataSamples[]**](PerformanceReportPerformanceDataSamples.md) |  | [optional] 
+**samples** | [**\ZeC128\AppCenter\AppCenterApi\PerformanceReportPerformanceDataSamples[]**](PerformanceReportPerformanceDataSamples.md) |  | [optional] 
 **elapsed_secs_end** | **float** |  | [optional] 
 **elapsed_secs_start** | **float** |  | [optional] 
 **elapsed_secs** | **float** |  | [optional] 

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **name** | **string** | Store Name | [optional] 
 **type** | **string** | Store Type | [optional] 
 **track** | **string** | Store track | [optional] 
-**intune_details** | [**\Swagger\Client\Model\V01appsownerNameappNamedistributionStoresIntuneDetails**](V01appsownerNameappNamedistributionStoresIntuneDetails.md) |  | [optional] 
+**intune_details** | [**\ZeC128\AppCenter\AppCenterApi\V01appsownerNameappNamedistributionStoresIntuneDetails**](V01appsownerNameappNamedistributionStoresIntuneDetails.md) |  | [optional] 
 **service_connection_id** | **string** | Id for the shared service connection. In case of Apple / GooglePlay stores, this connection will be used to connect to the Apple / Google stores in App Center. | [optional] 
 **created_by** | **string** | The ID of the principal that created the store. | [optional] 
 **created_by_principal_type** | **string** | The type of the principal that created the store. | [optional] 

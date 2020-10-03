@@ -1,4 +1,4 @@
-# Swagger\Client\CodepushApi
+# ZeC128\AppCenter\CodepushApi
 
 All URIs are relative to *https://api.appcenter.ms*
 
@@ -38,7 +38,7 @@ Returns the acquisition service status to the caller
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -83,7 +83,7 @@ Check for updates
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -146,12 +146,12 @@ Report Deployment status metric
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$release_metadata = new \Swagger\Client\Model\ReleaseMetadata1(); // \Swagger\Client\Model\ReleaseMetadata1 | Deployment status metric properties
+$release_metadata = new \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1(); // \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 | Deployment status metric properties
 
 try {
     $apiInstance->codePushAcquisitionUpdateDeployStatus($release_metadata);
@@ -165,7 +165,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **release_metadata** | [**\Swagger\Client\Model\ReleaseMetadata1**](../Model/ReleaseMetadata1.md)| Deployment status metric properties |
+ **release_metadata** | [**\ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1**](../Model/ReleaseMetadata1.md)| Deployment status metric properties |
 
 ### Return type
 
@@ -194,12 +194,12 @@ Report download of specified release
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$release_metadata = new \Swagger\Client\Model\ReleaseMetadata(); // \Swagger\Client\Model\ReleaseMetadata | Deployment status metric properties
+$release_metadata = new \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata(); // \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata | Deployment status metric properties
 
 try {
     $apiInstance->codePushAcquisitionUpdateDownloadStatus($release_metadata);
@@ -213,7 +213,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **release_metadata** | [**\Swagger\Client\Model\ReleaseMetadata**](../Model/ReleaseMetadata.md)| Deployment status metric properties |
+ **release_metadata** | [**\ZeC128\AppCenter\AppCenterApi\ReleaseMetadata**](../Model/ReleaseMetadata.md)| Deployment status metric properties |
 
 ### Return type
 
@@ -231,7 +231,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **codePushDeploymentMetricsGet**
-> \Swagger\Client\Model\InlineResponse20065[] codePushDeploymentMetricsGet($deployment_name, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20065[] codePushDeploymentMetricsGet($deployment_name, $owner_name, $app_name)
 
 
 
@@ -243,11 +243,11 @@ Gets all releases metrics for specified Deployment
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -276,7 +276,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20065[]**](../Model/InlineResponse20065.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20065[]**](../Model/InlineResponse20065.md)
 
 ### Authorization
 
@@ -302,11 +302,11 @@ Rollback the latest or a specific release for an app deployment
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -315,7 +315,7 @@ $apiInstance = new Swagger\Client\Api\CodepushApi(
 $deployment_name = "deployment_name_example"; // string | deployment name
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
-$release_label = new \Swagger\Client\Model\ReleaseLabel(); // \Swagger\Client\Model\ReleaseLabel | The specific release label that you want to rollback to
+$release_label = new \ZeC128\AppCenter\AppCenterApi\ReleaseLabel(); // \ZeC128\AppCenter\AppCenterApi\ReleaseLabel | The specific release label that you want to rollback to
 
 try {
     $result = $apiInstance->codePushDeploymentReleaseRollback($deployment_name, $owner_name, $app_name, $release_label);
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
  **deployment_name** | **string**| deployment name |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
- **release_label** | [**\Swagger\Client\Model\ReleaseLabel**](../Model/ReleaseLabel.md)| The specific release label that you want to rollback to | [optional]
+ **release_label** | [**\ZeC128\AppCenter\AppCenterApi\ReleaseLabel**](../Model/ReleaseLabel.md)| The specific release label that you want to rollback to | [optional]
 
 ### Return type
 
@@ -363,18 +363,18 @@ Create a new CodePush release for the specified deployment
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $deployment_name = "deployment_name_example"; // string | deployment name
-$uploaded_release = new \Swagger\Client\Model\UploadedRelease(); // \Swagger\Client\Model\UploadedRelease | The necessary information required to download the bundle and being the release process.
+$uploaded_release = new \ZeC128\AppCenter\AppCenterApi\UploadedRelease(); // \ZeC128\AppCenter\AppCenterApi\UploadedRelease | The necessary information required to download the bundle and being the release process.
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -392,7 +392,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deployment_name** | **string**| deployment name |
- **uploaded_release** | [**\Swagger\Client\Model\UploadedRelease**](../Model/UploadedRelease.md)| The necessary information required to download the bundle and being the release process. |
+ **uploaded_release** | [**\ZeC128\AppCenter\AppCenterApi\UploadedRelease**](../Model/UploadedRelease.md)| The necessary information required to download the bundle and being the release process. |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
@@ -424,11 +424,11 @@ Clears a Deployment of releases
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -482,11 +482,11 @@ Gets the history of releases on a Deployment
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -541,11 +541,11 @@ Create a new CodePush release upload for the specified deployment
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -588,7 +588,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **codePushDeploymentsCreate**
-> \Swagger\Client\Model\Deployment1 codePushDeploymentsCreate($deployment, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\Deployment1 codePushDeploymentsCreate($deployment, $owner_name, $app_name)
 
 
 
@@ -600,17 +600,17 @@ Creates a CodePush Deployment for the given app
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$deployment = new \Swagger\Client\Model\Deployment1(); // \Swagger\Client\Model\Deployment1 | Deployment to be created
+$deployment = new \ZeC128\AppCenter\AppCenterApi\Deployment1(); // \ZeC128\AppCenter\AppCenterApi\Deployment1 | Deployment to be created
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -627,13 +627,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **deployment** | [**\Swagger\Client\Model\Deployment1**](../Model/Deployment1.md)| Deployment to be created |
+ **deployment** | [**\ZeC128\AppCenter\AppCenterApi\Deployment1**](../Model/Deployment1.md)| Deployment to be created |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
 ### Return type
 
-[**\Swagger\Client\Model\Deployment1**](../Model/Deployment1.md)
+[**\ZeC128\AppCenter\AppCenterApi\Deployment1**](../Model/Deployment1.md)
 
 ### Authorization
 
@@ -659,11 +659,11 @@ Deletes a CodePush Deployment for the given app
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -707,7 +707,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **codePushDeploymentsGet**
-> \Swagger\Client\Model\InlineResponse20066 codePushDeploymentsGet($deployment_name, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20066 codePushDeploymentsGet($deployment_name, $owner_name, $app_name)
 
 
 
@@ -719,11 +719,11 @@ Gets a CodePush Deployment for the given app
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -752,7 +752,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20066**](../Model/InlineResponse20066.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20066**](../Model/InlineResponse20066.md)
 
 ### Authorization
 
@@ -766,7 +766,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **codePushDeploymentsList**
-> \Swagger\Client\Model\InlineResponse20066[] codePushDeploymentsList($owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20066[] codePushDeploymentsList($owner_name, $app_name)
 
 
 
@@ -778,11 +778,11 @@ Gets a list of CodePush deployments for the given app
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -809,7 +809,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20066[]**](../Model/InlineResponse20066.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20066[]**](../Model/InlineResponse20066.md)
 
 ### Authorization
 
@@ -835,11 +835,11 @@ Promote one release (default latest one) from one deployment to another
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -898,18 +898,18 @@ Modifies a CodePush Deployment for the given app
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $deployment_name = "deployment_name_example"; // string | deployment name
-$deployment = new \Swagger\Client\Model\Deployment(); // \Swagger\Client\Model\Deployment | Deployment modification. All fields are optional and only provided fields will get updated.
+$deployment = new \ZeC128\AppCenter\AppCenterApi\Deployment(); // \ZeC128\AppCenter\AppCenterApi\Deployment | Deployment modification. All fields are optional and only provided fields will get updated.
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -926,7 +926,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deployment_name** | **string**| deployment name |
- **deployment** | [**\Swagger\Client\Model\Deployment**](../Model/Deployment.md)| Deployment modification. All fields are optional and only provided fields will get updated. |
+ **deployment** | [**\ZeC128\AppCenter\AppCenterApi\Deployment**](../Model/Deployment.md)| Deployment modification. All fields are optional and only provided fields will get updated. |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
@@ -958,11 +958,11 @@ Modifies a CodePush release metadata under the given Deployment
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1021,11 +1021,11 @@ Check for updates
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1086,17 +1086,17 @@ Report download of specified release
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$release_metadata = new \Swagger\Client\Model\ReleaseMetadata(); // \Swagger\Client\Model\ReleaseMetadata | Deployment status metric properties
+$release_metadata = new \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata(); // \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata | Deployment status metric properties
 
 try {
     $apiInstance->legacyCodePushAcquisitionUpdateDownloadStatus($release_metadata);
@@ -1110,7 +1110,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **release_metadata** | [**\Swagger\Client\Model\ReleaseMetadata**](../Model/ReleaseMetadata.md)| Deployment status metric properties |
+ **release_metadata** | [**\ZeC128\AppCenter\AppCenterApi\ReleaseMetadata**](../Model/ReleaseMetadata.md)| Deployment status metric properties |
 
 ### Return type
 
@@ -1140,17 +1140,17 @@ Report deploy of specified release
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CodepushApi(
+$apiInstance = new ZeC128\AppCenter\Api\CodepushApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$release_metadata = new \Swagger\Client\Model\ReleaseMetadata1(); // \Swagger\Client\Model\ReleaseMetadata1 | Deployment status metric properties
+$release_metadata = new \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1(); // \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 | Deployment status metric properties
 
 try {
     $apiInstance->legacyCodePushAcquisitionUpdateInstallsStatus($release_metadata);
@@ -1164,7 +1164,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **release_metadata** | [**\Swagger\Client\Model\ReleaseMetadata1**](../Model/ReleaseMetadata1.md)| Deployment status metric properties |
+ **release_metadata** | [**\ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1**](../Model/ReleaseMetadata1.md)| Deployment status metric properties |
 
 ### Return type
 

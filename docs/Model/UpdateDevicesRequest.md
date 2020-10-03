@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **p12_password** | **string** | The password certificate if one is needed. | [optional] 
 **publish_all_devices** | **bool** | When set to true, all unprovisioned devices will be published to the Apple Developer account.  When false, only the provided devices will be published to the Apple Developer account. | [optional] 
 **devices** | **string[]** | Array of device UDID&#39;s to be published to the Apple Developer account. | [optional] 
-**destinations** | [**\Swagger\Client\Model\UpdateDevicesRequestDestinations[]**](UpdateDevicesRequestDestinations.md) | Array of distribution groups that the devices should be provisioned from. | [optional] 
+**destinations** | [**\ZeC128\AppCenter\AppCenterApi\UpdateDevicesRequestDestinations[]**](UpdateDevicesRequestDestinations.md) | Array of distribution groups that the devices should be provisioned from. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **app_secret** | **string** | A unique and secret key used to identify the app in communication with the ingestion endpoint for crash reporting and analytics | [optional] 
-**azure_subscription** | [**\Swagger\Client\Model\InlineResponse20012**](InlineResponse20012.md) |  | [optional] 
+**azure_subscription** | [**\ZeC128\AppCenter\AppCenterApi\InlineResponse20012**](InlineResponse20012.md) |  | [optional] 
 **platform** | **string** | The platform of the app | [optional] 
 **origin** | **string** | The creation origin of this app | [optional] 
 **created_at** | **string** | The created date of this app | [optional] 

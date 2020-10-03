@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**urls** | [**\Swagger\Client\Model\StepReportScreenshotUrls**](StepReportScreenshotUrls.md) |  | 
+**urls** | [**\ZeC128\AppCenter\AppCenterApi\StepReportScreenshotUrls**](StepReportScreenshotUrls.md) |  | 
 **rotation** | **float** |  | 
 **landscape** | **bool** |  | 
 

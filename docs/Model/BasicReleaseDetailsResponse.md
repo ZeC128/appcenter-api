@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **distribution_groups** | **object[]** | OBSOLETE. Will be removed in next version. A list of distribution groups that are associated with this release. | [optional] 
 **distribution_stores** | **object[]** | OBSOLETE. Will be removed in next version. A list of distribution stores that are associated with this release. | [optional] 
 **destinations** | **object[]** | A list of distribution groups or stores. | [optional] 
-**build** | [**\Swagger\Client\Model\V01appsownerNameappNamereleasesfilterByTesterBuild**](V01appsownerNameappNamereleasesfilterByTesterBuild.md) |  | [optional] 
+**build** | [**\ZeC128\AppCenter\AppCenterApi\V01appsownerNameappNamereleasesfilterByTesterBuild**](V01appsownerNameappNamereleasesfilterByTesterBuild.md) |  | [optional] 
 **is_external_build** | **bool** | This value determines if a release is external or not. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

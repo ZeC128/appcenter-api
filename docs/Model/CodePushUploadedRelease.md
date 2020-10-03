@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**release_upload** | [**\Swagger\Client\Model\V01appsownerNameappNamedeploymentsdeploymentNamereleasesReleaseUpload**](V01appsownerNameappNamedeploymentsdeploymentNamereleasesReleaseUpload.md) |  | 
+**release_upload** | [**\ZeC128\AppCenter\AppCenterApi\V01appsownerNameappNamedeploymentsdeploymentNamereleasesReleaseUpload**](V01appsownerNameappNamedeploymentsdeploymentNamereleasesReleaseUpload.md) |  | 
 **target_binary_version** | **string** | the binary version of the application | 
 **deployment_name** | **string** | This specifies which deployment you want to release the update to. Default is Staging. | [optional] 
 **description** | **string** | This provides an optional \&quot;change log\&quot; for the deployment. | [optional] 

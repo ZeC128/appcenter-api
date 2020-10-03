@@ -4,9 +4,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** | The unique ID (UUID) of the invitation | 
-**organization** | [**\Swagger\Client\Model\V01invitationssentOrganization**](V01invitationssentOrganization.md) |  | 
+**organization** | [**\ZeC128\AppCenter\AppCenterApi\V01invitationssentOrganization**](V01invitationssentOrganization.md) |  | 
 **email** | **string** | The email address of the invited user | 
-**invited_by** | [**\Swagger\Client\Model\InlineResponse20020**](InlineResponse20020.md) |  | 
+**invited_by** | [**\ZeC128\AppCenter\AppCenterApi\InlineResponse20020**](InlineResponse20020.md) |  | 
 **is_existing_user** | **bool** | Indicates whether the invited user already exists | 
 **role** | **string** | The role assigned to the invited user | [optional] 
 

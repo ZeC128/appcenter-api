@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **step_name** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
-**step_executions** | [**\Swagger\Client\Model\TestReportStepExecutions[]**](TestReportStepExecutions.md) |  | [optional] 
+**step_executions** | [**\ZeC128\AppCenter\AppCenterApi\TestReportStepExecutions[]**](TestReportStepExecutions.md) |  | [optional] 
 **failed** | **float** |  | [optional] 
 **skipped** | **float** |  | [optional] 
 **step_report_url** | **string** |  | [optional] 

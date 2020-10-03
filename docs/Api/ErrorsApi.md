@@ -1,4 +1,4 @@
-# Swagger\Client\ErrorsApi
+# ZeC128\AppCenter\ErrorsApi
 
 All URIs are relative to *https://api.appcenter.ms*
 
@@ -34,7 +34,7 @@ Method | HTTP request | Description
 
 
 # **errorsAppBuildsList**
-> \Swagger\Client\Model\InlineResponse20058 errorsAppBuildsList($version, $start, $owner_name, $app_name, $end, $top, $error_type)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20058 errorsAppBuildsList($version, $start, $owner_name, $app_name, $end, $top, $error_type)
 
 
 
@@ -46,11 +46,11 @@ List of app builds
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20058**](../Model/InlineResponse20058.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20058**](../Model/InlineResponse20058.md)
 
 ### Authorization
 
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsAvailableVersions**
-> \Swagger\Client\Model\InlineResponse20057 errorsAvailableVersions($start, $owner_name, $app_name, $end, $top, $skip, $filter, $inlinecount, $error_type)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20057 errorsAvailableVersions($start, $owner_name, $app_name, $end, $top, $skip, $filter, $inlinecount, $error_type)
 
 
 
@@ -113,11 +113,11 @@ Get all available versions in the time range.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20057**](../Model/InlineResponse20057.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20057**](../Model/InlineResponse20057.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsCountsPerDay**
-> \Swagger\Client\Model\InlineResponse20053 errorsCountsPerDay($start, $owner_name, $app_name, $version, $end, $app_build, $error_type)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20053 errorsCountsPerDay($start, $owner_name, $app_name, $version, $end, $app_build, $error_type)
 
 
 
@@ -184,11 +184,11 @@ Count of crashes or errors by day in the time range based the selected versions.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -225,7 +225,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20053**](../Model/InlineResponse20053.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20053**](../Model/InlineResponse20053.md)
 
 ### Authorization
 
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsDeleteError**
-> \Swagger\Client\Model\InlineResponse20051 errorsDeleteError($error_group_id, $error_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20051 errorsDeleteError($error_group_id, $error_id, $owner_name, $app_name)
 
 
 
@@ -251,11 +251,11 @@ Delete a specific error and related attachments and blobs for an app. Searchable
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -286,7 +286,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20051**](../Model/InlineResponse20051.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20051**](../Model/InlineResponse20051.md)
 
 ### Authorization
 
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsErrorAttachmentLocation**
-> \Swagger\Client\Model\InlineResponse20043 errorsErrorAttachmentLocation($error_id, $attachment_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20043 errorsErrorAttachmentLocation($error_id, $attachment_id, $owner_name, $app_name)
 
 
 
@@ -312,11 +312,11 @@ Error attachment location.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -347,7 +347,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20043**](../Model/InlineResponse20043.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20043**](../Model/InlineResponse20043.md)
 
 ### Authorization
 
@@ -361,7 +361,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsErrorAttachmentText**
-> \Swagger\Client\Model\InlineResponse20042 errorsErrorAttachmentText($error_id, $attachment_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20042 errorsErrorAttachmentText($error_id, $attachment_id, $owner_name, $app_name)
 
 
 
@@ -373,11 +373,11 @@ Error attachment text.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -408,7 +408,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20042**](../Model/InlineResponse20042.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20042**](../Model/InlineResponse20042.md)
 
 ### Authorization
 
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsErrorAttachments**
-> \Swagger\Client\Model\InlineResponse20044[] errorsErrorAttachments($error_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20044[] errorsErrorAttachments($error_id, $owner_name, $app_name)
 
 
 
@@ -434,11 +434,11 @@ List error attachments.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20044[]**](../Model/InlineResponse20044.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20044[]**](../Model/InlineResponse20044.md)
 
 ### Authorization
 
@@ -493,11 +493,11 @@ Download details for a specific error.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -544,7 +544,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsErrorFreeDevicePercentages**
-> \Swagger\Client\Model\InlineResponse20047 errorsErrorFreeDevicePercentages($start, $owner_name, $app_name, $end, $versions, $app_build, $error_type)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20047 errorsErrorFreeDevicePercentages($start, $owner_name, $app_name, $end, $versions, $app_build, $error_type)
 
 
 
@@ -556,11 +556,11 @@ Percentage of error-free devices by day in the time range based on the selected 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -597,7 +597,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20047**](../Model/InlineResponse20047.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20047**](../Model/InlineResponse20047.md)
 
 ### Authorization
 
@@ -611,7 +611,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsErrorGroupsSearch**
-> \Swagger\Client\Model\InlineResponse20055 errorsErrorGroupsSearch($owner_name, $app_name, $filter, $q, $order, $sort, $top, $skip)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20055 errorsErrorGroupsSearch($owner_name, $app_name, $filter, $q, $order, $sort, $top, $skip)
 
 
 
@@ -623,11 +623,11 @@ Error groups list based on search parameters
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -666,7 +666,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20055**](../Model/InlineResponse20055.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20055**](../Model/InlineResponse20055.md)
 
 ### Authorization
 
@@ -680,7 +680,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsErrorLocation**
-> \Swagger\Client\Model\InlineResponse20043 errorsErrorLocation($error_group_id, $error_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20043 errorsErrorLocation($error_group_id, $error_id, $owner_name, $app_name)
 
 
 
@@ -692,11 +692,11 @@ Error location.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -727,7 +727,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20043**](../Model/InlineResponse20043.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20043**](../Model/InlineResponse20043.md)
 
 ### Authorization
 
@@ -741,7 +741,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsErrorSearch**
-> \Swagger\Client\Model\InlineResponse20045 errorsErrorSearch($owner_name, $app_name, $filter, $q, $order, $sort, $top, $skip)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20045 errorsErrorSearch($owner_name, $app_name, $filter, $q, $order, $sort, $top, $skip)
 
 
 
@@ -753,11 +753,11 @@ Errors list based on search parameters
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -796,7 +796,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20045**](../Model/InlineResponse20045.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20045**](../Model/InlineResponse20045.md)
 
 ### Authorization
 
@@ -810,7 +810,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsErrorStackTrace**
-> \Swagger\Client\Model\DiagnosticsStackTrace errorsErrorStackTrace($error_group_id, $error_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace errorsErrorStackTrace($error_group_id, $error_id, $owner_name, $app_name)
 
 
 
@@ -822,11 +822,11 @@ Error Stacktrace details.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -857,7 +857,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DiagnosticsStackTrace**](../Model/DiagnosticsStackTrace.md)
+[**\ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace**](../Model/DiagnosticsStackTrace.md)
 
 ### Authorization
 
@@ -871,7 +871,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsGetErrorDetails**
-> \Swagger\Client\Model\InlineResponse20050 errorsGetErrorDetails($error_group_id, $error_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20050 errorsGetErrorDetails($error_group_id, $error_id, $owner_name, $app_name)
 
 
 
@@ -883,11 +883,11 @@ Error details.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -918,7 +918,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20050**](../Model/InlineResponse20050.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20050**](../Model/InlineResponse20050.md)
 
 ### Authorization
 
@@ -932,7 +932,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsGetRetentionSettings**
-> \Swagger\Client\Model\InlineResponse20046 errorsGetRetentionSettings($owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20046 errorsGetRetentionSettings($owner_name, $app_name)
 
 gets the retention settings in days
 
@@ -944,11 +944,11 @@ gets the retention settings in days
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -975,7 +975,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20046**](../Model/InlineResponse20046.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20046**](../Model/InlineResponse20046.md)
 
 ### Authorization
 
@@ -989,7 +989,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsGroupCountsPerDay**
-> \Swagger\Client\Model\InlineResponse20053 errorsGroupCountsPerDay($error_group_id, $start, $owner_name, $app_name, $version, $end)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20053 errorsGroupCountsPerDay($error_group_id, $start, $owner_name, $app_name, $version, $end)
 
 
 
@@ -1001,11 +1001,11 @@ Count of errors by day in the time range of the selected error group with select
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1040,7 +1040,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20053**](../Model/InlineResponse20053.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20053**](../Model/InlineResponse20053.md)
 
 ### Authorization
 
@@ -1054,7 +1054,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsGroupDetails**
-> \Swagger\Client\Model\InlineResponse20054 errorsGroupDetails($error_group_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20054 errorsGroupDetails($error_group_id, $owner_name, $app_name)
 
 
 
@@ -1066,11 +1066,11 @@ Error group details
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1099,7 +1099,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20054**](../Model/InlineResponse20054.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20054**](../Model/InlineResponse20054.md)
 
 ### Authorization
 
@@ -1113,7 +1113,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsGroupErrorFreeDevicePercentages**
-> \Swagger\Client\Model\InlineResponse20047 errorsGroupErrorFreeDevicePercentages($error_group_id, $start, $owner_name, $app_name, $end)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20047 errorsGroupErrorFreeDevicePercentages($error_group_id, $start, $owner_name, $app_name, $end)
 
 
 
@@ -1125,11 +1125,11 @@ Percentage of error-free devices by day in the time range. Api will return -1 if
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1162,7 +1162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20047**](../Model/InlineResponse20047.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20047**](../Model/InlineResponse20047.md)
 
 ### Authorization
 
@@ -1176,7 +1176,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsGroupErrorStackTrace**
-> \Swagger\Client\Model\DiagnosticsStackTrace errorsGroupErrorStackTrace($error_group_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace errorsGroupErrorStackTrace($error_group_id, $owner_name, $app_name)
 
 
 
@@ -1188,11 +1188,11 @@ Gets the stack trace for the error group.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1221,7 +1221,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DiagnosticsStackTrace**](../Model/DiagnosticsStackTrace.md)
+[**\ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace**](../Model/DiagnosticsStackTrace.md)
 
 ### Authorization
 
@@ -1235,7 +1235,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsGroupList**
-> \Swagger\Client\Model\InlineResponse20056 errorsGroupList($start, $owner_name, $app_name, $version, $app_build, $group_state, $end, $orderby, $top, $error_type)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20056 errorsGroupList($start, $owner_name, $app_name, $version, $app_build, $group_state, $end, $orderby, $top, $error_type)
 
 
 
@@ -1247,11 +1247,11 @@ List of error groups
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1294,7 +1294,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20056**](../Model/InlineResponse20056.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20056**](../Model/InlineResponse20056.md)
 
 ### Authorization
 
@@ -1308,7 +1308,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsGroupModelCounts**
-> \Swagger\Client\Model\InlineResponse20049 errorsGroupModelCounts($error_group_id, $owner_name, $app_name, $top)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20049 errorsGroupModelCounts($error_group_id, $owner_name, $app_name, $top)
 
 
 
@@ -1320,11 +1320,11 @@ Top models of the selected error group.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1355,7 +1355,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20049**](../Model/InlineResponse20049.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20049**](../Model/InlineResponse20049.md)
 
 ### Authorization
 
@@ -1369,7 +1369,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsGroupOperatingSystemCounts**
-> \Swagger\Client\Model\InlineResponse20048 errorsGroupOperatingSystemCounts($error_group_id, $owner_name, $app_name, $top)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20048 errorsGroupOperatingSystemCounts($error_group_id, $owner_name, $app_name, $top)
 
 
 
@@ -1381,11 +1381,11 @@ Top OSes of the selected error group.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1416,7 +1416,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20048**](../Model/InlineResponse20048.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20048**](../Model/InlineResponse20048.md)
 
 ### Authorization
 
@@ -1430,7 +1430,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsLatestErrorDetails**
-> \Swagger\Client\Model\InlineResponse20050 errorsLatestErrorDetails($error_group_id, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20050 errorsLatestErrorDetails($error_group_id, $owner_name, $app_name)
 
 
 
@@ -1442,11 +1442,11 @@ Latest error details.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1475,7 +1475,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20050**](../Model/InlineResponse20050.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20050**](../Model/InlineResponse20050.md)
 
 ### Authorization
 
@@ -1489,7 +1489,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsListForGroup**
-> \Swagger\Client\Model\InlineResponse20052 errorsListForGroup($error_group_id, $start, $owner_name, $app_name, $end, $top, $model, $os)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20052 errorsListForGroup($error_group_id, $start, $owner_name, $app_name, $end, $top, $model, $os)
 
 
 
@@ -1501,11 +1501,11 @@ Get all errors for group
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1544,7 +1544,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20052**](../Model/InlineResponse20052.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20052**](../Model/InlineResponse20052.md)
 
 ### Authorization
 
@@ -1558,7 +1558,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsListSessionLogs**
-> \Swagger\Client\Model\InlineResponse20041 errorsListSessionLogs($error_id, $owner_name, $app_name, $date)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20041 errorsListSessionLogs($error_id, $owner_name, $app_name, $date)
 
 
 
@@ -1570,11 +1570,11 @@ Get session logs by error ID
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1605,7 +1605,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20041**](../Model/InlineResponse20041.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20041**](../Model/InlineResponse20041.md)
 
 ### Authorization
 
@@ -1619,7 +1619,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsPutRetentionSettings**
-> \Swagger\Client\Model\ErrorRetentionInDays errorsPutRetentionSettings($error_retention_in_days, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays errorsPutRetentionSettings($error_retention_in_days, $owner_name, $app_name)
 
 Creates and updates the retention settings in days
 
@@ -1631,17 +1631,17 @@ Creates and updates the retention settings in days
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$error_retention_in_days = new \Swagger\Client\Model\ErrorRetentionInDays(); // \Swagger\Client\Model\ErrorRetentionInDays | The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90.
+$error_retention_in_days = new \ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays(); // \ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays | The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90.
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -1658,13 +1658,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **error_retention_in_days** | [**\Swagger\Client\Model\ErrorRetentionInDays**](../Model/ErrorRetentionInDays.md)| The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. |
+ **error_retention_in_days** | [**\ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays**](../Model/ErrorRetentionInDays.md)| The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
 ### Return type
 
-[**\Swagger\Client\Model\ErrorRetentionInDays**](../Model/ErrorRetentionInDays.md)
+[**\ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays**](../Model/ErrorRetentionInDays.md)
 
 ### Authorization
 
@@ -1678,7 +1678,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **errorsUpdateState**
-> \Swagger\Client\Model\InlineResponse20054 errorsUpdateState($error_group_id, $error_group_state, $owner_name, $app_name)
+> \ZeC128\AppCenter\AppCenterApi\InlineResponse20054 errorsUpdateState($error_group_id, $error_group_state, $owner_name, $app_name)
 
 
 
@@ -1690,18 +1690,18 @@ Update error group state
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: APIToken
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
+$config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKey('X-API-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
+// $config = ZeC128\AppCenter\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-Token', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ErrorsApi(
+$apiInstance = new ZeC128\AppCenter\Api\ErrorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $error_group_id = "error_group_id_example"; // string | The id of the error group
-$error_group_state = new \Swagger\Client\Model\ErrorGroupState(); // \Swagger\Client\Model\ErrorGroupState | The state of the error group
+$error_group_state = new \ZeC128\AppCenter\AppCenterApi\ErrorGroupState(); // \ZeC128\AppCenter\AppCenterApi\ErrorGroupState | The state of the error group
 $owner_name = "owner_name_example"; // string | The name of the owner
 $app_name = "app_name_example"; // string | The name of the application
 
@@ -1719,13 +1719,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **error_group_id** | **string**| The id of the error group |
- **error_group_state** | [**\Swagger\Client\Model\ErrorGroupState**](../Model/ErrorGroupState.md)| The state of the error group |
+ **error_group_state** | [**\ZeC128\AppCenter\AppCenterApi\ErrorGroupState**](../Model/ErrorGroupState.md)| The state of the error group |
  **owner_name** | **string**| The name of the owner |
  **app_name** | **string**| The name of the application |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20054**](../Model/InlineResponse20054.md)
+[**\ZeC128\AppCenter\AppCenterApi\InlineResponse20054**](../Model/InlineResponse20054.md)
 
 ### Authorization
 

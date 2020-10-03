@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**all_of** | [**\Swagger\Client\Model\LegacyDeploymentsResponsePackage**](LegacyDeploymentsResponsePackage.md) |  | [optional] 
+**all_of** | [**\ZeC128\AppCenter\AppCenterApi\LegacyDeploymentsResponsePackage**](LegacyDeploymentsResponsePackage.md) |  | [optional] 
 **description** | **string** | The description of the release. | [optional] 
 **original_deployment** | **string** | The original deployment of the release, if it&#39;s ever been promoted. | [optional] 
 **original_label** | **string** | The original label of the release, if it&#39;s ever been updated. | [optional] 

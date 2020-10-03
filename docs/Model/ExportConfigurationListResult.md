@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**values** | [**\Swagger\Client\Model\InlineResponse20039[]**](InlineResponse20039.md) |  | 
+**values** | [**\ZeC128\AppCenter\AppCenterApi\InlineResponse20039[]**](InlineResponse20039.md) |  | 
 **total** | **int** | the total count of exports | [optional] 
 **next_link** | **string** |  | [optional] 
 

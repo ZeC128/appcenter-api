@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * GdprApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class GdprApi
      * Operation dataSubjectRightCancelDeleteRequest
      *
      * @param  string $token Unique request ID (GUID) (required)
-     * @param  \Swagger\Client\Model\Email $email email (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Email $email email (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse202
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse202
      */
     public function dataSubjectRightCancelDeleteRequest($token, $email = null)
     {
@@ -107,15 +107,15 @@ class GdprApi
      * Operation dataSubjectRightCancelDeleteRequestWithHttpInfo
      *
      * @param  string $token Unique request ID (GUID) (required)
-     * @param  \Swagger\Client\Model\Email $email (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Email $email (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse202, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse202, HTTP status code, HTTP response headers (array of strings)
      */
     public function dataSubjectRightCancelDeleteRequestWithHttpInfo($token, $email = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse202';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse202';
         $request = $this->dataSubjectRightCancelDeleteRequestRequest($token, $email);
 
         try {
@@ -167,7 +167,7 @@ class GdprApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse202',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse202',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -175,7 +175,7 @@ class GdprApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -183,7 +183,7 @@ class GdprApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -199,7 +199,7 @@ class GdprApi
      * 
      *
      * @param  string $token Unique request ID (GUID) (required)
-     * @param  \Swagger\Client\Model\Email $email (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Email $email (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -220,14 +220,14 @@ class GdprApi
      * 
      *
      * @param  string $token Unique request ID (GUID) (required)
-     * @param  \Swagger\Client\Model\Email $email (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Email $email (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function dataSubjectRightCancelDeleteRequestAsyncWithHttpInfo($token, $email = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse202';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse202';
         $request = $this->dataSubjectRightCancelDeleteRequestRequest($token, $email);
 
         return $this->client
@@ -271,7 +271,7 @@ class GdprApi
      * Create request for operation 'dataSubjectRightCancelDeleteRequest'
      *
      * @param  string $token Unique request ID (GUID) (required)
-     * @param  \Swagger\Client\Model\Email $email (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Email $email (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -386,9 +386,9 @@ class GdprApi
      *
      * @param  string $token Unique request ID (GUID) (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse202
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse202
      */
     public function dataSubjectRightCancelExportRequest($token)
     {
@@ -401,13 +401,13 @@ class GdprApi
      *
      * @param  string $token Unique request ID (GUID) (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse202, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse202, HTTP status code, HTTP response headers (array of strings)
      */
     public function dataSubjectRightCancelExportRequestWithHttpInfo($token)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse202';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse202';
         $request = $this->dataSubjectRightCancelExportRequestRequest($token);
 
         try {
@@ -459,7 +459,7 @@ class GdprApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse202',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse202',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -467,7 +467,7 @@ class GdprApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -475,7 +475,7 @@ class GdprApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -517,7 +517,7 @@ class GdprApi
      */
     public function dataSubjectRightCancelExportRequestAsyncWithHttpInfo($token)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse202';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse202';
         $request = $this->dataSubjectRightCancelExportRequestRequest($token);
 
         return $this->client
@@ -671,9 +671,9 @@ class GdprApi
      * Operation dataSubjectRightDeleteRequest
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse202
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse202
      */
     public function dataSubjectRightDeleteRequest()
     {
@@ -685,13 +685,13 @@ class GdprApi
      * Operation dataSubjectRightDeleteRequestWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse202, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse202, HTTP status code, HTTP response headers (array of strings)
      */
     public function dataSubjectRightDeleteRequestWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse202';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse202';
         $request = $this->dataSubjectRightDeleteRequestRequest();
 
         try {
@@ -743,7 +743,7 @@ class GdprApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse202',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse202',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -751,7 +751,7 @@ class GdprApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -791,7 +791,7 @@ class GdprApi
      */
     public function dataSubjectRightDeleteRequestAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse202';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse202';
         $request = $this->dataSubjectRightDeleteRequestRequest();
 
         return $this->client
@@ -932,9 +932,9 @@ class GdprApi
      * @param  string $token Unique request ID (GUID) (required)
      * @param  string $email Email used for delete with x-authz-bypass headers (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2002
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2002
      */
     public function dataSubjectRightDeleteStatusRequest($token, $email)
     {
@@ -948,13 +948,13 @@ class GdprApi
      * @param  string $token Unique request ID (GUID) (required)
      * @param  string $email Email used for delete with x-authz-bypass headers (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
      */
     public function dataSubjectRightDeleteStatusRequestWithHttpInfo($token, $email)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2002';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2002';
         $request = $this->dataSubjectRightDeleteStatusRequestRequest($token, $email);
 
         try {
@@ -1006,7 +1006,7 @@ class GdprApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2002',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2002',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1014,7 +1014,7 @@ class GdprApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1058,7 +1058,7 @@ class GdprApi
      */
     public function dataSubjectRightDeleteStatusRequestAsyncWithHttpInfo($token, $email)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2002';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2002';
         $request = $this->dataSubjectRightDeleteStatusRequestRequest($token, $email);
 
         return $this->client
@@ -1223,9 +1223,9 @@ class GdprApi
      * Operation dataSubjectRightExportRequest
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse202
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse202
      */
     public function dataSubjectRightExportRequest()
     {
@@ -1237,13 +1237,13 @@ class GdprApi
      * Operation dataSubjectRightExportRequestWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse202, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse202, HTTP status code, HTTP response headers (array of strings)
      */
     public function dataSubjectRightExportRequestWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse202';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse202';
         $request = $this->dataSubjectRightExportRequestRequest();
 
         try {
@@ -1295,7 +1295,7 @@ class GdprApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse202',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse202',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1303,7 +1303,7 @@ class GdprApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1343,7 +1343,7 @@ class GdprApi
      */
     public function dataSubjectRightExportRequestAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse202';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse202';
         $request = $this->dataSubjectRightExportRequestRequest();
 
         return $this->client
@@ -1483,9 +1483,9 @@ class GdprApi
      *
      * @param  string $token Unique request ID (GUID) (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2002
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2002
      */
     public function dataSubjectRightExportStatusRequest($token)
     {
@@ -1498,13 +1498,13 @@ class GdprApi
      *
      * @param  string $token Unique request ID (GUID) (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
      */
     public function dataSubjectRightExportStatusRequestWithHttpInfo($token)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2002';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2002';
         $request = $this->dataSubjectRightExportStatusRequestRequest($token);
 
         try {
@@ -1556,7 +1556,7 @@ class GdprApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2002',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2002',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1564,7 +1564,7 @@ class GdprApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1606,7 +1606,7 @@ class GdprApi
      */
     public function dataSubjectRightExportStatusRequestAsyncWithHttpInfo($token)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2002';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2002';
         $request = $this->dataSubjectRightExportStatusRequestRequest($token);
 
         return $this->client

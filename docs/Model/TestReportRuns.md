@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **number** | **float** |  | [optional] 
-**steps** | [**\Swagger\Client\Model\TestReportSteps[]**](TestReportSteps.md) |  | [optional] 
+**steps** | [**\ZeC128\AppCenter\AppCenterApi\TestReportSteps[]**](TestReportSteps.md) |  | [optional] 
 **failed** | **float** |  | [optional] 
 **skipped** | **float** |  | [optional] 
 **report_url** | **string** |  | [optional] 

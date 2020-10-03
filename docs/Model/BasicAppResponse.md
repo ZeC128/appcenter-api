@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **icon_source** | **string** | The string representation of the source of the app&#39;s icon | [optional] 
 **name** | **string** | The name of the app used in URLs | 
 **os** | **string** | The OS the app will be running on | 
-**owner** | [**\Swagger\Client\Model\AppInvitationDetailResponseDistributionGroupOwner**](AppInvitationDetailResponseDistributionGroupOwner.md) |  | 
+**owner** | [**\ZeC128\AppCenter\AppCenterApi\AppInvitationDetailResponseDistributionGroupOwner**](AppInvitationDetailResponseDistributionGroupOwner.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

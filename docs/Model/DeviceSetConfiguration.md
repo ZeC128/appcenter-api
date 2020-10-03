@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** | The unique id of the device configuration | [optional] 
-**image** | [**\Swagger\Client\Model\DeviceSetImage**](DeviceSetImage.md) |  | [optional] 
-**model** | [**\Swagger\Client\Model\DeviceSetModel**](DeviceSetModel.md) |  | [optional] 
+**image** | [**\ZeC128\AppCenter\AppCenterApi\DeviceSetImage**](DeviceSetImage.md) |  | [optional] 
+**model** | [**\ZeC128\AppCenter\AppCenterApi\DeviceSetModel**](DeviceSetModel.md) |  | [optional] 
 **os** | **string** |  | [optional] 
 **os_name** | **string** |  | [optional] 
 

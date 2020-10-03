@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **label** | **string** |  | [optional] 
 **package_hash** | **string** |  | [optional] 
 **blob_url** | **string** |  | [optional] 
-**diff_package_map** | [**map[string,\Swagger\Client\Model\CodePushReleaseDiffPackageMap]**](CodePushReleaseDiffPackageMap.md) |  | [optional] 
+**diff_package_map** | [**map[string,\ZeC128\AppCenter\AppCenterApi\CodePushReleaseDiffPackageMap]**](CodePushReleaseDiffPackageMap.md) |  | [optional] 
 **original_deployment** | **string** | Set on &#39;Promote&#39; | [optional] 
 **original_label** | **string** | Set on &#39;Promote&#39; and &#39;Rollback&#39; | [optional] 
 **released_by** | **string** |  | [optional] 

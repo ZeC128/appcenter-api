@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **state_info** | **string** | Additional information about export configuration state | [optional] 
 **resource_group** | **string** | resource group for the storage account/App Insights resource | [optional] 
 **resource_name** | **string** | Storage accout or Appinsights resource name | [optional] 
-**export_configuration** | [**\Swagger\Client\Model\InlineResponse20039ExportConfiguration**](InlineResponse20039ExportConfiguration.md) |  | [optional] 
+**export_configuration** | [**\ZeC128\AppCenter\AppCenterApi\InlineResponse20039ExportConfiguration**](InlineResponse20039ExportConfiguration.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * DistributeApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,11 +90,11 @@ class DistributeApi
     /**
      * Operation appleMappingCreate
      *
-     * @param  \Swagger\Client\Model\Body14 $body The apple app mapping object (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body14 $body The apple app mapping object (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -107,11 +107,11 @@ class DistributeApi
     /**
      * Operation appleMappingCreateWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Body14 $body The apple app mapping object (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body14 $body The apple app mapping object (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -192,7 +192,7 @@ class DistributeApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Body14 $body The apple app mapping object (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body14 $body The apple app mapping object (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -214,7 +214,7 @@ class DistributeApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Body14 $body The apple app mapping object (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body14 $body The apple app mapping object (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -266,7 +266,7 @@ class DistributeApi
     /**
      * Create request for operation 'appleMappingCreate'
      *
-     * @param  \Swagger\Client\Model\Body14 $body The apple app mapping object (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body14 $body The apple app mapping object (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -405,7 +405,7 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  string $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -421,7 +421,7 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  string $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -672,7 +672,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -688,7 +688,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -969,9 +969,9 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20077[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20077[]
      */
     public function appleMappingTestFlightGroups($owner_name, $app_name)
     {
@@ -985,13 +985,13 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20077[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20077[], HTTP status code, HTTP response headers (array of strings)
      */
     public function appleMappingTestFlightGroupsWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20077[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20077[]';
         $request = $this->appleMappingTestFlightGroupsRequest($owner_name, $app_name);
 
         try {
@@ -1043,7 +1043,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20077[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20077[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1095,7 +1095,7 @@ class DistributeApi
      */
     public function appleMappingTestFlightGroupsAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20077[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20077[]';
         $request = $this->appleMappingTestFlightGroupsRequest($owner_name, $app_name);
 
         return $this->client
@@ -1265,7 +1265,7 @@ class DistributeApi
      *
      * @param  string $device_udid The UDID of the device (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1280,7 +1280,7 @@ class DistributeApi
      *
      * @param  string $device_udid The UDID of the device (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1563,7 +1563,7 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $include_provisioning_profile A boolean value that indicates if the provisioning profile should be return in addition to the status. When set to true, the provisioning profile will be returned only when status is &#39;complete&#39; or &#39;preparing_for_testers&#39;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1582,7 +1582,7 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $include_provisioning_profile A boolean value that indicates if the provisioning profile should be return in addition to the status. When set to true, the provisioning profile will be returned only when status is &#39;complete&#39; or &#39;preparing_for_testers&#39;. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1914,9 +1914,9 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  float $release_id when provided, gets the provisioning state of the devices owned by users of this distribution group when compared to the provided release. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2003[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2003[]
      */
     public function devicesList($distribution_group_name, $owner_name, $app_name, $release_id = null)
     {
@@ -1932,13 +1932,13 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  float $release_id when provided, gets the provisioning state of the devices owned by users of this distribution group when compared to the provided release. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2003[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2003[], HTTP status code, HTTP response headers (array of strings)
      */
     public function devicesListWithHttpInfo($distribution_group_name, $owner_name, $app_name, $release_id = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2003[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2003[]';
         $request = $this->devicesListRequest($distribution_group_name, $owner_name, $app_name, $release_id);
 
         try {
@@ -1990,7 +1990,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2003[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2003[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2054,7 +2054,7 @@ class DistributeApi
      */
     public function devicesListAsyncWithHttpInfo($distribution_group_name, $owner_name, $app_name, $release_id = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2003[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2003[]';
         $request = $this->devicesListRequest($distribution_group_name, $owner_name, $app_name, $release_id);
 
         return $this->client
@@ -2248,7 +2248,7 @@ class DistributeApi
      * @param  bool $unprovisioned_only when true, filters out provisioned devices (optional, default to false)
      * @param  string[] $udids multiple UDIDs which should be part of the resulting CSV. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2266,7 +2266,7 @@ class DistributeApi
      * @param  bool $unprovisioned_only when true, filters out provisioned devices (optional, default to false)
      * @param  string[] $udids multiple UDIDs which should be part of the resulting CSV. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2559,9 +2559,9 @@ class DistributeApi
      * Operation devicesRegisterUserForDevice
      *
      * @param  string $user_id The ID of the user (required)
-     * @param  \Swagger\Client\Model\Body $body The device info. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body $body The device info. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2575,9 +2575,9 @@ class DistributeApi
      * Operation devicesRegisterUserForDeviceWithHttpInfo
      *
      * @param  string $user_id The ID of the user (required)
-     * @param  \Swagger\Client\Model\Body $body The device info. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body $body The device info. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2659,7 +2659,7 @@ class DistributeApi
      * 
      *
      * @param  string $user_id The ID of the user (required)
-     * @param  \Swagger\Client\Model\Body $body The device info. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body $body The device info. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2680,7 +2680,7 @@ class DistributeApi
      * 
      *
      * @param  string $user_id The ID of the user (required)
-     * @param  \Swagger\Client\Model\Body $body The device info. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body $body The device info. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2731,7 +2731,7 @@ class DistributeApi
      * Create request for operation 'devicesRegisterUserForDevice'
      *
      * @param  string $user_id The ID of the user (required)
-     * @param  \Swagger\Client\Model\Body $body The device info. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body $body The device info. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2852,7 +2852,7 @@ class DistributeApi
      *
      * @param  string $device_udid The UDID of the device (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2866,7 +2866,7 @@ class DistributeApi
      *
      * @param  string $device_udid The UDID of the device (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3100,9 +3100,9 @@ class DistributeApi
      * Operation devicesUserDevicesList
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2003[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2003[]
      */
     public function devicesUserDevicesList()
     {
@@ -3114,13 +3114,13 @@ class DistributeApi
      * Operation devicesUserDevicesListWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2003[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2003[], HTTP status code, HTTP response headers (array of strings)
      */
     public function devicesUserDevicesListWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2003[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2003[]';
         $request = $this->devicesUserDevicesListRequest();
 
         try {
@@ -3172,7 +3172,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2003[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2003[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3228,7 +3228,7 @@ class DistributeApi
      */
     public function devicesUserDevicesListAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2003[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2003[]';
         $request = $this->devicesUserDevicesListRequest();
 
         return $this->client
@@ -3368,9 +3368,9 @@ class DistributeApi
      *
      * @param  string $owner_name The name of the app owner (required)
      * @param  string $app_name The name of the app (required)
-     * @param  \Swagger\Client\Model\Body1 $body The install analytics request payload (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body1 $body The install analytics request payload (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3384,9 +3384,9 @@ class DistributeApi
      *
      * @param  string $owner_name The name of the app owner (required)
      * @param  string $app_name The name of the app (required)
-     * @param  \Swagger\Client\Model\Body1 $body The install analytics request payload (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body1 $body The install analytics request payload (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3439,7 +3439,7 @@ class DistributeApi
      *
      * @param  string $owner_name The name of the app owner (required)
      * @param  string $app_name The name of the app (required)
-     * @param  \Swagger\Client\Model\Body1 $body The install analytics request payload (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body1 $body The install analytics request payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3461,7 +3461,7 @@ class DistributeApi
      *
      * @param  string $owner_name The name of the app owner (required)
      * @param  string $app_name The name of the app (required)
-     * @param  \Swagger\Client\Model\Body1 $body The install analytics request payload (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body1 $body The install analytics request payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3499,7 +3499,7 @@ class DistributeApi
      *
      * @param  string $owner_name The name of the app owner (required)
      * @param  string $app_name The name of the app (required)
-     * @param  \Swagger\Client\Model\Body1 $body The install analytics request payload (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body1 $body The install analytics request payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3631,9 +3631,9 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProvisioningProfileResponse
+     * @return \ZeC128\AppCenter\AppCenterApi\ProvisioningProfileResponse
      */
     public function provisioningProfile($release_id, $owner_name, $app_name)
     {
@@ -3648,13 +3648,13 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProvisioningProfileResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\ProvisioningProfileResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function provisioningProfileWithHttpInfo($release_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\ProvisioningProfileResponse';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\ProvisioningProfileResponse';
         $request = $this->provisioningProfileRequest($release_id, $owner_name, $app_name);
 
         try {
@@ -3706,7 +3706,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProvisioningProfileResponse',
+                        '\ZeC128\AppCenter\AppCenterApi\ProvisioningProfileResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3760,7 +3760,7 @@ class DistributeApi
      */
     public function provisioningProfileAsyncWithHttpInfo($release_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\ProvisioningProfileResponse';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\ProvisioningProfileResponse';
         $request = $this->provisioningProfileRequest($release_id, $owner_name, $app_name);
 
         return $this->client
@@ -3944,11 +3944,11 @@ class DistributeApi
      * Operation releaseUploadsComplete
      *
      * @param  string $upload_id The ID of the upload (required)
-     * @param  \Swagger\Client\Model\Body10 $body The release information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body10 $body The release information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -3962,11 +3962,11 @@ class DistributeApi
      * Operation releaseUploadsCompleteWithHttpInfo
      *
      * @param  string $upload_id The ID of the upload (required)
-     * @param  \Swagger\Client\Model\Body10 $body The release information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body10 $body The release information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4040,7 +4040,7 @@ class DistributeApi
      * 
      *
      * @param  string $upload_id The ID of the upload (required)
-     * @param  \Swagger\Client\Model\Body10 $body The release information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body10 $body The release information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -4063,7 +4063,7 @@ class DistributeApi
      * 
      *
      * @param  string $upload_id The ID of the upload (required)
-     * @param  \Swagger\Client\Model\Body10 $body The release information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body10 $body The release information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -4116,7 +4116,7 @@ class DistributeApi
      * Create request for operation 'releaseUploadsComplete'
      *
      * @param  string $upload_id The ID of the upload (required)
-     * @param  \Swagger\Client\Model\Body10 $body The release information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body10 $body The release information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -4265,11 +4265,11 @@ class DistributeApi
     /**
      * Operation releaseUploadsCreate
      *
-     * @param  \Swagger\Client\Model\Body11 $body The release information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body11 $body The release information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -4282,11 +4282,11 @@ class DistributeApi
     /**
      * Operation releaseUploadsCreateWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Body11 $body The release information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body11 $body The release information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4359,7 +4359,7 @@ class DistributeApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Body11 $body The release information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body11 $body The release information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -4381,7 +4381,7 @@ class DistributeApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Body11 $body The release information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body11 $body The release information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -4433,7 +4433,7 @@ class DistributeApi
     /**
      * Create request for operation 'releaseUploadsCreate'
      *
-     * @param  \Swagger\Client\Model\Body11 $body The release information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body11 $body The release information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -4573,9 +4573,9 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2011
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2011
      */
     public function releasesAddDistributionGroup($release_id, $body, $owner_name, $app_name)
     {
@@ -4591,13 +4591,13 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2011, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2011, HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesAddDistributionGroupWithHttpInfo($release_id, $body, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2011';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2011';
         $request = $this->releasesAddDistributionGroupRequest($release_id, $body, $owner_name, $app_name);
 
         try {
@@ -4649,7 +4649,7 @@ class DistributeApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2011',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2011',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4713,7 +4713,7 @@ class DistributeApi
      */
     public function releasesAddDistributionGroupAsyncWithHttpInfo($release_id, $body, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2011';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2011';
         $request = $this->releasesAddDistributionGroupRequest($release_id, $body, $owner_name, $app_name);
 
         return $this->client
@@ -4907,13 +4907,13 @@ class DistributeApi
      * Operation releasesAddStore
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body7 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body7 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2012
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2012
      */
     public function releasesAddStore($release_id, $body, $owner_name, $app_name)
     {
@@ -4925,17 +4925,17 @@ class DistributeApi
      * Operation releasesAddStoreWithHttpInfo
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body7 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body7 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2012, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2012, HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesAddStoreWithHttpInfo($release_id, $body, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2012';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2012';
         $request = $this->releasesAddStoreRequest($release_id, $body, $owner_name, $app_name);
 
         try {
@@ -4987,7 +4987,7 @@ class DistributeApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2012',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2012',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5019,7 +5019,7 @@ class DistributeApi
      * 
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body7 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body7 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -5042,7 +5042,7 @@ class DistributeApi
      * 
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body7 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body7 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -5051,7 +5051,7 @@ class DistributeApi
      */
     public function releasesAddStoreAsyncWithHttpInfo($release_id, $body, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2012';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2012';
         $request = $this->releasesAddStoreRequest($release_id, $body, $owner_name, $app_name);
 
         return $this->client
@@ -5095,7 +5095,7 @@ class DistributeApi
      * Create request for operation 'releasesAddStore'
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body7 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body7 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -5245,13 +5245,13 @@ class DistributeApi
      * Operation releasesAddTesters
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body6 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body6 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2011
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2011
      */
     public function releasesAddTesters($release_id, $body, $owner_name, $app_name)
     {
@@ -5263,17 +5263,17 @@ class DistributeApi
      * Operation releasesAddTestersWithHttpInfo
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body6 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body6 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2011, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2011, HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesAddTestersWithHttpInfo($release_id, $body, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2011';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2011';
         $request = $this->releasesAddTestersRequest($release_id, $body, $owner_name, $app_name);
 
         try {
@@ -5325,7 +5325,7 @@ class DistributeApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2011',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2011',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5357,7 +5357,7 @@ class DistributeApi
      * 
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body6 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body6 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -5380,7 +5380,7 @@ class DistributeApi
      * 
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body6 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body6 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -5389,7 +5389,7 @@ class DistributeApi
      */
     public function releasesAddTestersAsyncWithHttpInfo($release_id, $body, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2011';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2011';
         $request = $this->releasesAddTestersRequest($release_id, $body, $owner_name, $app_name);
 
         return $this->client
@@ -5433,7 +5433,7 @@ class DistributeApi
      * Create request for operation 'releasesAddTesters'
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body6 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body6 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -5586,9 +5586,9 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $published_only when *true*, filters out releases that were uploaded but were never distributed. Releases that under deleted distribution groups will not be filtered out. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20034[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]
      */
     public function releasesAvailableToTester($owner_name, $app_name, $published_only = null)
     {
@@ -5603,13 +5603,13 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $published_only when *true*, filters out releases that were uploaded but were never distributed. Releases that under deleted distribution groups will not be filtered out. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20034[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20034[], HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesAvailableToTesterWithHttpInfo($owner_name, $app_name, $published_only = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20034[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]';
         $request = $this->releasesAvailableToTesterRequest($owner_name, $app_name, $published_only);
 
         try {
@@ -5661,7 +5661,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20034[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5707,7 +5707,7 @@ class DistributeApi
      */
     public function releasesAvailableToTesterAsyncWithHttpInfo($owner_name, $app_name, $published_only = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20034[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]';
         $request = $this->releasesAvailableToTesterRequest($owner_name, $app_name, $published_only);
 
         return $this->client
@@ -5882,9 +5882,9 @@ class DistributeApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Body3 $body Optional parameters to create releases with user defined metadata (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body3 $body Optional parameters to create releases with user defined metadata (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -5899,9 +5899,9 @@ class DistributeApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Body3 $body Optional parameters to create releases with user defined metadata (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body3 $body Optional parameters to create releases with user defined metadata (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5992,7 +5992,7 @@ class DistributeApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Body3 $body Optional parameters to create releases with user defined metadata (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body3 $body Optional parameters to create releases with user defined metadata (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6014,7 +6014,7 @@ class DistributeApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Body3 $body Optional parameters to create releases with user defined metadata (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body3 $body Optional parameters to create releases with user defined metadata (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6066,7 +6066,7 @@ class DistributeApi
      *
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\Body3 $body Optional parameters to create releases with user defined metadata (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body3 $body Optional parameters to create releases with user defined metadata (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6197,7 +6197,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6213,7 +6213,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6485,7 +6485,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6502,7 +6502,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6783,7 +6783,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6800,7 +6800,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7081,7 +7081,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7098,7 +7098,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7378,7 +7378,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7394,7 +7394,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7658,7 +7658,7 @@ class DistributeApi
      * @param  string $distribution_group_name The name of the distribution group. (required)
      * @param  int $release_id The ID identifying the unique release. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7675,7 +7675,7 @@ class DistributeApi
      * @param  string $distribution_group_name The name of the distribution group. (required)
      * @param  int $release_id The ID identifying the unique release. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7947,7 +7947,7 @@ class DistributeApi
      * @param  int $release_id The release_id (required)
      * @param  string $token A hash that authorizes the download if it matches the release info. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -7963,7 +7963,7 @@ class DistributeApi
      * @param  int $release_id The release_id (required)
      * @param  string $token A hash that authorizes the download if it matches the release info. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8234,7 +8234,7 @@ class DistributeApi
      * @param  string $distribution_group_name The name of the distribution group. (required)
      * @param  string $release_id Also supports the constant &#x60;latest&#x60;, which will return the latest release in the distribution group. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -8252,7 +8252,7 @@ class DistributeApi
      * @param  string $distribution_group_name The name of the distribution group. (required)
      * @param  string $release_id Also supports the constant &#x60;latest&#x60;, which will return the latest release in the distribution group. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8576,7 +8576,7 @@ class DistributeApi
      * @param  string $release_hash The hash of the release or &#39;latest&#39; to get the latest release from all the distribution groups assigned to the current user. (required)
      * @param  string $udid When passing &#x60;udid&#x60; in the query string, a provisioning check for the given device ID will be done. Will be ignored for non-iOS platforms. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -8593,7 +8593,7 @@ class DistributeApi
      * @param  string $release_hash The hash of the release or &#39;latest&#39; to get the latest release from all the distribution groups assigned to the current user. (required)
      * @param  string $udid When passing &#x60;udid&#x60; in the query string, a provisioning check for the given device ID will be done. Will be ignored for non-iOS platforms. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8881,7 +8881,7 @@ class DistributeApi
      * @param  string $app_secret The secret of the target application (required)
      * @param  string $distribution_group_id the id for destination (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -8897,7 +8897,7 @@ class DistributeApi
      * @param  string $app_secret The secret of the target application (required)
      * @param  string $distribution_group_id the id for destination (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9183,7 +9183,7 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  string $udid when supplied, this call will also check if the given UDID is provisioned. Will be ignored for non-iOS platforms. The value will be returned in the property is_udid_provisioned. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -9201,7 +9201,7 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  string $udid when supplied, this call will also check if the given UDID is provisioned. Will be ignored for non-iOS platforms. The value will be returned in the property is_udid_provisioned. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9514,7 +9514,7 @@ class DistributeApi
      * @param  string $app_secret The secret of the target application (required)
      * @param  string $udid When passing &#x60;udid&#x60; in the query string, a provisioning check for the given device ID will be done. Will be ignored for non-iOS platforms. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -9530,7 +9530,7 @@ class DistributeApi
      * @param  string $app_secret The secret of the target application (required)
      * @param  string $udid When passing &#x60;udid&#x60; in the query string, a provisioning check for the given device ID will be done. Will be ignored for non-iOS platforms. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9800,7 +9800,7 @@ class DistributeApi
      *
      * @param  string $app_secret The secret of the target application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -9815,7 +9815,7 @@ class DistributeApi
      *
      * @param  string $app_secret The secret of the target application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10074,9 +10074,9 @@ class DistributeApi
      * @param  string $app_secret The secret of the target application (required)
      * @param  string $release_hash The hash of the release (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2005[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2005[]
      */
     public function releasesGetPublicGroupsForReleaseByHash($app_secret, $release_hash)
     {
@@ -10090,13 +10090,13 @@ class DistributeApi
      * @param  string $app_secret The secret of the target application (required)
      * @param  string $release_hash The hash of the release (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2005[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2005[], HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesGetPublicGroupsForReleaseByHashWithHttpInfo($app_secret, $release_hash)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2005[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2005[]';
         $request = $this->releasesGetPublicGroupsForReleaseByHashRequest($app_secret, $release_hash);
 
         try {
@@ -10148,7 +10148,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2005[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2005[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10200,7 +10200,7 @@ class DistributeApi
      */
     public function releasesGetPublicGroupsForReleaseByHashAsyncWithHttpInfo($app_secret, $release_hash)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2005[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2005[]';
         $request = $this->releasesGetPublicGroupsForReleaseByHashRequest($app_secret, $release_hash);
 
         return $this->client
@@ -10367,7 +10367,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -10384,7 +10384,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10689,7 +10689,7 @@ class DistributeApi
      *
      * @param  string $app_secret The secret of the application. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -10703,7 +10703,7 @@ class DistributeApi
      *
      * @param  string $app_secret The secret of the application. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10928,9 +10928,9 @@ class DistributeApi
      * @param  bool $published_only When *true*, filters out releases that were uploaded but were never distributed. Releases that under deleted distribution groups will not be filtered out. (optional)
      * @param  string $scope When the scope is &#39;tester&#39;, only includes releases that have been distributed to groups that the user belongs to. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20034[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]
      */
     public function releasesList($owner_name, $app_name, $published_only = null, $scope = null)
     {
@@ -10946,13 +10946,13 @@ class DistributeApi
      * @param  bool $published_only When *true*, filters out releases that were uploaded but were never distributed. Releases that under deleted distribution groups will not be filtered out. (optional)
      * @param  string $scope When the scope is &#39;tester&#39;, only includes releases that have been distributed to groups that the user belongs to. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20034[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20034[], HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesListWithHttpInfo($owner_name, $app_name, $published_only = null, $scope = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20034[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]';
         $request = $this->releasesListRequest($owner_name, $app_name, $published_only, $scope);
 
         try {
@@ -11004,7 +11004,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20034[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11052,7 +11052,7 @@ class DistributeApi
      */
     public function releasesListAsyncWithHttpInfo($owner_name, $app_name, $published_only = null, $scope = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20034[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]';
         $request = $this->releasesListRequest($owner_name, $app_name, $published_only, $scope);
 
         return $this->client
@@ -11234,9 +11234,9 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20062[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20062[]
      */
     public function releasesListByDistributionGroup($distribution_group_name, $owner_name, $app_name)
     {
@@ -11251,13 +11251,13 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20062[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20062[], HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesListByDistributionGroupWithHttpInfo($distribution_group_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20062[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20062[]';
         $request = $this->releasesListByDistributionGroupRequest($distribution_group_name, $owner_name, $app_name);
 
         try {
@@ -11309,7 +11309,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20062[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20062[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11363,7 +11363,7 @@ class DistributeApi
      */
     public function releasesListByDistributionGroupAsyncWithHttpInfo($distribution_group_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20062[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20062[]';
         $request = $this->releasesListByDistributionGroupRequest($distribution_group_name, $owner_name, $app_name);
 
         return $this->client
@@ -11549,9 +11549,9 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20034[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]
      */
     public function releasesListLatest($owner_name, $app_name)
     {
@@ -11565,13 +11565,13 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20034[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20034[], HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesListLatestWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20034[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]';
         $request = $this->releasesListLatestRequest($owner_name, $app_name);
 
         try {
@@ -11623,7 +11623,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20034[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11667,7 +11667,7 @@ class DistributeApi
      */
     public function releasesListLatestAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20034[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20034[]';
         $request = $this->releasesListLatestRequest($owner_name, $app_name);
 
         return $this->client
@@ -11836,9 +11836,9 @@ class DistributeApi
      * Operation releasesListTesterApps
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2004[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse2004[]
      */
     public function releasesListTesterApps()
     {
@@ -11850,13 +11850,13 @@ class DistributeApi
      * Operation releasesListTesterAppsWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2004[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse2004[], HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesListTesterAppsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2004[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2004[]';
         $request = $this->releasesListTesterAppsRequest();
 
         try {
@@ -11908,7 +11908,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2004[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse2004[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11948,7 +11948,7 @@ class DistributeApi
      */
     public function releasesListTesterAppsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2004[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse2004[]';
         $request = $this->releasesListTesterAppsRequest();
 
         return $this->client
@@ -12090,9 +12090,9 @@ class DistributeApi
      * @param  string $group_id The id of the releases destination (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DestinationGroupUpdateDetails $destination_group_update_details destination_group_update_details (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DestinationGroupUpdateDetails $destination_group_update_details destination_group_update_details (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -12108,9 +12108,9 @@ class DistributeApi
      * @param  string $group_id The id of the releases destination (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DestinationGroupUpdateDetails $destination_group_update_details (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DestinationGroupUpdateDetails $destination_group_update_details (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12173,7 +12173,7 @@ class DistributeApi
      * @param  string $group_id The id of the releases destination (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DestinationGroupUpdateDetails $destination_group_update_details (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DestinationGroupUpdateDetails $destination_group_update_details (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12197,7 +12197,7 @@ class DistributeApi
      * @param  string $group_id The id of the releases destination (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DestinationGroupUpdateDetails $destination_group_update_details (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DestinationGroupUpdateDetails $destination_group_update_details (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12237,7 +12237,7 @@ class DistributeApi
      * @param  string $group_id The id of the releases destination (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DestinationGroupUpdateDetails $destination_group_update_details (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DestinationGroupUpdateDetails $destination_group_update_details (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -12396,9 +12396,9 @@ class DistributeApi
      * @param  string $tester_id The id of the tester (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DestinationTesterUpdateDetails $destination_tester_update_details destination_tester_update_details (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DestinationTesterUpdateDetails $destination_tester_update_details destination_tester_update_details (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -12414,9 +12414,9 @@ class DistributeApi
      * @param  string $tester_id The id of the tester (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DestinationTesterUpdateDetails $destination_tester_update_details (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DestinationTesterUpdateDetails $destination_tester_update_details (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12479,7 +12479,7 @@ class DistributeApi
      * @param  string $tester_id The id of the tester (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DestinationTesterUpdateDetails $destination_tester_update_details (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DestinationTesterUpdateDetails $destination_tester_update_details (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12503,7 +12503,7 @@ class DistributeApi
      * @param  string $tester_id The id of the tester (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DestinationTesterUpdateDetails $destination_tester_update_details (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DestinationTesterUpdateDetails $destination_tester_update_details (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -12543,7 +12543,7 @@ class DistributeApi
      * @param  string $tester_id The id of the tester (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\DestinationTesterUpdateDetails $destination_tester_update_details (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DestinationTesterUpdateDetails $destination_tester_update_details (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -12699,11 +12699,11 @@ class DistributeApi
      * Operation releasesUpdate
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body9 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body9 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -12717,11 +12717,11 @@ class DistributeApi
      * Operation releasesUpdateWithHttpInfo
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body9 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body9 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12787,7 +12787,7 @@ class DistributeApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse400',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12811,7 +12811,7 @@ class DistributeApi
      * 
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body9 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body9 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -12834,7 +12834,7 @@ class DistributeApi
      * 
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body9 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body9 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -12887,7 +12887,7 @@ class DistributeApi
      * Create request for operation 'releasesUpdate'
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body9 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body9 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -13037,11 +13037,11 @@ class DistributeApi
      * Operation releasesUpdateDetails
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body8 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body8 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -13055,11 +13055,11 @@ class DistributeApi
      * Operation releasesUpdateDetailsWithHttpInfo
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body8 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body8 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -13125,7 +13125,7 @@ class DistributeApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse400',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse400',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13149,7 +13149,7 @@ class DistributeApi
      * 
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body8 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body8 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -13172,7 +13172,7 @@ class DistributeApi
      * 
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body8 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body8 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -13225,7 +13225,7 @@ class DistributeApi
      * Create request for operation 'releasesUpdateDetails'
      *
      * @param  int $release_id The ID of the release (required)
-     * @param  \Swagger\Client\Model\Body8 $body The release information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body8 $body The release information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -13375,12 +13375,12 @@ class DistributeApi
      * Operation releasesUpdateReleaseUploadStatus
      *
      * @param  string $upload_id The ID of the release upload (required)
-     * @param  \Swagger\Client\Model\Body2 $body The release upload status information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body2 $body The release upload status information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  bool $extract A flag that indicates to extract release or not, true by default (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -13394,12 +13394,12 @@ class DistributeApi
      * Operation releasesUpdateReleaseUploadStatusWithHttpInfo
      *
      * @param  string $upload_id The ID of the release upload (required)
-     * @param  \Swagger\Client\Model\Body2 $body The release upload status information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body2 $body The release upload status information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  bool $extract A flag that indicates to extract release or not, true by default (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -13489,7 +13489,7 @@ class DistributeApi
      * 
      *
      * @param  string $upload_id The ID of the release upload (required)
-     * @param  \Swagger\Client\Model\Body2 $body The release upload status information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body2 $body The release upload status information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  bool $extract A flag that indicates to extract release or not, true by default (optional)
@@ -13513,7 +13513,7 @@ class DistributeApi
      * 
      *
      * @param  string $upload_id The ID of the release upload (required)
-     * @param  \Swagger\Client\Model\Body2 $body The release upload status information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body2 $body The release upload status information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  bool $extract A flag that indicates to extract release or not, true by default (optional)
@@ -13567,7 +13567,7 @@ class DistributeApi
      * Create request for operation 'releasesUpdateReleaseUploadStatus'
      *
      * @param  string $upload_id The ID of the release upload (required)
-     * @param  \Swagger\Client\Model\Body2 $body The release upload status information. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body2 $body The release upload status information. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      * @param  bool $extract A flag that indicates to extract release or not, true by default (optional)
@@ -13724,7 +13724,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -13740,7 +13740,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -14023,7 +14023,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -14040,7 +14040,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -14322,7 +14322,7 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  string $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -14340,7 +14340,7 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  string $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -14627,9 +14627,9 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20059[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20059[]
      */
     public function storeReleasesGet($store_name, $release_id, $owner_name, $app_name)
     {
@@ -14645,13 +14645,13 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20059[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20059[], HTTP status code, HTTP response headers (array of strings)
      */
     public function storeReleasesGetWithHttpInfo($store_name, $release_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20059[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20059[]';
         $request = $this->storeReleasesGetRequest($store_name, $release_id, $owner_name, $app_name);
 
         try {
@@ -14703,7 +14703,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20059[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20059[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14759,7 +14759,7 @@ class DistributeApi
      */
     public function storeReleasesGetAsyncWithHttpInfo($store_name, $release_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20059[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20059[]';
         $request = $this->storeReleasesGetRequest($store_name, $release_id, $owner_name, $app_name);
 
         return $this->client
@@ -14961,9 +14961,9 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20059[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20059[]
      */
     public function storeReleasesGetLatest($store_name, $owner_name, $app_name)
     {
@@ -14978,13 +14978,13 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20059[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20059[], HTTP status code, HTTP response headers (array of strings)
      */
     public function storeReleasesGetLatestWithHttpInfo($store_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20059[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20059[]';
         $request = $this->storeReleasesGetLatestRequest($store_name, $owner_name, $app_name);
 
         try {
@@ -15036,7 +15036,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20059[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20059[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -15090,7 +15090,7 @@ class DistributeApi
      */
     public function storeReleasesGetLatestAsyncWithHttpInfo($store_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20059[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20059[]';
         $request = $this->storeReleasesGetLatestRequest($store_name, $owner_name, $app_name);
 
         return $this->client
@@ -15278,7 +15278,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -15296,7 +15296,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -15613,7 +15613,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -15631,7 +15631,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -15947,9 +15947,9 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20060[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20060[]
      */
     public function storeReleasesList($store_name, $owner_name, $app_name)
     {
@@ -15964,13 +15964,13 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20060[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20060[], HTTP status code, HTTP response headers (array of strings)
      */
     public function storeReleasesListWithHttpInfo($store_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20060[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20060[]';
         $request = $this->storeReleasesListRequest($store_name, $owner_name, $app_name);
 
         try {
@@ -16022,7 +16022,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20060[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20060[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16076,7 +16076,7 @@ class DistributeApi
      */
     public function storeReleasesListAsyncWithHttpInfo($store_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20060[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20060[]';
         $request = $this->storeReleasesListRequest($store_name, $owner_name, $app_name);
 
         return $this->client
@@ -16259,11 +16259,11 @@ class DistributeApi
     /**
      * Operation storesCreate
      *
-     * @param  \Swagger\Client\Model\Body13 $body The store request (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body13 $body The store request (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -16276,11 +16276,11 @@ class DistributeApi
     /**
      * Operation storesCreateWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Body13 $body The store request (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body13 $body The store request (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -16361,7 +16361,7 @@ class DistributeApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Body13 $body The store request (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body13 $body The store request (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -16383,7 +16383,7 @@ class DistributeApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Body13 $body The store request (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body13 $body The store request (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -16435,7 +16435,7 @@ class DistributeApi
     /**
      * Create request for operation 'storesCreate'
      *
-     * @param  \Swagger\Client\Model\Body13 $body The store request (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body13 $body The store request (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -16575,7 +16575,7 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  string $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -16592,7 +16592,7 @@ class DistributeApi
      * @param  string $app_name The name of the application (required)
      * @param  string $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -16861,7 +16861,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -16878,7 +16878,7 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -17176,9 +17176,9 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20061[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20061[]
      */
     public function storesList($owner_name, $app_name)
     {
@@ -17192,13 +17192,13 @@ class DistributeApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20061[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20061[], HTTP status code, HTTP response headers (array of strings)
      */
     public function storesListWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20061[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20061[]';
         $request = $this->storesListRequest($owner_name, $app_name);
 
         try {
@@ -17250,7 +17250,7 @@ class DistributeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20061[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20061[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -17294,7 +17294,7 @@ class DistributeApi
      */
     public function storesListAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20061[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20061[]';
         $request = $this->storesListRequest($owner_name, $app_name);
 
         return $this->client
@@ -17463,11 +17463,11 @@ class DistributeApi
      * Operation storesPatch
      *
      * @param  string $store_name The name of the store (required)
-     * @param  \Swagger\Client\Model\Body12 $body Store update request (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body12 $body Store update request (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -17480,11 +17480,11 @@ class DistributeApi
      * Operation storesPatchWithHttpInfo
      *
      * @param  string $store_name The name of the store (required)
-     * @param  \Swagger\Client\Model\Body12 $body Store update request (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body12 $body Store update request (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -17544,7 +17544,7 @@ class DistributeApi
      * 
      *
      * @param  string $store_name The name of the store (required)
-     * @param  \Swagger\Client\Model\Body12 $body Store update request (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body12 $body Store update request (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -17567,7 +17567,7 @@ class DistributeApi
      * 
      *
      * @param  string $store_name The name of the store (required)
-     * @param  \Swagger\Client\Model\Body12 $body Store update request (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body12 $body Store update request (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -17606,7 +17606,7 @@ class DistributeApi
      * Create request for operation 'storesPatch'
      *
      * @param  string $store_name The name of the store (required)
-     * @param  \Swagger\Client\Model\Body12 $body Store update request (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body12 $body Store update request (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *

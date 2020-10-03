@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**events** | [**\Swagger\Client\Model\EventsEvents[]**](EventsEvents.md) |  | [optional] 
+**events** | [**\ZeC128\AppCenter\AppCenterApi\EventsEvents[]**](EventsEvents.md) |  | [optional] 
 **total** | **int** | The total count of events. | [optional] 
 **total_devices** | **int** | The active device over this period. | [optional] 
 

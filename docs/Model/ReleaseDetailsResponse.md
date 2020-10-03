@@ -27,12 +27,12 @@ Name | Type | Description | Notes
 **app_icon_url** | **string** | A URL to the app&#39;s icon. | 
 **install_url** | **string** | The href required to install a release on a mobile device. On iOS devices will be prefixed with &#x60;itms-services://?action&#x3D;download-manifest&amp;url&#x3D;&#x60; | [optional] 
 **destination_type** | **string** | OBSOLETE. Will be removed in next version. The destination type.&lt;br&gt; &lt;b&gt;group&lt;/b&gt;: The release distributed to internal groups and distribution_groups details will be returned.&lt;br&gt; &lt;b&gt;store&lt;/b&gt;: The release distributed to external stores and distribution_stores details will be returned.&lt;br&gt; &lt;b&gt;tester&lt;/b&gt;: The release distributed testers details will be returned.&lt;br&gt; | [optional] 
-**distribution_groups** | [**\Swagger\Client\Model\ReleaseDetailsResponseDistributionGroups[]**](ReleaseDetailsResponseDistributionGroups.md) | OBSOLETE. Will be removed in next version. A list of distribution groups that are associated with this release. | [optional] 
-**distribution_stores** | [**\Swagger\Client\Model\ReleaseDetailsResponseDistributionStores[]**](ReleaseDetailsResponseDistributionStores.md) | OBSOLETE. Will be removed in next version. A list of distribution stores that are associated with this release. | [optional] 
+**distribution_groups** | [**\ZeC128\AppCenter\AppCenterApi\ReleaseDetailsResponseDistributionGroups[]**](ReleaseDetailsResponseDistributionGroups.md) | OBSOLETE. Will be removed in next version. A list of distribution groups that are associated with this release. | [optional] 
+**distribution_stores** | [**\ZeC128\AppCenter\AppCenterApi\ReleaseDetailsResponseDistributionStores[]**](ReleaseDetailsResponseDistributionStores.md) | OBSOLETE. Will be removed in next version. A list of distribution stores that are associated with this release. | [optional] 
 **destinations** | **object[]** | A list of distribution groups or stores. | [optional] 
 **is_udid_provisioned** | **bool** | In calls that allow passing &#x60;udid&#x60; in the query string, this value will hold the provisioning status of that UDID in this release. Will be ignored for non-iOS platforms. | [optional] 
 **can_resign** | **bool** | In calls that allow passing &#x60;udid&#x60; in the query string, this value determines if a release can be re-signed. When true, after a re-sign, the tester will be able to install the release from his registered devices. Will not be returned for non-iOS platforms. | [optional] 
-**build** | [**\Swagger\Client\Model\V01appsownerNameappNamereleasesreleaseIdBuild**](V01appsownerNameappNamereleasesreleaseIdBuild.md) |  | [optional] 
+**build** | [**\ZeC128\AppCenter\AppCenterApi\V01appsownerNameappNamereleasesreleaseIdBuild**](V01appsownerNameappNamereleasesreleaseIdBuild.md) |  | [optional] 
 **enabled** | **bool** | This value determines the whether a release currently is enabled or disabled. | 
 **status** | **string** | Status of the release. | [optional] 
 **is_external_build** | **bool** | This value determines if a release is external or not. | [optional] 

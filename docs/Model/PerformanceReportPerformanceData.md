@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**steps** | [**\Swagger\Client\Model\PerformanceReportPerformanceDataSteps[]**](PerformanceReportPerformanceDataSteps.md) |  | 
+**steps** | [**\ZeC128\AppCenter\AppCenterApi\PerformanceReportPerformanceDataSteps[]**](PerformanceReportPerformanceDataSteps.md) |  | 
 **elapsed_secs_end** | **float** |  | 
 **elapsed_secs_start** | **float** |  | 
 **elapsed_secs** | **float** |  | 

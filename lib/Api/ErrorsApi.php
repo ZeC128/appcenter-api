@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * ErrorsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class ErrorsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results till the max number.) (optional, default to 30)
      * @param  string $error_type Type of error (handled vs unhandled), including All (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20058
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20058
      */
     public function errorsAppBuildsList($version, $start, $owner_name, $app_name, $end = null, $top = '30', $error_type = null)
     {
@@ -119,13 +119,13 @@ class ErrorsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results till the max number.) (optional, default to 30)
      * @param  string $error_type Type of error (handled vs unhandled), including All (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20058, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20058, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsAppBuildsListWithHttpInfo($version, $start, $owner_name, $app_name, $end = null, $top = '30', $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20058';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20058';
         $request = $this->errorsAppBuildsListRequest($version, $start, $owner_name, $app_name, $end, $top, $error_type);
 
         try {
@@ -177,7 +177,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20058',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20058',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class ErrorsApi
      */
     public function errorsAppBuildsListAsyncWithHttpInfo($version, $start, $owner_name, $app_name, $end = null, $top = '30', $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20058';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20058';
         $request = $this->errorsAppBuildsListRequest($version, $start, $owner_name, $app_name, $end, $top, $error_type);
 
         return $this->client
@@ -461,9 +461,9 @@ class ErrorsApi
      * @param  string $inlinecount Controls whether or not to include a count of all the items across all pages. (optional, default to none)
      * @param  string $error_type Type of error (handled vs unhandled), including All (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20057
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20057
      */
     public function errorsAvailableVersions($start, $owner_name, $app_name, $end = null, $top = '30', $skip = '0', $filter = null, $inlinecount = 'none', $error_type = null)
     {
@@ -484,13 +484,13 @@ class ErrorsApi
      * @param  string $inlinecount Controls whether or not to include a count of all the items across all pages. (optional, default to none)
      * @param  string $error_type Type of error (handled vs unhandled), including All (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20057, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20057, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsAvailableVersionsWithHttpInfo($start, $owner_name, $app_name, $end = null, $top = '30', $skip = '0', $filter = null, $inlinecount = 'none', $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20057';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20057';
         $request = $this->errorsAvailableVersionsRequest($start, $owner_name, $app_name, $end, $top, $skip, $filter, $inlinecount, $error_type);
 
         try {
@@ -542,7 +542,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20057',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20057',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -550,7 +550,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -608,7 +608,7 @@ class ErrorsApi
      */
     public function errorsAvailableVersionsAsyncWithHttpInfo($start, $owner_name, $app_name, $end = null, $top = '30', $skip = '0', $filter = null, $inlinecount = 'none', $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20057';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20057';
         $request = $this->errorsAvailableVersionsRequest($start, $owner_name, $app_name, $end, $top, $skip, $filter, $inlinecount, $error_type);
 
         return $this->client
@@ -836,9 +836,9 @@ class ErrorsApi
      * @param  string $app_build app build (optional)
      * @param  string $error_type Type of error (handled vs unhandled), excluding All (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20053
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20053
      */
     public function errorsCountsPerDay($start, $owner_name, $app_name, $version = null, $end = null, $app_build = null, $error_type = null)
     {
@@ -857,13 +857,13 @@ class ErrorsApi
      * @param  string $app_build app build (optional)
      * @param  string $error_type Type of error (handled vs unhandled), excluding All (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20053, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20053, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsCountsPerDayWithHttpInfo($start, $owner_name, $app_name, $version = null, $end = null, $app_build = null, $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20053';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20053';
         $request = $this->errorsCountsPerDayRequest($start, $owner_name, $app_name, $version, $end, $app_build, $error_type);
 
         try {
@@ -915,7 +915,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20053',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20053',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -923,7 +923,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -977,7 +977,7 @@ class ErrorsApi
      */
     public function errorsCountsPerDayAsyncWithHttpInfo($start, $owner_name, $app_name, $version = null, $end = null, $app_build = null, $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20053';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20053';
         $request = $this->errorsCountsPerDayRequest($start, $owner_name, $app_name, $version, $end, $app_build, $error_type);
 
         return $this->client
@@ -1181,9 +1181,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20051
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20051
      */
     public function errorsDeleteError($error_group_id, $error_id, $owner_name, $app_name)
     {
@@ -1199,13 +1199,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20051, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20051, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsDeleteErrorWithHttpInfo($error_group_id, $error_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20051';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20051';
         $request = $this->errorsDeleteErrorRequest($error_group_id, $error_id, $owner_name, $app_name);
 
         try {
@@ -1257,7 +1257,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20051',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20051',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1265,7 +1265,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1313,7 +1313,7 @@ class ErrorsApi
      */
     public function errorsDeleteErrorAsyncWithHttpInfo($error_group_id, $error_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20051';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20051';
         $request = $this->errorsDeleteErrorRequest($error_group_id, $error_id, $owner_name, $app_name);
 
         return $this->client
@@ -1516,9 +1516,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20043
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20043
      */
     public function errorsErrorAttachmentLocation($error_id, $attachment_id, $owner_name, $app_name)
     {
@@ -1534,13 +1534,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20043, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20043, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsErrorAttachmentLocationWithHttpInfo($error_id, $attachment_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20043';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20043';
         $request = $this->errorsErrorAttachmentLocationRequest($error_id, $attachment_id, $owner_name, $app_name);
 
         try {
@@ -1592,7 +1592,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20043',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20043',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1600,7 +1600,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1648,7 +1648,7 @@ class ErrorsApi
      */
     public function errorsErrorAttachmentLocationAsyncWithHttpInfo($error_id, $attachment_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20043';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20043';
         $request = $this->errorsErrorAttachmentLocationRequest($error_id, $attachment_id, $owner_name, $app_name);
 
         return $this->client
@@ -1851,9 +1851,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20042
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20042
      */
     public function errorsErrorAttachmentText($error_id, $attachment_id, $owner_name, $app_name)
     {
@@ -1869,13 +1869,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20042, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20042, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsErrorAttachmentTextWithHttpInfo($error_id, $attachment_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20042';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20042';
         $request = $this->errorsErrorAttachmentTextRequest($error_id, $attachment_id, $owner_name, $app_name);
 
         try {
@@ -1927,7 +1927,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20042',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20042',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1935,7 +1935,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1983,7 +1983,7 @@ class ErrorsApi
      */
     public function errorsErrorAttachmentTextAsyncWithHttpInfo($error_id, $attachment_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20042';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20042';
         $request = $this->errorsErrorAttachmentTextRequest($error_id, $attachment_id, $owner_name, $app_name);
 
         return $this->client
@@ -2185,9 +2185,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20044[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20044[]
      */
     public function errorsErrorAttachments($error_id, $owner_name, $app_name)
     {
@@ -2202,13 +2202,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20044[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20044[], HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsErrorAttachmentsWithHttpInfo($error_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20044[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20044[]';
         $request = $this->errorsErrorAttachmentsRequest($error_id, $owner_name, $app_name);
 
         try {
@@ -2260,7 +2260,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20044[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20044[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2268,7 +2268,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2314,7 +2314,7 @@ class ErrorsApi
      */
     public function errorsErrorAttachmentsAsyncWithHttpInfo($error_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20044[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20044[]';
         $request = $this->errorsErrorAttachmentsRequest($error_id, $owner_name, $app_name);
 
         return $this->client
@@ -2503,7 +2503,7 @@ class ErrorsApi
      * @param  string $app_name The name of the application (required)
      * @param  string $format the format of the crash log (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2522,7 +2522,7 @@ class ErrorsApi
      * @param  string $app_name The name of the application (required)
      * @param  string $format the format of the crash log (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2588,7 +2588,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2849,9 +2849,9 @@ class ErrorsApi
      * @param  string $app_build app build (optional)
      * @param  string $error_type Type of error (handled vs unhandled), excluding All (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20047
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20047
      */
     public function errorsErrorFreeDevicePercentages($start, $owner_name, $app_name, $end = null, $versions = null, $app_build = null, $error_type = null)
     {
@@ -2870,13 +2870,13 @@ class ErrorsApi
      * @param  string $app_build app build (optional)
      * @param  string $error_type Type of error (handled vs unhandled), excluding All (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20047, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20047, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsErrorFreeDevicePercentagesWithHttpInfo($start, $owner_name, $app_name, $end = null, $versions = null, $app_build = null, $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20047';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20047';
         $request = $this->errorsErrorFreeDevicePercentagesRequest($start, $owner_name, $app_name, $end, $versions, $app_build, $error_type);
 
         try {
@@ -2928,7 +2928,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20047',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20047',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2936,7 +2936,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2990,7 +2990,7 @@ class ErrorsApi
      */
     public function errorsErrorFreeDevicePercentagesAsyncWithHttpInfo($start, $owner_name, $app_name, $end = null, $versions = null, $app_build = null, $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20047';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20047';
         $request = $this->errorsErrorFreeDevicePercentagesRequest($start, $owner_name, $app_name, $end, $versions, $app_build, $error_type);
 
         return $this->client
@@ -3201,9 +3201,9 @@ class ErrorsApi
      * @param  int $top The maximum number of results to return (optional, default to 100)
      * @param  int $skip The offset (starting at 0) of the first result to return. This parameter along with limit is used to perform pagination. (optional, default to 0)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20055
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20055
      */
     public function errorsErrorGroupsSearch($owner_name, $app_name, $filter = null, $q = null, $order = 'desc', $sort = 'matchingReportsCount', $top = '100', $skip = '0')
     {
@@ -3223,13 +3223,13 @@ class ErrorsApi
      * @param  int $top The maximum number of results to return (optional, default to 100)
      * @param  int $skip The offset (starting at 0) of the first result to return. This parameter along with limit is used to perform pagination. (optional, default to 0)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20055, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20055, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsErrorGroupsSearchWithHttpInfo($owner_name, $app_name, $filter = null, $q = null, $order = 'desc', $sort = 'matchingReportsCount', $top = '100', $skip = '0')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20055';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20055';
         $request = $this->errorsErrorGroupsSearchRequest($owner_name, $app_name, $filter, $q, $order, $sort, $top, $skip);
 
         try {
@@ -3281,7 +3281,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20055',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20055',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3289,7 +3289,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3345,7 +3345,7 @@ class ErrorsApi
      */
     public function errorsErrorGroupsSearchAsyncWithHttpInfo($owner_name, $app_name, $filter = null, $q = null, $order = 'desc', $sort = 'matchingReportsCount', $top = '100', $skip = '0')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20055';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20055';
         $request = $this->errorsErrorGroupsSearchRequest($owner_name, $app_name, $filter, $q, $order, $sort, $top, $skip);
 
         return $this->client
@@ -3559,9 +3559,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20043
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20043
      */
     public function errorsErrorLocation($error_group_id, $error_id, $owner_name, $app_name)
     {
@@ -3577,13 +3577,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20043, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20043, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsErrorLocationWithHttpInfo($error_group_id, $error_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20043';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20043';
         $request = $this->errorsErrorLocationRequest($error_group_id, $error_id, $owner_name, $app_name);
 
         try {
@@ -3635,7 +3635,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20043',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20043',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3643,7 +3643,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3691,7 +3691,7 @@ class ErrorsApi
      */
     public function errorsErrorLocationAsyncWithHttpInfo($error_group_id, $error_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20043';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20043';
         $request = $this->errorsErrorLocationRequest($error_group_id, $error_id, $owner_name, $app_name);
 
         return $this->client
@@ -3898,9 +3898,9 @@ class ErrorsApi
      * @param  int $top The maximum number of results to return (optional, default to 100)
      * @param  int $skip The offset (starting at 0) of the first result to return. This parameter along with limit is used to perform pagination. (optional, default to 0)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20045
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20045
      */
     public function errorsErrorSearch($owner_name, $app_name, $filter = null, $q = null, $order = 'desc', $sort = 'timestamp', $top = '100', $skip = '0')
     {
@@ -3920,13 +3920,13 @@ class ErrorsApi
      * @param  int $top The maximum number of results to return (optional, default to 100)
      * @param  int $skip The offset (starting at 0) of the first result to return. This parameter along with limit is used to perform pagination. (optional, default to 0)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20045, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20045, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsErrorSearchWithHttpInfo($owner_name, $app_name, $filter = null, $q = null, $order = 'desc', $sort = 'timestamp', $top = '100', $skip = '0')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20045';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20045';
         $request = $this->errorsErrorSearchRequest($owner_name, $app_name, $filter, $q, $order, $sort, $top, $skip);
 
         try {
@@ -3978,7 +3978,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20045',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20045',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3986,7 +3986,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4042,7 +4042,7 @@ class ErrorsApi
      */
     public function errorsErrorSearchAsyncWithHttpInfo($owner_name, $app_name, $filter = null, $q = null, $order = 'desc', $sort = 'timestamp', $top = '100', $skip = '0')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20045';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20045';
         $request = $this->errorsErrorSearchRequest($owner_name, $app_name, $filter, $q, $order, $sort, $top, $skip);
 
         return $this->client
@@ -4256,9 +4256,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DiagnosticsStackTrace
+     * @return \ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace
      */
     public function errorsErrorStackTrace($error_group_id, $error_id, $owner_name, $app_name)
     {
@@ -4274,13 +4274,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DiagnosticsStackTrace, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsErrorStackTraceWithHttpInfo($error_group_id, $error_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DiagnosticsStackTrace';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace';
         $request = $this->errorsErrorStackTraceRequest($error_group_id, $error_id, $owner_name, $app_name);
 
         try {
@@ -4332,7 +4332,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DiagnosticsStackTrace',
+                        '\ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4340,7 +4340,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4388,7 +4388,7 @@ class ErrorsApi
      */
     public function errorsErrorStackTraceAsyncWithHttpInfo($error_group_id, $error_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DiagnosticsStackTrace';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace';
         $request = $this->errorsErrorStackTraceRequest($error_group_id, $error_id, $owner_name, $app_name);
 
         return $this->client
@@ -4591,9 +4591,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20050
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20050
      */
     public function errorsGetErrorDetails($error_group_id, $error_id, $owner_name, $app_name)
     {
@@ -4609,13 +4609,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20050, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20050, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsGetErrorDetailsWithHttpInfo($error_group_id, $error_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20050';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20050';
         $request = $this->errorsGetErrorDetailsRequest($error_group_id, $error_id, $owner_name, $app_name);
 
         try {
@@ -4667,7 +4667,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20050',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20050',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4675,7 +4675,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4723,7 +4723,7 @@ class ErrorsApi
      */
     public function errorsGetErrorDetailsAsyncWithHttpInfo($error_group_id, $error_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20050';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20050';
         $request = $this->errorsGetErrorDetailsRequest($error_group_id, $error_id, $owner_name, $app_name);
 
         return $this->client
@@ -4926,9 +4926,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20046
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20046
      */
     public function errorsGetRetentionSettings($owner_name, $app_name)
     {
@@ -4944,13 +4944,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20046, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20046, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsGetRetentionSettingsWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20046';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20046';
         $request = $this->errorsGetRetentionSettingsRequest($owner_name, $app_name);
 
         try {
@@ -5002,7 +5002,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20046',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20046',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5010,7 +5010,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5054,7 +5054,7 @@ class ErrorsApi
      */
     public function errorsGetRetentionSettingsAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20046';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20046';
         $request = $this->errorsGetRetentionSettingsRequest($owner_name, $app_name);
 
         return $this->client
@@ -5229,9 +5229,9 @@ class ErrorsApi
      * @param  string $version version (optional)
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20053
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20053
      */
     public function errorsGroupCountsPerDay($error_group_id, $start, $owner_name, $app_name, $version = null, $end = null)
     {
@@ -5249,13 +5249,13 @@ class ErrorsApi
      * @param  string $version (optional)
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20053, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20053, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsGroupCountsPerDayWithHttpInfo($error_group_id, $start, $owner_name, $app_name, $version = null, $end = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20053';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20053';
         $request = $this->errorsGroupCountsPerDayRequest($error_group_id, $start, $owner_name, $app_name, $version, $end);
 
         try {
@@ -5307,7 +5307,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20053',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20053',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5315,7 +5315,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5367,7 +5367,7 @@ class ErrorsApi
      */
     public function errorsGroupCountsPerDayAsyncWithHttpInfo($error_group_id, $start, $owner_name, $app_name, $version = null, $end = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20053';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20053';
         $request = $this->errorsGroupCountsPerDayRequest($error_group_id, $start, $owner_name, $app_name, $version, $end);
 
         return $this->client
@@ -5575,9 +5575,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20054
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20054
      */
     public function errorsGroupDetails($error_group_id, $owner_name, $app_name)
     {
@@ -5592,13 +5592,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20054, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20054, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsGroupDetailsWithHttpInfo($error_group_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20054';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20054';
         $request = $this->errorsGroupDetailsRequest($error_group_id, $owner_name, $app_name);
 
         try {
@@ -5650,7 +5650,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20054',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20054',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5658,7 +5658,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5704,7 +5704,7 @@ class ErrorsApi
      */
     public function errorsGroupDetailsAsyncWithHttpInfo($error_group_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20054';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20054';
         $request = $this->errorsGroupDetailsRequest($error_group_id, $owner_name, $app_name);
 
         return $this->client
@@ -5893,9 +5893,9 @@ class ErrorsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20047
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20047
      */
     public function errorsGroupErrorFreeDevicePercentages($error_group_id, $start, $owner_name, $app_name, $end = null)
     {
@@ -5912,13 +5912,13 @@ class ErrorsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20047, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20047, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsGroupErrorFreeDevicePercentagesWithHttpInfo($error_group_id, $start, $owner_name, $app_name, $end = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20047';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20047';
         $request = $this->errorsGroupErrorFreeDevicePercentagesRequest($error_group_id, $start, $owner_name, $app_name, $end);
 
         try {
@@ -5970,7 +5970,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20047',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20047',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5978,7 +5978,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6028,7 +6028,7 @@ class ErrorsApi
      */
     public function errorsGroupErrorFreeDevicePercentagesAsyncWithHttpInfo($error_group_id, $start, $owner_name, $app_name, $end = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20047';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20047';
         $request = $this->errorsGroupErrorFreeDevicePercentagesRequest($error_group_id, $start, $owner_name, $app_name, $end);
 
         return $this->client
@@ -6231,9 +6231,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DiagnosticsStackTrace
+     * @return \ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace
      */
     public function errorsGroupErrorStackTrace($error_group_id, $owner_name, $app_name)
     {
@@ -6248,13 +6248,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DiagnosticsStackTrace, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsGroupErrorStackTraceWithHttpInfo($error_group_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DiagnosticsStackTrace';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace';
         $request = $this->errorsGroupErrorStackTraceRequest($error_group_id, $owner_name, $app_name);
 
         try {
@@ -6306,7 +6306,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DiagnosticsStackTrace',
+                        '\ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6314,7 +6314,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6360,7 +6360,7 @@ class ErrorsApi
      */
     public function errorsGroupErrorStackTraceAsyncWithHttpInfo($error_group_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DiagnosticsStackTrace';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DiagnosticsStackTrace';
         $request = $this->errorsGroupErrorStackTraceRequest($error_group_id, $owner_name, $app_name);
 
         return $this->client
@@ -6554,9 +6554,9 @@ class ErrorsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results till the max number.) (optional, default to 30)
      * @param  string $error_type Type of error (handled vs unhandled), including All (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20056
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20056
      */
     public function errorsGroupList($start, $owner_name, $app_name, $version = null, $app_build = null, $group_state = null, $end = null, $orderby = 'count desc', $top = '30', $error_type = null)
     {
@@ -6578,13 +6578,13 @@ class ErrorsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results till the max number.) (optional, default to 30)
      * @param  string $error_type Type of error (handled vs unhandled), including All (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20056, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20056, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsGroupListWithHttpInfo($start, $owner_name, $app_name, $version = null, $app_build = null, $group_state = null, $end = null, $orderby = 'count desc', $top = '30', $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20056';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20056';
         $request = $this->errorsGroupListRequest($start, $owner_name, $app_name, $version, $app_build, $group_state, $end, $orderby, $top, $error_type);
 
         try {
@@ -6636,7 +6636,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20056',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20056',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6644,7 +6644,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6704,7 +6704,7 @@ class ErrorsApi
      */
     public function errorsGroupListAsyncWithHttpInfo($start, $owner_name, $app_name, $version = null, $app_build = null, $group_state = null, $end = null, $orderby = 'count desc', $top = '30', $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20056';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20056';
         $request = $this->errorsGroupListRequest($start, $owner_name, $app_name, $version, $app_build, $group_state, $end, $orderby, $top, $error_type);
 
         return $this->client
@@ -6930,9 +6930,9 @@ class ErrorsApi
      * @param  string $app_name The name of the application (required)
      * @param  int $top The maximum number of results to return. (0 will fetch all results till the max number.) (optional, default to 30)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20049
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20049
      */
     public function errorsGroupModelCounts($error_group_id, $owner_name, $app_name, $top = '30')
     {
@@ -6948,13 +6948,13 @@ class ErrorsApi
      * @param  string $app_name The name of the application (required)
      * @param  int $top The maximum number of results to return. (0 will fetch all results till the max number.) (optional, default to 30)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20049, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20049, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsGroupModelCountsWithHttpInfo($error_group_id, $owner_name, $app_name, $top = '30')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20049';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20049';
         $request = $this->errorsGroupModelCountsRequest($error_group_id, $owner_name, $app_name, $top);
 
         try {
@@ -7006,7 +7006,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20049',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20049',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7014,7 +7014,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7062,7 +7062,7 @@ class ErrorsApi
      */
     public function errorsGroupModelCountsAsyncWithHttpInfo($error_group_id, $owner_name, $app_name, $top = '30')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20049';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20049';
         $request = $this->errorsGroupModelCountsRequest($error_group_id, $owner_name, $app_name, $top);
 
         return $this->client
@@ -7262,9 +7262,9 @@ class ErrorsApi
      * @param  string $app_name The name of the application (required)
      * @param  int $top The maximum number of results to return. (0 will fetch all results till the max number.) (optional, default to 30)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20048
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20048
      */
     public function errorsGroupOperatingSystemCounts($error_group_id, $owner_name, $app_name, $top = '30')
     {
@@ -7280,13 +7280,13 @@ class ErrorsApi
      * @param  string $app_name The name of the application (required)
      * @param  int $top The maximum number of results to return. (0 will fetch all results till the max number.) (optional, default to 30)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20048, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20048, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsGroupOperatingSystemCountsWithHttpInfo($error_group_id, $owner_name, $app_name, $top = '30')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20048';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20048';
         $request = $this->errorsGroupOperatingSystemCountsRequest($error_group_id, $owner_name, $app_name, $top);
 
         try {
@@ -7338,7 +7338,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20048',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20048',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7346,7 +7346,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7394,7 +7394,7 @@ class ErrorsApi
      */
     public function errorsGroupOperatingSystemCountsAsyncWithHttpInfo($error_group_id, $owner_name, $app_name, $top = '30')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20048';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20048';
         $request = $this->errorsGroupOperatingSystemCountsRequest($error_group_id, $owner_name, $app_name, $top);
 
         return $this->client
@@ -7593,9 +7593,9 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20050
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20050
      */
     public function errorsLatestErrorDetails($error_group_id, $owner_name, $app_name)
     {
@@ -7610,13 +7610,13 @@ class ErrorsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20050, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20050, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsLatestErrorDetailsWithHttpInfo($error_group_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20050';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20050';
         $request = $this->errorsLatestErrorDetailsRequest($error_group_id, $owner_name, $app_name);
 
         try {
@@ -7668,7 +7668,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20050',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20050',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7676,7 +7676,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7722,7 +7722,7 @@ class ErrorsApi
      */
     public function errorsLatestErrorDetailsAsyncWithHttpInfo($error_group_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20050';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20050';
         $request = $this->errorsLatestErrorDetailsRequest($error_group_id, $owner_name, $app_name);
 
         return $this->client
@@ -7914,9 +7914,9 @@ class ErrorsApi
      * @param  string $model model (optional)
      * @param  string $os os (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20052
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20052
      */
     public function errorsListForGroup($error_group_id, $start, $owner_name, $app_name, $end = null, $top = '30', $model = null, $os = null)
     {
@@ -7936,13 +7936,13 @@ class ErrorsApi
      * @param  string $model (optional)
      * @param  string $os (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20052, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20052, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsListForGroupWithHttpInfo($error_group_id, $start, $owner_name, $app_name, $end = null, $top = '30', $model = null, $os = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20052';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20052';
         $request = $this->errorsListForGroupRequest($error_group_id, $start, $owner_name, $app_name, $end, $top, $model, $os);
 
         try {
@@ -7994,7 +7994,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20052',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20052',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8002,7 +8002,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8058,7 +8058,7 @@ class ErrorsApi
      */
     public function errorsListForGroupAsyncWithHttpInfo($error_group_id, $start, $owner_name, $app_name, $end = null, $top = '30', $model = null, $os = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20052';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20052';
         $request = $this->errorsListForGroupRequest($error_group_id, $start, $owner_name, $app_name, $end, $top, $model, $os);
 
         return $this->client
@@ -8284,9 +8284,9 @@ class ErrorsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $date Date of data requested (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20041
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20041
      */
     public function errorsListSessionLogs($error_id, $owner_name, $app_name, $date = null)
     {
@@ -8302,13 +8302,13 @@ class ErrorsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $date Date of data requested (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20041, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20041, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsListSessionLogsWithHttpInfo($error_id, $owner_name, $app_name, $date = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20041';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20041';
         $request = $this->errorsListSessionLogsRequest($error_id, $owner_name, $app_name, $date);
 
         try {
@@ -8360,7 +8360,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20041',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20041',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8368,7 +8368,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8416,7 +8416,7 @@ class ErrorsApi
      */
     public function errorsListSessionLogsAsyncWithHttpInfo($error_id, $owner_name, $app_name, $date = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20041';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20041';
         $request = $this->errorsListSessionLogsRequest($error_id, $owner_name, $app_name, $date);
 
         return $this->client
@@ -8606,13 +8606,13 @@ class ErrorsApi
      *
      * Creates and updates the retention settings in days
      *
-     * @param  \Swagger\Client\Model\ErrorRetentionInDays $error_retention_in_days The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays $error_retention_in_days The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ErrorRetentionInDays
+     * @return \ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays
      */
     public function errorsPutRetentionSettings($error_retention_in_days, $owner_name, $app_name)
     {
@@ -8625,17 +8625,17 @@ class ErrorsApi
      *
      * Creates and updates the retention settings in days
      *
-     * @param  \Swagger\Client\Model\ErrorRetentionInDays $error_retention_in_days The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays $error_retention_in_days The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ErrorRetentionInDays, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsPutRetentionSettingsWithHttpInfo($error_retention_in_days, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\ErrorRetentionInDays';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays';
         $request = $this->errorsPutRetentionSettingsRequest($error_retention_in_days, $owner_name, $app_name);
 
         try {
@@ -8687,7 +8687,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ErrorRetentionInDays',
+                        '\ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8695,7 +8695,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8710,7 +8710,7 @@ class ErrorsApi
      *
      * Creates and updates the retention settings in days
      *
-     * @param  \Swagger\Client\Model\ErrorRetentionInDays $error_retention_in_days The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays $error_retention_in_days The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -8732,7 +8732,7 @@ class ErrorsApi
      *
      * Creates and updates the retention settings in days
      *
-     * @param  \Swagger\Client\Model\ErrorRetentionInDays $error_retention_in_days The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays $error_retention_in_days The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -8741,7 +8741,7 @@ class ErrorsApi
      */
     public function errorsPutRetentionSettingsAsyncWithHttpInfo($error_retention_in_days, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\ErrorRetentionInDays';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays';
         $request = $this->errorsPutRetentionSettingsRequest($error_retention_in_days, $owner_name, $app_name);
 
         return $this->client
@@ -8784,7 +8784,7 @@ class ErrorsApi
     /**
      * Create request for operation 'errorsPutRetentionSettings'
      *
-     * @param  \Swagger\Client\Model\ErrorRetentionInDays $error_retention_in_days The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ErrorRetentionInDays $error_retention_in_days The amount of days to keep the crashes for this application. retention_in_days is an enum value, can only be 28 or 90. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -8920,13 +8920,13 @@ class ErrorsApi
      * Operation errorsUpdateState
      *
      * @param  string $error_group_id The id of the error group (required)
-     * @param  \Swagger\Client\Model\ErrorGroupState $error_group_state The state of the error group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ErrorGroupState $error_group_state The state of the error group (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20054
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20054
      */
     public function errorsUpdateState($error_group_id, $error_group_state, $owner_name, $app_name)
     {
@@ -8938,17 +8938,17 @@ class ErrorsApi
      * Operation errorsUpdateStateWithHttpInfo
      *
      * @param  string $error_group_id The id of the error group (required)
-     * @param  \Swagger\Client\Model\ErrorGroupState $error_group_state The state of the error group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ErrorGroupState $error_group_state The state of the error group (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20054, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20054, HTTP status code, HTTP response headers (array of strings)
      */
     public function errorsUpdateStateWithHttpInfo($error_group_id, $error_group_state, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20054';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20054';
         $request = $this->errorsUpdateStateRequest($error_group_id, $error_group_state, $owner_name, $app_name);
 
         try {
@@ -9000,7 +9000,7 @@ class ErrorsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20054',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20054',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9008,7 +9008,7 @@ class ErrorsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9024,7 +9024,7 @@ class ErrorsApi
      * 
      *
      * @param  string $error_group_id The id of the error group (required)
-     * @param  \Swagger\Client\Model\ErrorGroupState $error_group_state The state of the error group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ErrorGroupState $error_group_state The state of the error group (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -9047,7 +9047,7 @@ class ErrorsApi
      * 
      *
      * @param  string $error_group_id The id of the error group (required)
-     * @param  \Swagger\Client\Model\ErrorGroupState $error_group_state The state of the error group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ErrorGroupState $error_group_state The state of the error group (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -9056,7 +9056,7 @@ class ErrorsApi
      */
     public function errorsUpdateStateAsyncWithHttpInfo($error_group_id, $error_group_state, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20054';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20054';
         $request = $this->errorsUpdateStateRequest($error_group_id, $error_group_state, $owner_name, $app_name);
 
         return $this->client
@@ -9100,7 +9100,7 @@ class ErrorsApi
      * Create request for operation 'errorsUpdateState'
      *
      * @param  string $error_group_id The id of the error group (required)
-     * @param  \Swagger\Client\Model\ErrorGroupState $error_group_state The state of the error group (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ErrorGroupState $error_group_state The state of the error group (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *

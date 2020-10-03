@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * CrashApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20073
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20073
      */
     public function crashGroupsGet($crash_group_id, $owner_name, $app_name)
     {
@@ -111,13 +111,13 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20073, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20073, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashGroupsGetWithHttpInfo($crash_group_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20073';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20073';
         $request = $this->crashGroupsGetRequest($crash_group_id, $owner_name, $app_name);
 
         try {
@@ -169,7 +169,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20073',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20073',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class CrashApi
      */
     public function crashGroupsGetAsyncWithHttpInfo($crash_group_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20073';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20073';
         $request = $this->crashGroupsGetRequest($crash_group_id, $owner_name, $app_name);
 
         return $this->client
@@ -411,9 +411,9 @@ class CrashApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $grouping_only true if the stacktrace should be only the relevant thread / exception. Default is false (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Stacktrace
+     * @return \ZeC128\AppCenter\AppCenterApi\Stacktrace
      */
     public function crashGroupsGetStacktrace($crash_group_id, $owner_name, $app_name, $grouping_only = 'false')
     {
@@ -429,13 +429,13 @@ class CrashApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $grouping_only true if the stacktrace should be only the relevant thread / exception. Default is false (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Stacktrace, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\Stacktrace, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashGroupsGetStacktraceWithHttpInfo($crash_group_id, $owner_name, $app_name, $grouping_only = 'false')
     {
-        $returnType = '\Swagger\Client\Model\Stacktrace';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Stacktrace';
         $request = $this->crashGroupsGetStacktraceRequest($crash_group_id, $owner_name, $app_name, $grouping_only);
 
         try {
@@ -487,7 +487,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Stacktrace',
+                        '\ZeC128\AppCenter\AppCenterApi\Stacktrace',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -543,7 +543,7 @@ class CrashApi
      */
     public function crashGroupsGetStacktraceAsyncWithHttpInfo($crash_group_id, $owner_name, $app_name, $grouping_only = 'false')
     {
-        $returnType = '\Swagger\Client\Model\Stacktrace';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Stacktrace';
         $request = $this->crashGroupsGetStacktraceRequest($crash_group_id, $owner_name, $app_name, $grouping_only);
 
         return $this->client
@@ -742,9 +742,9 @@ class CrashApi
      * @param  string $orderby the OData-like $orderby argument (optional, default to last_occurrence desc)
      * @param  string $continuation_token Cassandra request continuation token. The token is used for pagination. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20074
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20074
      */
     public function crashGroupsList($owner_name, $app_name, $last_occurrence_from = null, $last_occurrence_to = null, $app_version = null, $group_type = null, $group_status = null, $group_text_search = null, $orderby = 'last_occurrence desc', $continuation_token = null)
     {
@@ -766,13 +766,13 @@ class CrashApi
      * @param  string $orderby the OData-like $orderby argument (optional, default to last_occurrence desc)
      * @param  string $continuation_token Cassandra request continuation token. The token is used for pagination. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20074, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20074, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashGroupsListWithHttpInfo($owner_name, $app_name, $last_occurrence_from = null, $last_occurrence_to = null, $app_version = null, $group_type = null, $group_status = null, $group_text_search = null, $orderby = 'last_occurrence desc', $continuation_token = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20074';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20074';
         $request = $this->crashGroupsListRequest($owner_name, $app_name, $last_occurrence_from, $last_occurrence_to, $app_version, $group_type, $group_status, $group_text_search, $orderby, $continuation_token);
 
         try {
@@ -824,7 +824,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20074',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20074',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -892,7 +892,7 @@ class CrashApi
      */
     public function crashGroupsListAsyncWithHttpInfo($owner_name, $app_name, $last_occurrence_from = null, $last_occurrence_to = null, $app_version = null, $group_type = null, $group_status = null, $group_text_search = null, $orderby = 'last_occurrence desc', $continuation_token = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20074';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20074';
         $request = $this->crashGroupsListRequest($owner_name, $app_name, $last_occurrence_from, $last_occurrence_to, $app_version, $group_type, $group_status, $group_text_search, $orderby, $continuation_token);
 
         return $this->client
@@ -1101,13 +1101,13 @@ class CrashApi
      * Operation crashGroupsUpdate
      *
      * @param  string $crash_group_id id of a specific group (required)
-     * @param  \Swagger\Client\Model\Group $group Group change object. All fields are optional and only provided fields will get updated. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Group $group Group change object. All fields are optional and only provided fields will get updated. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20073
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20073
      */
     public function crashGroupsUpdate($crash_group_id, $group, $owner_name, $app_name)
     {
@@ -1119,17 +1119,17 @@ class CrashApi
      * Operation crashGroupsUpdateWithHttpInfo
      *
      * @param  string $crash_group_id id of a specific group (required)
-     * @param  \Swagger\Client\Model\Group $group Group change object. All fields are optional and only provided fields will get updated. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Group $group Group change object. All fields are optional and only provided fields will get updated. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20073, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20073, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashGroupsUpdateWithHttpInfo($crash_group_id, $group, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20073';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20073';
         $request = $this->crashGroupsUpdateRequest($crash_group_id, $group, $owner_name, $app_name);
 
         try {
@@ -1181,7 +1181,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20073',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20073',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1205,7 +1205,7 @@ class CrashApi
      * 
      *
      * @param  string $crash_group_id id of a specific group (required)
-     * @param  \Swagger\Client\Model\Group $group Group change object. All fields are optional and only provided fields will get updated. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Group $group Group change object. All fields are optional and only provided fields will get updated. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1228,7 +1228,7 @@ class CrashApi
      * 
      *
      * @param  string $crash_group_id id of a specific group (required)
-     * @param  \Swagger\Client\Model\Group $group Group change object. All fields are optional and only provided fields will get updated. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Group $group Group change object. All fields are optional and only provided fields will get updated. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1237,7 +1237,7 @@ class CrashApi
      */
     public function crashGroupsUpdateAsyncWithHttpInfo($crash_group_id, $group, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20073';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20073';
         $request = $this->crashGroupsUpdateRequest($crash_group_id, $group, $owner_name, $app_name);
 
         return $this->client
@@ -1281,7 +1281,7 @@ class CrashApi
      * Create request for operation 'crashGroupsUpdate'
      *
      * @param  string $crash_group_id id of a specific group (required)
-     * @param  \Swagger\Client\Model\Group $group Group change object. All fields are optional and only provided fields will get updated. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Group $group Group change object. All fields are optional and only provided fields will get updated. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1436,9 +1436,9 @@ class CrashApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $retention_delete true in that case if the method should skip update counts (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20072
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20072
      */
     public function crashesDelete($crash_group_id, $crash_id, $owner_name, $app_name, $retention_delete = 'false')
     {
@@ -1455,13 +1455,13 @@ class CrashApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $retention_delete true in that case if the method should skip update counts (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20072, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20072, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashesDeleteWithHttpInfo($crash_group_id, $crash_id, $owner_name, $app_name, $retention_delete = 'false')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20072';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20072';
         $request = $this->crashesDeleteRequest($crash_group_id, $crash_id, $owner_name, $app_name, $retention_delete);
 
         try {
@@ -1513,7 +1513,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20072',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20072',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1571,7 +1571,7 @@ class CrashApi
      */
     public function crashesDeleteAsyncWithHttpInfo($crash_group_id, $crash_id, $owner_name, $app_name, $retention_delete = 'false')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20072';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20072';
         $request = $this->crashesDeleteRequest($crash_group_id, $crash_id, $owner_name, $app_name, $retention_delete);
 
         return $this->client
@@ -1784,9 +1784,9 @@ class CrashApi
      * @param  bool $include_stacktrace true if the crash should include the stacktrace information (optional, default to false)
      * @param  bool $grouping_only true if the stacktrace should be only the relevant thread / exception. Default is false (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Crash
+     * @return \ZeC128\AppCenter\AppCenterApi\Crash
      */
     public function crashesGet($crash_group_id, $crash_id, $owner_name, $app_name, $include_report = 'false', $include_log = 'false', $include_details = 'false', $include_stacktrace = 'false', $grouping_only = 'false')
     {
@@ -1807,13 +1807,13 @@ class CrashApi
      * @param  bool $include_stacktrace true if the crash should include the stacktrace information (optional, default to false)
      * @param  bool $grouping_only true if the stacktrace should be only the relevant thread / exception. Default is false (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Crash, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\Crash, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashesGetWithHttpInfo($crash_group_id, $crash_id, $owner_name, $app_name, $include_report = 'false', $include_log = 'false', $include_details = 'false', $include_stacktrace = 'false', $grouping_only = 'false')
     {
-        $returnType = '\Swagger\Client\Model\Crash';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Crash';
         $request = $this->crashesGetRequest($crash_group_id, $crash_id, $owner_name, $app_name, $include_report, $include_log, $include_details, $include_stacktrace, $grouping_only);
 
         try {
@@ -1865,7 +1865,7 @@ class CrashApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Crash',
+                        '\ZeC128\AppCenter\AppCenterApi\Crash',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1931,7 +1931,7 @@ class CrashApi
      */
     public function crashesGetAsyncWithHttpInfo($crash_group_id, $crash_id, $owner_name, $app_name, $include_report = 'false', $include_log = 'false', $include_details = 'false', $include_stacktrace = 'false', $grouping_only = 'false')
     {
-        $returnType = '\Swagger\Client\Model\Crash';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Crash';
         $request = $this->crashesGetRequest($crash_group_id, $crash_id, $owner_name, $app_name, $include_report, $include_log, $include_details, $include_stacktrace, $grouping_only);
 
         return $this->client
@@ -2157,9 +2157,9 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20067
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20067
      */
     public function crashesGetAppCrashesInfo($owner_name, $app_name)
     {
@@ -2173,13 +2173,13 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20067, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20067, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashesGetAppCrashesInfoWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20067';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20067';
         $request = $this->crashesGetAppCrashesInfoRequest($owner_name, $app_name);
 
         try {
@@ -2231,7 +2231,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20067',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20067',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2283,7 +2283,7 @@ class CrashApi
      */
     public function crashesGetAppCrashesInfoAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20067';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20067';
         $request = $this->crashesGetAppCrashesInfoRequest($owner_name, $app_name);
 
         return $this->client
@@ -2454,9 +2454,9 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20019[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20019[]
      */
     public function crashesGetAppVersions($owner_name, $app_name)
     {
@@ -2470,13 +2470,13 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20019[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20019[], HTTP status code, HTTP response headers (array of strings)
      */
     public function crashesGetAppVersionsWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20019[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20019[]';
         $request = $this->crashesGetAppVersionsRequest($owner_name, $app_name);
 
         try {
@@ -2528,7 +2528,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20019[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20019[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2580,7 +2580,7 @@ class CrashApi
      */
     public function crashesGetAppVersionsAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20019[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20019[]';
         $request = $this->crashesGetAppVersionsRequest($owner_name, $app_name);
 
         return $this->client
@@ -2753,9 +2753,9 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20069
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20069
      */
     public function crashesGetCrashAttachmentLocation($crash_id, $attachment_id, $owner_name, $app_name)
     {
@@ -2771,13 +2771,13 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20069, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20069, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashesGetCrashAttachmentLocationWithHttpInfo($crash_id, $attachment_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20069';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20069';
         $request = $this->crashesGetCrashAttachmentLocationRequest($crash_id, $attachment_id, $owner_name, $app_name);
 
         try {
@@ -2829,7 +2829,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20069',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20069',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2885,7 +2885,7 @@ class CrashApi
      */
     public function crashesGetCrashAttachmentLocationAsyncWithHttpInfo($crash_id, $attachment_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20069';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20069';
         $request = $this->crashesGetCrashAttachmentLocationRequest($crash_id, $attachment_id, $owner_name, $app_name);
 
         return $this->client
@@ -3088,7 +3088,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -3106,7 +3106,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3423,7 +3423,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -3441,7 +3441,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3758,7 +3758,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -3776,7 +3776,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4093,9 +4093,9 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20071
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20071
      */
     public function crashesGetRawCrashLocation($crash_group_id, $crash_id, $owner_name, $app_name)
     {
@@ -4111,13 +4111,13 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20071, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20071, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashesGetRawCrashLocationWithHttpInfo($crash_group_id, $crash_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20071';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20071';
         $request = $this->crashesGetRawCrashLocationRequest($crash_group_id, $crash_id, $owner_name, $app_name);
 
         try {
@@ -4169,7 +4169,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20071',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20071',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4225,7 +4225,7 @@ class CrashApi
      */
     public function crashesGetRawCrashLocationAsyncWithHttpInfo($crash_group_id, $crash_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20071';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20071';
         $request = $this->crashesGetRawCrashLocationRequest($crash_group_id, $crash_id, $owner_name, $app_name);
 
         return $this->client
@@ -4429,9 +4429,9 @@ class CrashApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $grouping_only true if the stacktrace should be only the relevant thread / exception. Default is false (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Stacktrace
+     * @return \ZeC128\AppCenter\AppCenterApi\Stacktrace
      */
     public function crashesGetStacktrace($crash_group_id, $crash_id, $owner_name, $app_name, $grouping_only = 'false')
     {
@@ -4448,13 +4448,13 @@ class CrashApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $grouping_only true if the stacktrace should be only the relevant thread / exception. Default is false (optional, default to false)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Stacktrace, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\Stacktrace, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashesGetStacktraceWithHttpInfo($crash_group_id, $crash_id, $owner_name, $app_name, $grouping_only = 'false')
     {
-        $returnType = '\Swagger\Client\Model\Stacktrace';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Stacktrace';
         $request = $this->crashesGetStacktraceRequest($crash_group_id, $crash_id, $owner_name, $app_name, $grouping_only);
 
         try {
@@ -4506,7 +4506,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Stacktrace',
+                        '\ZeC128\AppCenter\AppCenterApi\Stacktrace',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4564,7 +4564,7 @@ class CrashApi
      */
     public function crashesGetStacktraceAsyncWithHttpInfo($crash_group_id, $crash_id, $owner_name, $app_name, $grouping_only = 'false')
     {
-        $returnType = '\Swagger\Client\Model\Stacktrace';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Stacktrace';
         $request = $this->crashesGetStacktraceRequest($crash_group_id, $crash_id, $owner_name, $app_name, $grouping_only);
 
         return $this->client
@@ -4777,9 +4777,9 @@ class CrashApi
      * @param  string $app_version version (optional)
      * @param  string $error_type error_type (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Crash[]
+     * @return \ZeC128\AppCenter\AppCenterApi\Crash[]
      */
     public function crashesList($crash_group_id, $owner_name, $app_name, $include_report = 'false', $include_log = 'false', $date_from = null, $date_to = null, $app_version = null, $error_type = null)
     {
@@ -4800,13 +4800,13 @@ class CrashApi
      * @param  string $app_version version (optional)
      * @param  string $error_type (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Crash[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\Crash[], HTTP status code, HTTP response headers (array of strings)
      */
     public function crashesListWithHttpInfo($crash_group_id, $owner_name, $app_name, $include_report = 'false', $include_log = 'false', $date_from = null, $date_to = null, $app_version = null, $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\Crash[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Crash[]';
         $request = $this->crashesListRequest($crash_group_id, $owner_name, $app_name, $include_report, $include_log, $date_from, $date_to, $app_version, $error_type);
 
         try {
@@ -4858,7 +4858,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Crash[]',
+                        '\ZeC128\AppCenter\AppCenterApi\Crash[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4924,7 +4924,7 @@ class CrashApi
      */
     public function crashesListAsyncWithHttpInfo($crash_group_id, $owner_name, $app_name, $include_report = 'false', $include_log = 'false', $date_from = null, $date_to = null, $app_version = null, $error_type = null)
     {
-        $returnType = '\Swagger\Client\Model\Crash[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Crash[]';
         $request = $this->crashesListRequest($crash_group_id, $owner_name, $app_name, $include_report, $include_log, $date_from, $date_to, $app_version, $error_type);
 
         return $this->client
@@ -5141,9 +5141,9 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20070[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20070[]
      */
     public function crashesListAttachments($crash_id, $owner_name, $app_name)
     {
@@ -5158,13 +5158,13 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20070[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20070[], HTTP status code, HTTP response headers (array of strings)
      */
     public function crashesListAttachmentsWithHttpInfo($crash_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20070[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20070[]';
         $request = $this->crashesListAttachmentsRequest($crash_id, $owner_name, $app_name);
 
         try {
@@ -5216,7 +5216,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20070[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20070[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5270,7 +5270,7 @@ class CrashApi
      */
     public function crashesListAttachmentsAsyncWithHttpInfo($crash_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20070[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20070[]';
         $request = $this->crashesListAttachmentsRequest($crash_id, $owner_name, $app_name);
 
         return $this->client
@@ -5459,7 +5459,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -5478,7 +5478,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5778,7 +5778,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -5796,7 +5796,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6081,7 +6081,7 @@ class CrashApi
      * @param  string $app_name The name of the application (required)
      * @param  string $filter query filter (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -6101,7 +6101,7 @@ class CrashApi
      * @param  string $app_name The name of the application (required)
      * @param  string $filter query filter (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6400,11 +6400,11 @@ class CrashApi
      * Operation symbolUploadsComplete
      *
      * @param  string $symbol_upload_id The ID of the symbol upload (required)
-     * @param  \Swagger\Client\Model\Body4 $body The symbol information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body4 $body The symbol information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -6418,11 +6418,11 @@ class CrashApi
      * Operation symbolUploadsCompleteWithHttpInfo
      *
      * @param  string $symbol_upload_id The ID of the symbol upload (required)
-     * @param  \Swagger\Client\Model\Body4 $body The symbol information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body4 $body The symbol information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6520,7 +6520,7 @@ class CrashApi
      * 
      *
      * @param  string $symbol_upload_id The ID of the symbol upload (required)
-     * @param  \Swagger\Client\Model\Body4 $body The symbol information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body4 $body The symbol information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -6543,7 +6543,7 @@ class CrashApi
      * 
      *
      * @param  string $symbol_upload_id The ID of the symbol upload (required)
-     * @param  \Swagger\Client\Model\Body4 $body The symbol information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body4 $body The symbol information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -6596,7 +6596,7 @@ class CrashApi
      * Create request for operation 'symbolUploadsComplete'
      *
      * @param  string $symbol_upload_id The ID of the symbol upload (required)
-     * @param  \Swagger\Client\Model\Body4 $body The symbol information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body4 $body The symbol information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -6745,11 +6745,11 @@ class CrashApi
     /**
      * Operation symbolUploadsCreate
      *
-     * @param  \Swagger\Client\Model\Body5 $body The symbol information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body5 $body The symbol information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -6762,11 +6762,11 @@ class CrashApi
     /**
      * Operation symbolUploadsCreateWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Body5 $body The symbol information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body5 $body The symbol information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6863,7 +6863,7 @@ class CrashApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Body5 $body The symbol information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body5 $body The symbol information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -6885,7 +6885,7 @@ class CrashApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Body5 $body The symbol information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body5 $body The symbol information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -6937,7 +6937,7 @@ class CrashApi
     /**
      * Create request for operation 'symbolUploadsCreate'
      *
-     * @param  \Swagger\Client\Model\Body5 $body The symbol information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Body5 $body The symbol information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -7076,7 +7076,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -7093,7 +7093,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7408,7 +7408,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -7425,7 +7425,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7740,9 +7740,9 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20030
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20030
      */
     public function symbolUploadsGetLocation($symbol_upload_id, $owner_name, $app_name)
     {
@@ -7757,13 +7757,13 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20030, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20030, HTTP status code, HTTP response headers (array of strings)
      */
     public function symbolUploadsGetLocationWithHttpInfo($symbol_upload_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20030';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20030';
         $request = $this->symbolUploadsGetLocationRequest($symbol_upload_id, $owner_name, $app_name);
 
         try {
@@ -7815,7 +7815,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20030',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20030',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7885,7 +7885,7 @@ class CrashApi
      */
     public function symbolUploadsGetLocationAsyncWithHttpInfo($symbol_upload_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20030';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20030';
         $request = $this->symbolUploadsGetLocationRequest($symbol_upload_id, $owner_name, $app_name);
 
         return $this->client
@@ -8074,9 +8074,9 @@ class CrashApi
      * @param  string $status Filter results by the current status of a symbol upload: * all: all states in the symbol upload process. Includes created, aborted, committed, processing, indexed and failed states * uploaded: all states after package is uploaded. Includes committed, processing, indexed and failed states * processed: symbol upload processing is completed. Includes indexed and failed states. (optional)
      * @param  string $symbol_type The type of symbols (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20031[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20031[]
      */
     public function symbolUploadsList($owner_name, $app_name, $top = '30', $status = null, $symbol_type = null)
     {
@@ -8093,13 +8093,13 @@ class CrashApi
      * @param  string $status Filter results by the current status of a symbol upload: * all: all states in the symbol upload process. Includes created, aborted, committed, processing, indexed and failed states * uploaded: all states after package is uploaded. Includes committed, processing, indexed and failed states * processed: symbol upload processing is completed. Includes indexed and failed states. (optional)
      * @param  string $symbol_type The type of symbols (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20031[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20031[], HTTP status code, HTTP response headers (array of strings)
      */
     public function symbolUploadsListWithHttpInfo($owner_name, $app_name, $top = '30', $status = null, $symbol_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20031[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20031[]';
         $request = $this->symbolUploadsListRequest($owner_name, $app_name, $top, $status, $symbol_type);
 
         try {
@@ -8151,7 +8151,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20031[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20031[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8217,7 +8217,7 @@ class CrashApi
      */
     public function symbolUploadsListAsyncWithHttpInfo($owner_name, $app_name, $top = '30', $status = null, $symbol_type = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20031[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20031[]';
         $request = $this->symbolUploadsListRequest($owner_name, $app_name, $top, $status, $symbol_type);
 
         return $this->client
@@ -8411,7 +8411,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -8428,7 +8428,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8743,9 +8743,9 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20028
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20028
      */
     public function symbolsGetLocation($symbol_id, $owner_name, $app_name)
     {
@@ -8760,13 +8760,13 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20028, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20028, HTTP status code, HTTP response headers (array of strings)
      */
     public function symbolsGetLocationWithHttpInfo($symbol_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20028';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20028';
         $request = $this->symbolsGetLocationRequest($symbol_id, $owner_name, $app_name);
 
         try {
@@ -8818,7 +8818,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20028',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20028',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8888,7 +8888,7 @@ class CrashApi
      */
     public function symbolsGetLocationAsyncWithHttpInfo($symbol_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20028';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20028';
         $request = $this->symbolsGetLocationRequest($symbol_id, $owner_name, $app_name);
 
         return $this->client
@@ -9075,7 +9075,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -9092,7 +9092,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9407,7 +9407,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -9424,7 +9424,7 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9738,9 +9738,9 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20029[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20029[]
      */
     public function symbolsList($owner_name, $app_name)
     {
@@ -9754,13 +9754,13 @@ class CrashApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20029[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20029[], HTTP status code, HTTP response headers (array of strings)
      */
     public function symbolsListWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20029[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20029[]';
         $request = $this->symbolsListRequest($owner_name, $app_name);
 
         try {
@@ -9812,7 +9812,7 @@ class CrashApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20029[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20029[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9872,7 +9872,7 @@ class CrashApi
      */
     public function symbolsListAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20029[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20029[]';
         $request = $this->symbolsListRequest($owner_name, $app_name);
 
         return $this->client

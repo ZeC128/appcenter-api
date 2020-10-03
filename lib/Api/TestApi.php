@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * TestApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestRun
+     * @return \ZeC128\AppCenter\AppCenterApi\TestRun
      */
     public function testArchiveTestRun($test_run_id, $owner_name, $app_name)
     {
@@ -111,13 +111,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestRun, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestRun, HTTP status code, HTTP response headers (array of strings)
      */
     public function testArchiveTestRunWithHttpInfo($test_run_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRun';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRun';
         $request = $this->testArchiveTestRunRequest($test_run_id, $owner_name, $app_name);
 
         try {
@@ -169,7 +169,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestRun',
+                        '\ZeC128\AppCenter\AppCenterApi\TestRun',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class TestApi
      */
     public function testArchiveTestRunAsyncWithHttpInfo($test_run_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRun';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRun';
         $request = $this->testArchiveTestRunRequest($test_run_id, $owner_name, $app_name);
 
         return $this->client
@@ -398,13 +398,13 @@ class TestApi
     /**
      * Operation testCreateDeviceSelection
      *
-     * @param  \Swagger\Client\Model\DeviceList $device_list device_list (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceList $device_list device_list (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DeviceSelection
+     * @return \ZeC128\AppCenter\AppCenterApi\DeviceSelection
      */
     public function testCreateDeviceSelection($device_list, $owner_name, $app_name)
     {
@@ -415,17 +415,17 @@ class TestApi
     /**
      * Operation testCreateDeviceSelectionWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\DeviceList $device_list (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceList $device_list (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DeviceSelection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DeviceSelection, HTTP status code, HTTP response headers (array of strings)
      */
     public function testCreateDeviceSelectionWithHttpInfo($device_list, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSelection';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSelection';
         $request = $this->testCreateDeviceSelectionRequest($device_list, $owner_name, $app_name);
 
         try {
@@ -477,7 +477,7 @@ class TestApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeviceSelection',
+                        '\ZeC128\AppCenter\AppCenterApi\DeviceSelection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -485,7 +485,7 @@ class TestApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestCloudErrorDetails',
+                        '\ZeC128\AppCenter\AppCenterApi\TestCloudErrorDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -500,7 +500,7 @@ class TestApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\DeviceList $device_list (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceList $device_list (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -522,7 +522,7 @@ class TestApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\DeviceList $device_list (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceList $device_list (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -531,7 +531,7 @@ class TestApi
      */
     public function testCreateDeviceSelectionAsyncWithHttpInfo($device_list, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSelection';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSelection';
         $request = $this->testCreateDeviceSelectionRequest($device_list, $owner_name, $app_name);
 
         return $this->client
@@ -574,7 +574,7 @@ class TestApi
     /**
      * Create request for operation 'testCreateDeviceSelection'
      *
-     * @param  \Swagger\Client\Model\DeviceList $device_list (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceList $device_list (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -709,13 +709,13 @@ class TestApi
     /**
      * Operation testCreateDeviceSetOfOwner
      *
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation3 $device_set device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation3 $device_set device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DeviceSet
+     * @return \ZeC128\AppCenter\AppCenterApi\DeviceSet
      */
     public function testCreateDeviceSetOfOwner($device_set, $owner_name, $app_name)
     {
@@ -726,17 +726,17 @@ class TestApi
     /**
      * Operation testCreateDeviceSetOfOwnerWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation3 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation3 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DeviceSet, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DeviceSet, HTTP status code, HTTP response headers (array of strings)
      */
     public function testCreateDeviceSetOfOwnerWithHttpInfo($device_set, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testCreateDeviceSetOfOwnerRequest($device_set, $owner_name, $app_name);
 
         try {
@@ -788,7 +788,7 @@ class TestApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeviceSet',
+                        '\ZeC128\AppCenter\AppCenterApi\DeviceSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -796,7 +796,7 @@ class TestApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestCloudErrorDetails',
+                        '\ZeC128\AppCenter\AppCenterApi\TestCloudErrorDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -811,7 +811,7 @@ class TestApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation3 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation3 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -833,7 +833,7 @@ class TestApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation3 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation3 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -842,7 +842,7 @@ class TestApi
      */
     public function testCreateDeviceSetOfOwnerAsyncWithHttpInfo($device_set, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testCreateDeviceSetOfOwnerRequest($device_set, $owner_name, $app_name);
 
         return $this->client
@@ -885,7 +885,7 @@ class TestApi
     /**
      * Create request for operation 'testCreateDeviceSetOfOwner'
      *
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation3 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation3 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1020,13 +1020,13 @@ class TestApi
     /**
      * Operation testCreateDeviceSetOfUser
      *
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation1 $device_set device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation1 $device_set device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DeviceSet
+     * @return \ZeC128\AppCenter\AppCenterApi\DeviceSet
      */
     public function testCreateDeviceSetOfUser($device_set, $owner_name, $app_name)
     {
@@ -1037,17 +1037,17 @@ class TestApi
     /**
      * Operation testCreateDeviceSetOfUserWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation1 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation1 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DeviceSet, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DeviceSet, HTTP status code, HTTP response headers (array of strings)
      */
     public function testCreateDeviceSetOfUserWithHttpInfo($device_set, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testCreateDeviceSetOfUserRequest($device_set, $owner_name, $app_name);
 
         try {
@@ -1099,7 +1099,7 @@ class TestApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeviceSet',
+                        '\ZeC128\AppCenter\AppCenterApi\DeviceSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1107,7 +1107,7 @@ class TestApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestCloudErrorDetails',
+                        '\ZeC128\AppCenter\AppCenterApi\TestCloudErrorDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1122,7 +1122,7 @@ class TestApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation1 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation1 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1144,7 +1144,7 @@ class TestApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation1 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation1 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1153,7 +1153,7 @@ class TestApi
      */
     public function testCreateDeviceSetOfUserAsyncWithHttpInfo($device_set, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testCreateDeviceSetOfUserRequest($device_set, $owner_name, $app_name);
 
         return $this->client
@@ -1196,7 +1196,7 @@ class TestApi
     /**
      * Create request for operation 'testCreateDeviceSetOfUser'
      *
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation1 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation1 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1334,9 +1334,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Subscription1
+     * @return \ZeC128\AppCenter\AppCenterApi\Subscription1
      */
     public function testCreateSubscription($owner_name, $app_name)
     {
@@ -1350,13 +1350,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Subscription1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\Subscription1, HTTP status code, HTTP response headers (array of strings)
      */
     public function testCreateSubscriptionWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\Subscription1';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Subscription1';
         $request = $this->testCreateSubscriptionRequest($owner_name, $app_name);
 
         try {
@@ -1408,7 +1408,7 @@ class TestApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Subscription1',
+                        '\ZeC128\AppCenter\AppCenterApi\Subscription1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1452,7 +1452,7 @@ class TestApi
      */
     public function testCreateSubscriptionAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\Subscription1';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Subscription1';
         $request = $this->testCreateSubscriptionRequest($owner_name, $app_name);
 
         return $this->client
@@ -1623,7 +1623,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1638,7 +1638,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1872,13 +1872,13 @@ class TestApi
     /**
      * Operation testCreateTestSeries
      *
-     * @param  \Swagger\Client\Model\NameOfTheTestSeries1 $test_series_name test_series_name (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NameOfTheTestSeries1 $test_series_name test_series_name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestSeries
+     * @return \ZeC128\AppCenter\AppCenterApi\TestSeries
      */
     public function testCreateTestSeries($test_series_name, $owner_name, $app_name)
     {
@@ -1889,17 +1889,17 @@ class TestApi
     /**
      * Operation testCreateTestSeriesWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\NameOfTheTestSeries1 $test_series_name (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NameOfTheTestSeries1 $test_series_name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestSeries, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestSeries, HTTP status code, HTTP response headers (array of strings)
      */
     public function testCreateTestSeriesWithHttpInfo($test_series_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestSeries';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestSeries';
         $request = $this->testCreateTestSeriesRequest($test_series_name, $owner_name, $app_name);
 
         try {
@@ -1951,7 +1951,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestSeries',
+                        '\ZeC128\AppCenter\AppCenterApi\TestSeries',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1959,7 +1959,7 @@ class TestApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestCloudErrorDetails',
+                        '\ZeC128\AppCenter\AppCenterApi\TestCloudErrorDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1974,7 +1974,7 @@ class TestApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\NameOfTheTestSeries1 $test_series_name (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NameOfTheTestSeries1 $test_series_name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1996,7 +1996,7 @@ class TestApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\NameOfTheTestSeries1 $test_series_name (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NameOfTheTestSeries1 $test_series_name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2005,7 +2005,7 @@ class TestApi
      */
     public function testCreateTestSeriesAsyncWithHttpInfo($test_series_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestSeries';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestSeries';
         $request = $this->testCreateTestSeriesRequest($test_series_name, $owner_name, $app_name);
 
         return $this->client
@@ -2048,7 +2048,7 @@ class TestApi
     /**
      * Create request for operation 'testCreateTestSeries'
      *
-     * @param  \Swagger\Client\Model\NameOfTheTestSeries1 $test_series_name (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NameOfTheTestSeries1 $test_series_name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2187,7 +2187,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2203,7 +2203,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2458,7 +2458,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2474,7 +2474,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2729,7 +2729,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2745,7 +2745,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2997,9 +2997,9 @@ class TestApi
      * Operation testGdprExportAccount
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse200101
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse200101
      */
     public function testGdprExportAccount()
     {
@@ -3011,13 +3011,13 @@ class TestApi
      * Operation testGdprExportAccountWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse200101, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse200101, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGdprExportAccountWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200101';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse200101';
         $request = $this->testGdprExportAccountRequest();
 
         try {
@@ -3069,7 +3069,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse200101',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse200101',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3109,7 +3109,7 @@ class TestApi
      */
     public function testGdprExportAccountAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200101';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse200101';
         $request = $this->testGdprExportAccountRequest();
 
         return $this->client
@@ -3248,9 +3248,9 @@ class TestApi
      * Operation testGdprExportAccounts
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20027
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20027
      */
     public function testGdprExportAccounts()
     {
@@ -3262,13 +3262,13 @@ class TestApi
      * Operation testGdprExportAccountsWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20027, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20027, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGdprExportAccountsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20027';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20027';
         $request = $this->testGdprExportAccountsRequest();
 
         try {
@@ -3320,7 +3320,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20027',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20027',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3360,7 +3360,7 @@ class TestApi
      */
     public function testGdprExportAccountsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20027';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20027';
         $request = $this->testGdprExportAccountsRequest();
 
         return $this->client
@@ -3501,9 +3501,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20026
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20026
      */
     public function testGdprExportApp($owner_name, $app_name)
     {
@@ -3517,13 +3517,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20026, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20026, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGdprExportAppWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20026';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20026';
         $request = $this->testGdprExportAppRequest($owner_name, $app_name);
 
         try {
@@ -3575,7 +3575,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20026',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20026',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3619,7 +3619,7 @@ class TestApi
      */
     public function testGdprExportAppAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20026';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20026';
         $request = $this->testGdprExportAppRequest($owner_name, $app_name);
 
         return $this->client
@@ -3790,9 +3790,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20027
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20027
      */
     public function testGdprExportApps($owner_name, $app_name)
     {
@@ -3806,13 +3806,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20027, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20027, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGdprExportAppsWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20027';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20027';
         $request = $this->testGdprExportAppsRequest($owner_name, $app_name);
 
         try {
@@ -3864,7 +3864,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20027',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20027',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3908,7 +3908,7 @@ class TestApi
      */
     public function testGdprExportAppsAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20027';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20027';
         $request = $this->testGdprExportAppsRequest($owner_name, $app_name);
 
         return $this->client
@@ -4077,9 +4077,9 @@ class TestApi
      * Operation testGdprExportFeatureFlag
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse200100
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse200100
      */
     public function testGdprExportFeatureFlag()
     {
@@ -4091,13 +4091,13 @@ class TestApi
      * Operation testGdprExportFeatureFlagWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse200100, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse200100, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGdprExportFeatureFlagWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200100';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse200100';
         $request = $this->testGdprExportFeatureFlagRequest();
 
         try {
@@ -4149,7 +4149,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse200100',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse200100',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4189,7 +4189,7 @@ class TestApi
      */
     public function testGdprExportFeatureFlagAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200100';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse200100';
         $request = $this->testGdprExportFeatureFlagRequest();
 
         return $this->client
@@ -4330,9 +4330,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20025
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20025
      */
     public function testGdprExportFileSetFile($owner_name, $app_name)
     {
@@ -4346,13 +4346,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGdprExportFileSetFileWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20025';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20025';
         $request = $this->testGdprExportFileSetFileRequest($owner_name, $app_name);
 
         try {
@@ -4404,7 +4404,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20025',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20025',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4448,7 +4448,7 @@ class TestApi
      */
     public function testGdprExportFileSetFileAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20025';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20025';
         $request = $this->testGdprExportFileSetFileRequest($owner_name, $app_name);
 
         return $this->client
@@ -4619,9 +4619,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20024
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20024
      */
     public function testGdprExportHashFile($owner_name, $app_name)
     {
@@ -4635,13 +4635,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20024, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20024, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGdprExportHashFileWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20024';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20024';
         $request = $this->testGdprExportHashFileRequest($owner_name, $app_name);
 
         try {
@@ -4693,7 +4693,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20024',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20024',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4737,7 +4737,7 @@ class TestApi
      */
     public function testGdprExportHashFileAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20024';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20024';
         $request = $this->testGdprExportHashFileRequest($owner_name, $app_name);
 
         return $this->client
@@ -4908,9 +4908,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20023
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20023
      */
     public function testGdprExportPipelineTest($owner_name, $app_name)
     {
@@ -4924,13 +4924,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20023, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20023, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGdprExportPipelineTestWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20023';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20023';
         $request = $this->testGdprExportPipelineTestRequest($owner_name, $app_name);
 
         try {
@@ -4982,7 +4982,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20023',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20023',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5026,7 +5026,7 @@ class TestApi
      */
     public function testGdprExportPipelineTestAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20023';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20023';
         $request = $this->testGdprExportPipelineTestRequest($owner_name, $app_name);
 
         return $this->client
@@ -5197,9 +5197,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20022
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20022
      */
     public function testGdprExportTestRun($owner_name, $app_name)
     {
@@ -5213,13 +5213,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20022, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20022, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGdprExportTestRunWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20022';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20022';
         $request = $this->testGdprExportTestRunRequest($owner_name, $app_name);
 
         try {
@@ -5271,7 +5271,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20022',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20022',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5315,7 +5315,7 @@ class TestApi
      */
     public function testGdprExportTestRunAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20022';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20022';
         $request = $this->testGdprExportTestRunRequest($owner_name, $app_name);
 
         return $this->client
@@ -5487,9 +5487,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestRun[]
+     * @return \ZeC128\AppCenter\AppCenterApi\TestRun[]
      */
     public function testGetAllTestRunsForSeries($test_series_slug, $owner_name, $app_name)
     {
@@ -5504,13 +5504,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestRun[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestRun[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testGetAllTestRunsForSeriesWithHttpInfo($test_series_slug, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRun[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRun[]';
         $request = $this->testGetAllTestRunsForSeriesRequest($test_series_slug, $owner_name, $app_name);
 
         try {
@@ -5562,7 +5562,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestRun[]',
+                        '\ZeC128\AppCenter\AppCenterApi\TestRun[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5608,7 +5608,7 @@ class TestApi
      */
     public function testGetAllTestRunsForSeriesAsyncWithHttpInfo($test_series_slug, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRun[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRun[]';
         $request = $this->testGetAllTestRunsForSeriesRequest($test_series_slug, $owner_name, $app_name);
 
         return $this->client
@@ -5795,9 +5795,9 @@ class TestApi
      * @param  string $app_name The name of the application (required)
      * @param  string $query A query string to filter test series (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestSeries[]
+     * @return \ZeC128\AppCenter\AppCenterApi\TestSeries[]
      */
     public function testGetAllTestSeries($owner_name, $app_name, $query = null)
     {
@@ -5812,13 +5812,13 @@ class TestApi
      * @param  string $app_name The name of the application (required)
      * @param  string $query A query string to filter test series (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestSeries[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestSeries[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testGetAllTestSeriesWithHttpInfo($owner_name, $app_name, $query = null)
     {
-        $returnType = '\Swagger\Client\Model\TestSeries[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestSeries[]';
         $request = $this->testGetAllTestSeriesRequest($owner_name, $app_name, $query);
 
         try {
@@ -5870,7 +5870,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestSeries[]',
+                        '\ZeC128\AppCenter\AppCenterApi\TestSeries[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5916,7 +5916,7 @@ class TestApi
      */
     public function testGetAllTestSeriesAsyncWithHttpInfo($owner_name, $app_name, $query = null)
     {
-        $returnType = '\Swagger\Client\Model\TestSeries[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestSeries[]';
         $request = $this->testGetAllTestSeriesRequest($owner_name, $app_name, $query);
 
         return $this->client
@@ -6093,9 +6093,9 @@ class TestApi
      * @param  string $app_name The name of the application (required)
      * @param  string $app_upload_id The ID of the test run (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20064[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20064[]
      */
     public function testGetDeviceConfigurations($owner_name, $app_name, $app_upload_id = null)
     {
@@ -6110,13 +6110,13 @@ class TestApi
      * @param  string $app_name The name of the application (required)
      * @param  string $app_upload_id The ID of the test run (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20064[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20064[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testGetDeviceConfigurationsWithHttpInfo($owner_name, $app_name, $app_upload_id = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20064[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20064[]';
         $request = $this->testGetDeviceConfigurationsRequest($owner_name, $app_name, $app_upload_id);
 
         try {
@@ -6168,7 +6168,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20064[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20064[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6214,7 +6214,7 @@ class TestApi
      */
     public function testGetDeviceConfigurationsAsyncWithHttpInfo($owner_name, $app_name, $app_upload_id = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20064[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20064[]';
         $request = $this->testGetDeviceConfigurationsRequest($owner_name, $app_name, $app_upload_id);
 
         return $this->client
@@ -6391,9 +6391,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DeviceSet
+     * @return \ZeC128\AppCenter\AppCenterApi\DeviceSet
      */
     public function testGetDeviceSetOfOwner($id, $owner_name, $app_name)
     {
@@ -6408,13 +6408,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DeviceSet, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DeviceSet, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGetDeviceSetOfOwnerWithHttpInfo($id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testGetDeviceSetOfOwnerRequest($id, $owner_name, $app_name);
 
         try {
@@ -6466,7 +6466,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeviceSet',
+                        '\ZeC128\AppCenter\AppCenterApi\DeviceSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6512,7 +6512,7 @@ class TestApi
      */
     public function testGetDeviceSetOfOwnerAsyncWithHttpInfo($id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testGetDeviceSetOfOwnerRequest($id, $owner_name, $app_name);
 
         return $this->client
@@ -6699,9 +6699,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DeviceSet
+     * @return \ZeC128\AppCenter\AppCenterApi\DeviceSet
      */
     public function testGetDeviceSetOfUser($id, $owner_name, $app_name)
     {
@@ -6716,13 +6716,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DeviceSet, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DeviceSet, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGetDeviceSetOfUserWithHttpInfo($id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testGetDeviceSetOfUserRequest($id, $owner_name, $app_name);
 
         try {
@@ -6774,7 +6774,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeviceSet',
+                        '\ZeC128\AppCenter\AppCenterApi\DeviceSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6820,7 +6820,7 @@ class TestApi
      */
     public function testGetDeviceSetOfUserAsyncWithHttpInfo($id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testGetDeviceSetOfUserRequest($id, $owner_name, $app_name);
 
         return $this->client
@@ -7006,9 +7006,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Subscription1
+     * @return \ZeC128\AppCenter\AppCenterApi\Subscription1
      */
     public function testGetSubscriptions($owner_name, $app_name)
     {
@@ -7022,13 +7022,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Subscription1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\Subscription1, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGetSubscriptionsWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\Subscription1';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Subscription1';
         $request = $this->testGetSubscriptionsRequest($owner_name, $app_name);
 
         try {
@@ -7080,7 +7080,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Subscription1',
+                        '\ZeC128\AppCenter\AppCenterApi\Subscription1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7124,7 +7124,7 @@ class TestApi
      */
     public function testGetSubscriptionsAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\Subscription1';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Subscription1';
         $request = $this->testGetSubscriptionsRequest($owner_name, $app_name);
 
         return $this->client
@@ -7296,7 +7296,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -7313,7 +7313,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7604,9 +7604,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestRun
+     * @return \ZeC128\AppCenter\AppCenterApi\TestRun
      */
     public function testGetTestRun($test_run_id, $owner_name, $app_name)
     {
@@ -7621,13 +7621,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestRun, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestRun, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGetTestRunWithHttpInfo($test_run_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRun';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRun';
         $request = $this->testGetTestRunRequest($test_run_id, $owner_name, $app_name);
 
         try {
@@ -7679,7 +7679,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestRun',
+                        '\ZeC128\AppCenter\AppCenterApi\TestRun',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7725,7 +7725,7 @@ class TestApi
      */
     public function testGetTestRunAsyncWithHttpInfo($test_run_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRun';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRun';
         $request = $this->testGetTestRunRequest($test_run_id, $owner_name, $app_name);
 
         return $this->client
@@ -7912,9 +7912,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestRunState
+     * @return \ZeC128\AppCenter\AppCenterApi\TestRunState
      */
     public function testGetTestRunState($test_run_id, $owner_name, $app_name)
     {
@@ -7929,13 +7929,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestRunState, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestRunState, HTTP status code, HTTP response headers (array of strings)
      */
     public function testGetTestRunStateWithHttpInfo($test_run_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRunState';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRunState';
         $request = $this->testGetTestRunStateRequest($test_run_id, $owner_name, $app_name);
 
         try {
@@ -7987,7 +7987,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestRunState',
+                        '\ZeC128\AppCenter\AppCenterApi\TestRunState',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8033,7 +8033,7 @@ class TestApi
      */
     public function testGetTestRunStateAsyncWithHttpInfo($test_run_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRunState';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRunState';
         $request = $this->testGetTestRunStateRequest($test_run_id, $owner_name, $app_name);
 
         return $this->client
@@ -8219,9 +8219,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestRun[]
+     * @return \ZeC128\AppCenter\AppCenterApi\TestRun[]
      */
     public function testGetTestRuns($owner_name, $app_name)
     {
@@ -8235,13 +8235,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestRun[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestRun[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testGetTestRunsWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRun[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRun[]';
         $request = $this->testGetTestRunsRequest($owner_name, $app_name);
 
         try {
@@ -8293,7 +8293,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestRun[]',
+                        '\ZeC128\AppCenter\AppCenterApi\TestRun[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8337,7 +8337,7 @@ class TestApi
      */
     public function testGetTestRunsAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRun[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRun[]';
         $request = $this->testGetTestRunsRequest($owner_name, $app_name);
 
         return $this->client
@@ -8508,9 +8508,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DeviceSet[]
+     * @return \ZeC128\AppCenter\AppCenterApi\DeviceSet[]
      */
     public function testListDeviceSetsOfOwner($owner_name, $app_name)
     {
@@ -8524,13 +8524,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DeviceSet[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DeviceSet[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testListDeviceSetsOfOwnerWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet[]';
         $request = $this->testListDeviceSetsOfOwnerRequest($owner_name, $app_name);
 
         try {
@@ -8582,7 +8582,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeviceSet[]',
+                        '\ZeC128\AppCenter\AppCenterApi\DeviceSet[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8626,7 +8626,7 @@ class TestApi
      */
     public function testListDeviceSetsOfOwnerAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet[]';
         $request = $this->testListDeviceSetsOfOwnerRequest($owner_name, $app_name);
 
         return $this->client
@@ -8797,9 +8797,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DeviceSet[]
+     * @return \ZeC128\AppCenter\AppCenterApi\DeviceSet[]
      */
     public function testListDeviceSetsOfUser($owner_name, $app_name)
     {
@@ -8813,13 +8813,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DeviceSet[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DeviceSet[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testListDeviceSetsOfUserWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet[]';
         $request = $this->testListDeviceSetsOfUserRequest($owner_name, $app_name);
 
         try {
@@ -8871,7 +8871,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeviceSet[]',
+                        '\ZeC128\AppCenter\AppCenterApi\DeviceSet[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8915,7 +8915,7 @@ class TestApi
      */
     public function testListDeviceSetsOfUserAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet[]';
         $request = $this->testListDeviceSetsOfUserRequest($owner_name, $app_name);
 
         return $this->client
@@ -9084,13 +9084,13 @@ class TestApi
      * Operation testPatchTestSeries
      *
      * @param  string $test_series_slug The slug of the test series (required)
-     * @param  \Swagger\Client\Model\NameOfTheTestSeries $name name (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NameOfTheTestSeries $name name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestSeries
+     * @return \ZeC128\AppCenter\AppCenterApi\TestSeries
      */
     public function testPatchTestSeries($test_series_slug, $name, $owner_name, $app_name)
     {
@@ -9102,17 +9102,17 @@ class TestApi
      * Operation testPatchTestSeriesWithHttpInfo
      *
      * @param  string $test_series_slug The slug of the test series (required)
-     * @param  \Swagger\Client\Model\NameOfTheTestSeries $name (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NameOfTheTestSeries $name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestSeries, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestSeries, HTTP status code, HTTP response headers (array of strings)
      */
     public function testPatchTestSeriesWithHttpInfo($test_series_slug, $name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestSeries';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestSeries';
         $request = $this->testPatchTestSeriesRequest($test_series_slug, $name, $owner_name, $app_name);
 
         try {
@@ -9164,7 +9164,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestSeries',
+                        '\ZeC128\AppCenter\AppCenterApi\TestSeries',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9180,7 +9180,7 @@ class TestApi
      * 
      *
      * @param  string $test_series_slug The slug of the test series (required)
-     * @param  \Swagger\Client\Model\NameOfTheTestSeries $name (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NameOfTheTestSeries $name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -9203,7 +9203,7 @@ class TestApi
      * 
      *
      * @param  string $test_series_slug The slug of the test series (required)
-     * @param  \Swagger\Client\Model\NameOfTheTestSeries $name (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NameOfTheTestSeries $name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -9212,7 +9212,7 @@ class TestApi
      */
     public function testPatchTestSeriesAsyncWithHttpInfo($test_series_slug, $name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestSeries';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestSeries';
         $request = $this->testPatchTestSeriesRequest($test_series_slug, $name, $owner_name, $app_name);
 
         return $this->client
@@ -9256,7 +9256,7 @@ class TestApi
      * Create request for operation 'testPatchTestSeries'
      *
      * @param  string $test_series_slug The slug of the test series (required)
-     * @param  \Swagger\Client\Model\NameOfTheTestSeries $name (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\NameOfTheTestSeries $name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -9406,13 +9406,13 @@ class TestApi
      * Operation testStartTestRun
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudStartTestRunOptions $start_options Option required to start the test run (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudStartTestRunOptions $start_options Option required to start the test run (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestCloudTestRunStartResult
+     * @return \ZeC128\AppCenter\AppCenterApi\TestCloudTestRunStartResult
      */
     public function testStartTestRun($test_run_id, $start_options, $owner_name, $app_name)
     {
@@ -9424,17 +9424,17 @@ class TestApi
      * Operation testStartTestRunWithHttpInfo
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudStartTestRunOptions $start_options Option required to start the test run (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudStartTestRunOptions $start_options Option required to start the test run (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestCloudTestRunStartResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestCloudTestRunStartResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function testStartTestRunWithHttpInfo($test_run_id, $start_options, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestCloudTestRunStartResult';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestCloudTestRunStartResult';
         $request = $this->testStartTestRunRequest($test_run_id, $start_options, $owner_name, $app_name);
 
         try {
@@ -9486,7 +9486,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestCloudTestRunStartResult',
+                        '\ZeC128\AppCenter\AppCenterApi\TestCloudTestRunStartResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9502,7 +9502,7 @@ class TestApi
      * 
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudStartTestRunOptions $start_options Option required to start the test run (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudStartTestRunOptions $start_options Option required to start the test run (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -9525,7 +9525,7 @@ class TestApi
      * 
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudStartTestRunOptions $start_options Option required to start the test run (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudStartTestRunOptions $start_options Option required to start the test run (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -9534,7 +9534,7 @@ class TestApi
      */
     public function testStartTestRunAsyncWithHttpInfo($test_run_id, $start_options, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestCloudTestRunStartResult';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestCloudTestRunStartResult';
         $request = $this->testStartTestRunRequest($test_run_id, $start_options, $owner_name, $app_name);
 
         return $this->client
@@ -9578,7 +9578,7 @@ class TestApi
      * Create request for operation 'testStartTestRun'
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudStartTestRunOptions $start_options Option required to start the test run (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudStartTestRunOptions $start_options Option required to start the test run (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -9731,7 +9731,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -9747,7 +9747,7 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10002,9 +10002,9 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestRun
+     * @return \ZeC128\AppCenter\AppCenterApi\TestRun
      */
     public function testStopTestRun($test_run_id, $owner_name, $app_name)
     {
@@ -10019,13 +10019,13 @@ class TestApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestRun, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestRun, HTTP status code, HTTP response headers (array of strings)
      */
     public function testStopTestRunWithHttpInfo($test_run_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRun';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRun';
         $request = $this->testStopTestRunRequest($test_run_id, $owner_name, $app_name);
 
         try {
@@ -10077,7 +10077,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestRun',
+                        '\ZeC128\AppCenter\AppCenterApi\TestRun',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10123,7 +10123,7 @@ class TestApi
      */
     public function testStopTestRunAsyncWithHttpInfo($test_run_id, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestRun';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestRun';
         $request = $this->testStopTestRunRequest($test_run_id, $owner_name, $app_name);
 
         return $this->client
@@ -10307,13 +10307,13 @@ class TestApi
      * Operation testUpdateDeviceSetOfOwner
      *
      * @param  string $id The UUID of the device set (required)
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation2 $device_set device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation2 $device_set device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DeviceSet
+     * @return \ZeC128\AppCenter\AppCenterApi\DeviceSet
      */
     public function testUpdateDeviceSetOfOwner($id, $device_set, $owner_name, $app_name)
     {
@@ -10325,17 +10325,17 @@ class TestApi
      * Operation testUpdateDeviceSetOfOwnerWithHttpInfo
      *
      * @param  string $id The UUID of the device set (required)
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation2 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation2 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DeviceSet, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DeviceSet, HTTP status code, HTTP response headers (array of strings)
      */
     public function testUpdateDeviceSetOfOwnerWithHttpInfo($id, $device_set, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testUpdateDeviceSetOfOwnerRequest($id, $device_set, $owner_name, $app_name);
 
         try {
@@ -10387,7 +10387,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeviceSet',
+                        '\ZeC128\AppCenter\AppCenterApi\DeviceSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10395,7 +10395,7 @@ class TestApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestCloudErrorDetails',
+                        '\ZeC128\AppCenter\AppCenterApi\TestCloudErrorDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10411,7 +10411,7 @@ class TestApi
      * 
      *
      * @param  string $id The UUID of the device set (required)
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation2 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation2 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -10434,7 +10434,7 @@ class TestApi
      * 
      *
      * @param  string $id The UUID of the device set (required)
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation2 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation2 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -10443,7 +10443,7 @@ class TestApi
      */
     public function testUpdateDeviceSetOfOwnerAsyncWithHttpInfo($id, $device_set, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testUpdateDeviceSetOfOwnerRequest($id, $device_set, $owner_name, $app_name);
 
         return $this->client
@@ -10487,7 +10487,7 @@ class TestApi
      * Create request for operation 'testUpdateDeviceSetOfOwner'
      *
      * @param  string $id The UUID of the device set (required)
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation2 $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation2 $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -10637,13 +10637,13 @@ class TestApi
      * Operation testUpdateDeviceSetOfUser
      *
      * @param  string $id The UUID of the device set (required)
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation $device_set device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation $device_set device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DeviceSet
+     * @return \ZeC128\AppCenter\AppCenterApi\DeviceSet
      */
     public function testUpdateDeviceSetOfUser($id, $device_set, $owner_name, $app_name)
     {
@@ -10655,17 +10655,17 @@ class TestApi
      * Operation testUpdateDeviceSetOfUserWithHttpInfo
      *
      * @param  string $id The UUID of the device set (required)
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DeviceSet, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\DeviceSet, HTTP status code, HTTP response headers (array of strings)
      */
     public function testUpdateDeviceSetOfUserWithHttpInfo($id, $device_set, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testUpdateDeviceSetOfUserRequest($id, $device_set, $owner_name, $app_name);
 
         try {
@@ -10717,7 +10717,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DeviceSet',
+                        '\ZeC128\AppCenter\AppCenterApi\DeviceSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10725,7 +10725,7 @@ class TestApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestCloudErrorDetails',
+                        '\ZeC128\AppCenter\AppCenterApi\TestCloudErrorDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10741,7 +10741,7 @@ class TestApi
      * 
      *
      * @param  string $id The UUID of the device set (required)
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -10764,7 +10764,7 @@ class TestApi
      * 
      *
      * @param  string $id The UUID of the device set (required)
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -10773,7 +10773,7 @@ class TestApi
      */
     public function testUpdateDeviceSetOfUserAsyncWithHttpInfo($id, $device_set, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\DeviceSet';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\DeviceSet';
         $request = $this->testUpdateDeviceSetOfUserRequest($id, $device_set, $owner_name, $app_name);
 
         return $this->client
@@ -10817,7 +10817,7 @@ class TestApi
      * Create request for operation 'testUpdateDeviceSetOfUser'
      *
      * @param  string $id The UUID of the device set (required)
-     * @param  \Swagger\Client\Model\DeviceSetUpdateInformation $device_set (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\DeviceSetUpdateInformation $device_set (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -10967,11 +10967,11 @@ class TestApi
      * Operation testUploadHash
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudFileHash1 $file_info File hash information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudFileHash1 $file_info File hash information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -10984,11 +10984,11 @@ class TestApi
      * Operation testUploadHashWithHttpInfo
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudFileHash1 $file_info File hash information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudFileHash1 $file_info File hash information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -11040,7 +11040,7 @@ class TestApi
      * 
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudFileHash1 $file_info File hash information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudFileHash1 $file_info File hash information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -11063,7 +11063,7 @@ class TestApi
      * 
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudFileHash1 $file_info File hash information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudFileHash1 $file_info File hash information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -11102,7 +11102,7 @@ class TestApi
      * Create request for operation 'testUploadHash'
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudFileHash1 $file_info File hash information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudFileHash1 $file_info File hash information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -11252,13 +11252,13 @@ class TestApi
      * Operation testUploadHashesBatch
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudFileHash[] $file_info File hash information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudFileHash[] $file_info File hash information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TestCloudFileHashResponse[]
+     * @return \ZeC128\AppCenter\AppCenterApi\TestCloudFileHashResponse[]
      */
     public function testUploadHashesBatch($test_run_id, $file_info, $owner_name, $app_name)
     {
@@ -11270,17 +11270,17 @@ class TestApi
      * Operation testUploadHashesBatchWithHttpInfo
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudFileHash[] $file_info File hash information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudFileHash[] $file_info File hash information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TestCloudFileHashResponse[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\TestCloudFileHashResponse[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testUploadHashesBatchWithHttpInfo($test_run_id, $file_info, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestCloudFileHashResponse[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestCloudFileHashResponse[]';
         $request = $this->testUploadHashesBatchRequest($test_run_id, $file_info, $owner_name, $app_name);
 
         try {
@@ -11332,7 +11332,7 @@ class TestApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TestCloudFileHashResponse[]',
+                        '\ZeC128\AppCenter\AppCenterApi\TestCloudFileHashResponse[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11348,7 +11348,7 @@ class TestApi
      * 
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudFileHash[] $file_info File hash information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudFileHash[] $file_info File hash information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -11371,7 +11371,7 @@ class TestApi
      * 
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudFileHash[] $file_info File hash information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudFileHash[] $file_info File hash information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -11380,7 +11380,7 @@ class TestApi
      */
     public function testUploadHashesBatchAsyncWithHttpInfo($test_run_id, $file_info, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\TestCloudFileHashResponse[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\TestCloudFileHashResponse[]';
         $request = $this->testUploadHashesBatchRequest($test_run_id, $file_info, $owner_name, $app_name);
 
         return $this->client
@@ -11424,7 +11424,7 @@ class TestApi
      * Create request for operation 'testUploadHashesBatch'
      *
      * @param  string $test_run_id The ID of the test run (required)
-     * @param  \Swagger\Client\Model\TestCloudFileHash[] $file_info File hash information (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\TestCloudFileHash[] $file_info File hash information (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *

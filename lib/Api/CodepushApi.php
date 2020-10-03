@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * CodepushApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,7 +91,7 @@ class CodepushApi
      * Operation codePushAcquisitionGetAcquisitionStatus
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -105,7 +105,7 @@ class CodepushApi
      * Operation codePushAcquisitionGetAcquisitionStatusWithHttpInfo
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -353,7 +353,7 @@ class CodepushApi
      * @param  string $previous_label_or_app_version previous_label_or_app_version (optional)
      * @param  string $previous_deployment_key previous_deployment_key (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -375,7 +375,7 @@ class CodepushApi
      * @param  string $previous_label_or_app_version (optional)
      * @param  string $previous_deployment_key (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -682,9 +682,9 @@ class CodepushApi
     /**
      * Operation codePushAcquisitionUpdateDeployStatus
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -696,9 +696,9 @@ class CodepushApi
     /**
      * Operation codePushAcquisitionUpdateDeployStatusWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -757,7 +757,7 @@ class CodepushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -777,7 +777,7 @@ class CodepushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -813,7 +813,7 @@ class CodepushApi
     /**
      * Create request for operation 'codePushAcquisitionUpdateDeployStatus'
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -913,9 +913,9 @@ class CodepushApi
     /**
      * Operation codePushAcquisitionUpdateDownloadStatus
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata $release_metadata Deployment status metric properties (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -927,9 +927,9 @@ class CodepushApi
     /**
      * Operation codePushAcquisitionUpdateDownloadStatusWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata $release_metadata Deployment status metric properties (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -988,7 +988,7 @@ class CodepushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1008,7 +1008,7 @@ class CodepushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1044,7 +1044,7 @@ class CodepushApi
     /**
      * Create request for operation 'codePushAcquisitionUpdateDownloadStatus'
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1148,9 +1148,9 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20065[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20065[]
      */
     public function codePushDeploymentMetricsGet($deployment_name, $owner_name, $app_name)
     {
@@ -1165,13 +1165,13 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20065[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20065[], HTTP status code, HTTP response headers (array of strings)
      */
     public function codePushDeploymentMetricsGetWithHttpInfo($deployment_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20065[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20065[]';
         $request = $this->codePushDeploymentMetricsGetRequest($deployment_name, $owner_name, $app_name);
 
         try {
@@ -1223,7 +1223,7 @@ class CodepushApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20065[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20065[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1277,7 +1277,7 @@ class CodepushApi
      */
     public function codePushDeploymentMetricsGetAsyncWithHttpInfo($deployment_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20065[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20065[]';
         $request = $this->codePushDeploymentMetricsGetRequest($deployment_name, $owner_name, $app_name);
 
         return $this->client
@@ -1463,9 +1463,9 @@ class CodepushApi
      * @param  string $deployment_name deployment name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\ReleaseLabel $release_label The specific release label that you want to rollback to (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseLabel $release_label The specific release label that you want to rollback to (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1481,9 +1481,9 @@ class CodepushApi
      * @param  string $deployment_name deployment name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\ReleaseLabel $release_label The specific release label that you want to rollback to (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseLabel $release_label The specific release label that you want to rollback to (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1567,7 +1567,7 @@ class CodepushApi
      * @param  string $deployment_name deployment name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\ReleaseLabel $release_label The specific release label that you want to rollback to (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseLabel $release_label The specific release label that you want to rollback to (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1590,7 +1590,7 @@ class CodepushApi
      * @param  string $deployment_name deployment name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\ReleaseLabel $release_label The specific release label that you want to rollback to (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseLabel $release_label The specific release label that you want to rollback to (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1643,7 +1643,7 @@ class CodepushApi
      * @param  string $deployment_name deployment name (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
-     * @param  \Swagger\Client\Model\ReleaseLabel $release_label The specific release label that you want to rollback to (optional)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseLabel $release_label The specific release label that you want to rollback to (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1785,11 +1785,11 @@ class CodepushApi
      * Operation codePushDeploymentReleasesCreate
      *
      * @param  string $deployment_name deployment name (required)
-     * @param  \Swagger\Client\Model\UploadedRelease $uploaded_release The necessary information required to download the bundle and being the release process. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UploadedRelease $uploaded_release The necessary information required to download the bundle and being the release process. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -1803,11 +1803,11 @@ class CodepushApi
      * Operation codePushDeploymentReleasesCreateWithHttpInfo
      *
      * @param  string $deployment_name deployment name (required)
-     * @param  \Swagger\Client\Model\UploadedRelease $uploaded_release The necessary information required to download the bundle and being the release process. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UploadedRelease $uploaded_release The necessary information required to download the bundle and being the release process. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1889,7 +1889,7 @@ class CodepushApi
      * 
      *
      * @param  string $deployment_name deployment name (required)
-     * @param  \Swagger\Client\Model\UploadedRelease $uploaded_release The necessary information required to download the bundle and being the release process. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UploadedRelease $uploaded_release The necessary information required to download the bundle and being the release process. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1912,7 +1912,7 @@ class CodepushApi
      * 
      *
      * @param  string $deployment_name deployment name (required)
-     * @param  \Swagger\Client\Model\UploadedRelease $uploaded_release The necessary information required to download the bundle and being the release process. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UploadedRelease $uploaded_release The necessary information required to download the bundle and being the release process. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -1965,7 +1965,7 @@ class CodepushApi
      * Create request for operation 'codePushDeploymentReleasesCreate'
      *
      * @param  string $deployment_name deployment name (required)
-     * @param  \Swagger\Client\Model\UploadedRelease $uploaded_release The necessary information required to download the bundle and being the release process. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\UploadedRelease $uploaded_release The necessary information required to download the bundle and being the release process. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2118,7 +2118,7 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2134,7 +2134,7 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2397,7 +2397,7 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object[]
      */
@@ -2414,7 +2414,7 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -2713,7 +2713,7 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2730,7 +2730,7 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3025,13 +3025,13 @@ class CodepushApi
     /**
      * Operation codePushDeploymentsCreate
      *
-     * @param  \Swagger\Client\Model\Deployment1 $deployment Deployment to be created (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Deployment1 $deployment Deployment to be created (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Deployment1
+     * @return \ZeC128\AppCenter\AppCenterApi\Deployment1
      */
     public function codePushDeploymentsCreate($deployment, $owner_name, $app_name)
     {
@@ -3042,17 +3042,17 @@ class CodepushApi
     /**
      * Operation codePushDeploymentsCreateWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Deployment1 $deployment Deployment to be created (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Deployment1 $deployment Deployment to be created (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Deployment1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\Deployment1, HTTP status code, HTTP response headers (array of strings)
      */
     public function codePushDeploymentsCreateWithHttpInfo($deployment, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\Deployment1';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Deployment1';
         $request = $this->codePushDeploymentsCreateRequest($deployment, $owner_name, $app_name);
 
         try {
@@ -3104,7 +3104,7 @@ class CodepushApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Deployment1',
+                        '\ZeC128\AppCenter\AppCenterApi\Deployment1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3127,7 +3127,7 @@ class CodepushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Deployment1 $deployment Deployment to be created (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Deployment1 $deployment Deployment to be created (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -3149,7 +3149,7 @@ class CodepushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Deployment1 $deployment Deployment to be created (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Deployment1 $deployment Deployment to be created (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -3158,7 +3158,7 @@ class CodepushApi
      */
     public function codePushDeploymentsCreateAsyncWithHttpInfo($deployment, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\Deployment1';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\Deployment1';
         $request = $this->codePushDeploymentsCreateRequest($deployment, $owner_name, $app_name);
 
         return $this->client
@@ -3201,7 +3201,7 @@ class CodepushApi
     /**
      * Create request for operation 'codePushDeploymentsCreate'
      *
-     * @param  \Swagger\Client\Model\Deployment1 $deployment Deployment to be created (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Deployment1 $deployment Deployment to be created (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -3341,7 +3341,7 @@ class CodepushApi
      * @param  string $app_name The name of the application (required)
      * @param  object $body body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3358,7 +3358,7 @@ class CodepushApi
      * @param  string $app_name The name of the application (required)
      * @param  object $body (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3627,9 +3627,9 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20066
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20066
      */
     public function codePushDeploymentsGet($deployment_name, $owner_name, $app_name)
     {
@@ -3644,13 +3644,13 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20066, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20066, HTTP status code, HTTP response headers (array of strings)
      */
     public function codePushDeploymentsGetWithHttpInfo($deployment_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20066';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20066';
         $request = $this->codePushDeploymentsGetRequest($deployment_name, $owner_name, $app_name);
 
         try {
@@ -3702,7 +3702,7 @@ class CodepushApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20066',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20066',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3756,7 +3756,7 @@ class CodepushApi
      */
     public function codePushDeploymentsGetAsyncWithHttpInfo($deployment_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20066';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20066';
         $request = $this->codePushDeploymentsGetRequest($deployment_name, $owner_name, $app_name);
 
         return $this->client
@@ -3942,9 +3942,9 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20066[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20066[]
      */
     public function codePushDeploymentsList($owner_name, $app_name)
     {
@@ -3958,13 +3958,13 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20066[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20066[], HTTP status code, HTTP response headers (array of strings)
      */
     public function codePushDeploymentsListWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20066[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20066[]';
         $request = $this->codePushDeploymentsListRequest($owner_name, $app_name);
 
         try {
@@ -4016,7 +4016,7 @@ class CodepushApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20066[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20066[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4068,7 +4068,7 @@ class CodepushApi
      */
     public function codePushDeploymentsListAsyncWithHttpInfo($owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20066[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20066[]';
         $request = $this->codePushDeploymentsListRequest($owner_name, $app_name);
 
         return $this->client
@@ -4242,7 +4242,7 @@ class CodepushApi
      * @param  string $app_name The name of the application (required)
      * @param  object $release Release to be promoted, only needs to provide optional fields, description, label, disabled, mandatory, rollout, targetBinaryVersion (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -4261,7 +4261,7 @@ class CodepushApi
      * @param  string $app_name The name of the application (required)
      * @param  object $release Release to be promoted, only needs to provide optional fields, description, label, disabled, mandatory, rollout, targetBinaryVersion (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4580,11 +4580,11 @@ class CodepushApi
      * Operation codePushDeploymentsUpdate
      *
      * @param  string $deployment_name deployment name (required)
-     * @param  \Swagger\Client\Model\Deployment $deployment Deployment modification. All fields are optional and only provided fields will get updated. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Deployment $deployment Deployment modification. All fields are optional and only provided fields will get updated. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4597,11 +4597,11 @@ class CodepushApi
      * Operation codePushDeploymentsUpdateWithHttpInfo
      *
      * @param  string $deployment_name deployment name (required)
-     * @param  \Swagger\Client\Model\Deployment $deployment Deployment modification. All fields are optional and only provided fields will get updated. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Deployment $deployment Deployment modification. All fields are optional and only provided fields will get updated. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4661,7 +4661,7 @@ class CodepushApi
      * 
      *
      * @param  string $deployment_name deployment name (required)
-     * @param  \Swagger\Client\Model\Deployment $deployment Deployment modification. All fields are optional and only provided fields will get updated. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Deployment $deployment Deployment modification. All fields are optional and only provided fields will get updated. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -4684,7 +4684,7 @@ class CodepushApi
      * 
      *
      * @param  string $deployment_name deployment name (required)
-     * @param  \Swagger\Client\Model\Deployment $deployment Deployment modification. All fields are optional and only provided fields will get updated. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Deployment $deployment Deployment modification. All fields are optional and only provided fields will get updated. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -4723,7 +4723,7 @@ class CodepushApi
      * Create request for operation 'codePushDeploymentsUpdate'
      *
      * @param  string $deployment_name deployment name (required)
-     * @param  \Swagger\Client\Model\Deployment $deployment Deployment modification. All fields are optional and only provided fields will get updated. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Deployment $deployment Deployment modification. All fields are optional and only provided fields will get updated. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -4878,7 +4878,7 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -4897,7 +4897,7 @@ class CodepushApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5228,7 +5228,7 @@ class CodepushApi
      * @param  string $client_unique_id client_unique_id (optional)
      * @param  string $is_companion is_companion (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -5248,7 +5248,7 @@ class CodepushApi
      * @param  string $client_unique_id (optional)
      * @param  string $is_companion (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5534,9 +5534,9 @@ class CodepushApi
     /**
      * Operation legacyCodePushAcquisitionUpdateDownloadStatus
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata $release_metadata Deployment status metric properties (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5548,9 +5548,9 @@ class CodepushApi
     /**
      * Operation legacyCodePushAcquisitionUpdateDownloadStatusWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata $release_metadata Deployment status metric properties (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5609,7 +5609,7 @@ class CodepushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5629,7 +5629,7 @@ class CodepushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5665,7 +5665,7 @@ class CodepushApi
     /**
      * Create request for operation 'legacyCodePushAcquisitionUpdateDownloadStatus'
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5770,9 +5770,9 @@ class CodepushApi
     /**
      * Operation legacyCodePushAcquisitionUpdateInstallsStatus
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5784,9 +5784,9 @@ class CodepushApi
     /**
      * Operation legacyCodePushAcquisitionUpdateInstallsStatusWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -5845,7 +5845,7 @@ class CodepushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5865,7 +5865,7 @@ class CodepushApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5901,7 +5901,7 @@ class CodepushApi
     /**
      * Create request for operation 'legacyCodePushAcquisitionUpdateInstallsStatus'
      *
-     * @param  \Swagger\Client\Model\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\ReleaseMetadata1 $release_metadata Deployment status metric properties (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

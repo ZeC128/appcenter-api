@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **notification_id** | **string** | Notification id. | 
 **name** | **string** | Notification name | [optional] 
-**notification_target** | [**\Swagger\Client\Model\InlineResponse20035NotificationTarget**](InlineResponse20035NotificationTarget.md) |  | [optional] 
+**notification_target** | [**\ZeC128\AppCenter\AppCenterApi\InlineResponse20035NotificationTarget**](InlineResponse20035NotificationTarget.md) |  | [optional] 
 **send_time** | [**\DateTime**](\DateTime.md) | Notification send time | [optional] 
 **pns_send_failure** | **int** | Number of the notifications failed to send to the push provider. | [optional] 
 **pns_send_success** | **int** | Number of the notifications successfully sent to push the provider. | [optional] 

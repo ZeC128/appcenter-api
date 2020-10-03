@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **starts_at** | **string** | The date the subscription began | [optional] 
 **ends_at** | **string** | The date the subscription will end or ended | [optional] 
 **days_left** | **float** | The number of days left in the subscription | [optional] 
-**tier** | [**\Swagger\Client\Model\SubscriptionTier**](SubscriptionTier.md) |  | [optional] 
+**tier** | [**\ZeC128\AppCenter\AppCenterApi\SubscriptionTier**](SubscriptionTier.md) |  | [optional] 
 **active** | **bool** | Is the subscription currently active? | [optional] 
 **id** | **string** | Id of the subscription | [optional] 
 

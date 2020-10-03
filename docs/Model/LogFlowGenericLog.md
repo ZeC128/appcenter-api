@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **event_name** | **string** | Event name. | [optional] 
 **message_id** | **string** | Message ID. | [optional] 
 **properties** | **map[string,string]** | event specific properties. | [optional] 
-**device** | [**\Swagger\Client\Model\InlineResponse20041Device**](InlineResponse20041Device.md) |  | 
+**device** | [**\ZeC128\AppCenter\AppCenterApi\InlineResponse20041Device**](InlineResponse20041Device.md) |  | 
 **auth_provider** | **string** | Auth service provider. | [optional] 
 **account_id** | **string** | Account ID of the authenticated user. | [optional] 
 

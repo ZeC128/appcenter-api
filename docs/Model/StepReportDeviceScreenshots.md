@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **crash_data** | **string[]** |  | [optional] 
 **status** | **string** |  | [optional] 
 **title** | **string** |  | [optional] 
-**screenshot** | [**\Swagger\Client\Model\StepReportScreenshot**](StepReportScreenshot.md) |  | [optional] 
+**screenshot** | [**\ZeC128\AppCenter\AppCenterApi\StepReportScreenshot**](StepReportScreenshot.md) |  | [optional] 
 **log_file** | **string** |  | [optional] 
 **appium_log_file** | **string** |  | [optional] 
 **raw_crash_data** | **string[]** |  | [optional] 

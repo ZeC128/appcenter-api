@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ZeC128\AppCenter\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ZeC128\AppCenter\ApiException;
+use ZeC128\AppCenter\Configuration;
+use ZeC128\AppCenter\HeaderSelector;
+use ZeC128\AppCenter\ObjectSerializer;
 
 /**
  * AnalyticsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ZeC128\AppCenter
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,7 +110,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -154,7 +154,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -384,9 +384,9 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20097
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20097
      */
     public function analyticsCrashCounts($start, $owner_name, $app_name, $end = null, $versions = null)
     {
@@ -405,13 +405,13 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20097, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20097, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsCrashCountsWithHttpInfo($start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20097';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20097';
         $request = $this->analyticsCrashCountsRequest($start, $owner_name, $app_name, $end, $versions);
 
         try {
@@ -463,7 +463,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20097',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20097',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -471,7 +471,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class AnalyticsApi
      */
     public function analyticsCrashCountsAsyncWithHttpInfo($start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20097';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20097';
         $request = $this->analyticsCrashCountsRequest($start, $owner_name, $app_name, $end, $versions);
 
         return $this->client
@@ -719,9 +719,9 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20093
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20093
      */
     public function analyticsCrashFreeDevicePercentages($start, $version, $owner_name, $app_name, $end = null)
     {
@@ -738,13 +738,13 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20093, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20093, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsCrashFreeDevicePercentagesWithHttpInfo($start, $version, $owner_name, $app_name, $end = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20093';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20093';
         $request = $this->analyticsCrashFreeDevicePercentagesRequest($start, $version, $owner_name, $app_name, $end);
 
         try {
@@ -796,7 +796,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20093',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20093',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -804,7 +804,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -854,7 +854,7 @@ class AnalyticsApi
      */
     public function analyticsCrashFreeDevicePercentagesAsyncWithHttpInfo($start, $version, $owner_name, $app_name, $end = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20093';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20093';
         $request = $this->analyticsCrashFreeDevicePercentagesRequest($start, $version, $owner_name, $app_name, $end);
 
         return $this->client
@@ -1058,9 +1058,9 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20097
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20097
      */
     public function analyticsCrashGroupCounts($crash_group_id, $version, $start, $owner_name, $app_name, $end = null)
     {
@@ -1080,13 +1080,13 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20097, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20097, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsCrashGroupCountsWithHttpInfo($crash_group_id, $version, $start, $owner_name, $app_name, $end = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20097';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20097';
         $request = $this->analyticsCrashGroupCountsRequest($crash_group_id, $version, $start, $owner_name, $app_name, $end);
 
         try {
@@ -1138,7 +1138,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20097',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20097',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1146,7 +1146,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1198,7 +1198,7 @@ class AnalyticsApi
      */
     public function analyticsCrashGroupCountsAsyncWithHttpInfo($crash_group_id, $version, $start, $owner_name, $app_name, $end = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20097';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20097';
         $request = $this->analyticsCrashGroupCountsRequest($crash_group_id, $version, $start, $owner_name, $app_name, $end);
 
         return $this->client
@@ -1416,9 +1416,9 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20096
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20096
      */
     public function analyticsCrashGroupModelCounts($crash_group_id, $version, $owner_name, $app_name, $top = '30')
     {
@@ -1437,13 +1437,13 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20096, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20096, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsCrashGroupModelCountsWithHttpInfo($crash_group_id, $version, $owner_name, $app_name, $top = '30')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20096';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20096';
         $request = $this->analyticsCrashGroupModelCountsRequest($crash_group_id, $version, $owner_name, $app_name, $top);
 
         try {
@@ -1495,7 +1495,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20096',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20096',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1503,7 +1503,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1553,7 +1553,7 @@ class AnalyticsApi
      */
     public function analyticsCrashGroupModelCountsAsyncWithHttpInfo($crash_group_id, $version, $owner_name, $app_name, $top = '30')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20096';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20096';
         $request = $this->analyticsCrashGroupModelCountsRequest($crash_group_id, $version, $owner_name, $app_name, $top);
 
         return $this->client
@@ -1767,9 +1767,9 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20095
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20095
      */
     public function analyticsCrashGroupOperatingSystemCounts($crash_group_id, $version, $owner_name, $app_name, $top = '30')
     {
@@ -1788,13 +1788,13 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20095, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20095, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsCrashGroupOperatingSystemCountsWithHttpInfo($crash_group_id, $version, $owner_name, $app_name, $top = '30')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20095';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20095';
         $request = $this->analyticsCrashGroupOperatingSystemCountsRequest($crash_group_id, $version, $owner_name, $app_name, $top);
 
         try {
@@ -1846,7 +1846,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20095',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20095',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1854,7 +1854,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1904,7 +1904,7 @@ class AnalyticsApi
      */
     public function analyticsCrashGroupOperatingSystemCountsAsyncWithHttpInfo($crash_group_id, $version, $owner_name, $app_name, $top = '30')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20095';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20095';
         $request = $this->analyticsCrashGroupOperatingSystemCountsRequest($crash_group_id, $version, $owner_name, $app_name, $top);
 
         return $this->client
@@ -2117,9 +2117,9 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20094
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20094
      */
     public function analyticsCrashGroupTotals($crash_group_id, $version, $owner_name, $app_name)
     {
@@ -2137,13 +2137,13 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20094, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20094, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsCrashGroupTotalsWithHttpInfo($crash_group_id, $version, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20094';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20094';
         $request = $this->analyticsCrashGroupTotalsRequest($crash_group_id, $version, $owner_name, $app_name);
 
         try {
@@ -2195,7 +2195,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20094',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20094',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2203,7 +2203,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2251,7 +2251,7 @@ class AnalyticsApi
      */
     public function analyticsCrashGroupTotalsAsyncWithHttpInfo($crash_group_id, $version, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20094';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20094';
         $request = $this->analyticsCrashGroupTotalsRequest($crash_group_id, $version, $owner_name, $app_name);
 
         return $this->client
@@ -2445,13 +2445,13 @@ class AnalyticsApi
     /**
      * Operation analyticsCrashGroupsTotals
      *
-     * @param  \Swagger\Client\Model\CrashGroups $crash_groups crash_groups (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\CrashGroups $crash_groups crash_groups (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20098[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20098[]
      */
     public function analyticsCrashGroupsTotals($crash_groups, $owner_name, $app_name)
     {
@@ -2462,17 +2462,17 @@ class AnalyticsApi
     /**
      * Operation analyticsCrashGroupsTotalsWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\CrashGroups $crash_groups (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\CrashGroups $crash_groups (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20098[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20098[], HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsCrashGroupsTotalsWithHttpInfo($crash_groups, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20098[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20098[]';
         $request = $this->analyticsCrashGroupsTotalsRequest($crash_groups, $owner_name, $app_name);
 
         try {
@@ -2524,7 +2524,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20098[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20098[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2532,7 +2532,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2547,7 +2547,7 @@ class AnalyticsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\CrashGroups $crash_groups (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\CrashGroups $crash_groups (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2569,7 +2569,7 @@ class AnalyticsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\CrashGroups $crash_groups (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\CrashGroups $crash_groups (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2578,7 +2578,7 @@ class AnalyticsApi
      */
     public function analyticsCrashGroupsTotalsAsyncWithHttpInfo($crash_groups, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20098[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20098[]';
         $request = $this->analyticsCrashGroupsTotalsRequest($crash_groups, $owner_name, $app_name);
 
         return $this->client
@@ -2621,7 +2621,7 @@ class AnalyticsApi
     /**
      * Create request for operation 'analyticsCrashGroupsTotals'
      *
-     * @param  \Swagger\Client\Model\CrashGroups $crash_groups (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\CrashGroups $crash_groups (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2757,11 +2757,11 @@ class AnalyticsApi
      * Operation analyticsCreateOrUpdateAudience
      *
      * @param  string $audience_name The name of the audience (required)
-     * @param  \Swagger\Client\Model\Audience $audience Audience definition (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Audience $audience Audience definition (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -2775,11 +2775,11 @@ class AnalyticsApi
      * Operation analyticsCreateOrUpdateAudienceWithHttpInfo
      *
      * @param  string $audience_name The name of the audience (required)
-     * @param  \Swagger\Client\Model\Audience $audience Audience definition (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Audience $audience Audience definition (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2845,7 +2845,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2861,7 +2861,7 @@ class AnalyticsApi
      * 
      *
      * @param  string $audience_name The name of the audience (required)
-     * @param  \Swagger\Client\Model\Audience $audience Audience definition (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Audience $audience Audience definition (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2884,7 +2884,7 @@ class AnalyticsApi
      * 
      *
      * @param  string $audience_name The name of the audience (required)
-     * @param  \Swagger\Client\Model\Audience $audience Audience definition (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Audience $audience Audience definition (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -2937,7 +2937,7 @@ class AnalyticsApi
      * Create request for operation 'analyticsCreateOrUpdateAudience'
      *
      * @param  string $audience_name The name of the audience (required)
-     * @param  \Swagger\Client\Model\Audience $audience Audience definition (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Audience $audience Audience definition (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -3097,7 +3097,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3113,7 +3113,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3157,7 +3157,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3386,7 +3386,7 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -3406,7 +3406,7 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3472,7 +3472,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3727,13 +3727,13 @@ class AnalyticsApi
     /**
      * Operation analyticsDistributionReleaseCounts
      *
-     * @param  \Swagger\Client\Model\Releases $releases The releases to retrieve. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Releases $releases The releases to retrieve. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20092
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20092
      */
     public function analyticsDistributionReleaseCounts($releases, $owner_name, $app_name)
     {
@@ -3744,17 +3744,17 @@ class AnalyticsApi
     /**
      * Operation analyticsDistributionReleaseCountsWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Releases $releases The releases to retrieve. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Releases $releases The releases to retrieve. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20092, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20092, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsDistributionReleaseCountsWithHttpInfo($releases, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20092';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20092';
         $request = $this->analyticsDistributionReleaseCountsRequest($releases, $owner_name, $app_name);
 
         try {
@@ -3806,7 +3806,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20092',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20092',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3814,7 +3814,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3829,7 +3829,7 @@ class AnalyticsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Releases $releases The releases to retrieve. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Releases $releases The releases to retrieve. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -3851,7 +3851,7 @@ class AnalyticsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Releases $releases The releases to retrieve. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Releases $releases The releases to retrieve. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -3860,7 +3860,7 @@ class AnalyticsApi
      */
     public function analyticsDistributionReleaseCountsAsyncWithHttpInfo($releases, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20092';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20092';
         $request = $this->analyticsDistributionReleaseCountsRequest($releases, $owner_name, $app_name);
 
         return $this->client
@@ -3903,7 +3903,7 @@ class AnalyticsApi
     /**
      * Create request for operation 'analyticsDistributionReleaseCounts'
      *
-     * @param  \Swagger\Client\Model\Releases $releases The releases to retrieve. (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Releases $releases The releases to retrieve. (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -4045,9 +4045,9 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20088
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20088
      */
     public function analyticsEventCount($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
@@ -4065,13 +4065,13 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20088, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20088, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsEventCountWithHttpInfo($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20088';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20088';
         $request = $this->analyticsEventCountRequest($event_name, $start, $owner_name, $app_name, $end, $versions);
 
         try {
@@ -4123,7 +4123,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20088',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20088',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4131,7 +4131,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4183,7 +4183,7 @@ class AnalyticsApi
      */
     public function analyticsEventCountAsyncWithHttpInfo($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20088';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20088';
         $request = $this->analyticsEventCountRequest($event_name, $start, $owner_name, $app_name, $end, $versions);
 
         return $this->client
@@ -4397,9 +4397,9 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20089
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20089
      */
     public function analyticsEventDeviceCount($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
@@ -4417,13 +4417,13 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20089, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20089, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsEventDeviceCountWithHttpInfo($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20089';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20089';
         $request = $this->analyticsEventDeviceCountRequest($event_name, $start, $owner_name, $app_name, $end, $versions);
 
         try {
@@ -4475,7 +4475,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20089',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20089',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4483,7 +4483,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4535,7 +4535,7 @@ class AnalyticsApi
      */
     public function analyticsEventDeviceCountAsyncWithHttpInfo($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20089';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20089';
         $request = $this->analyticsEventDeviceCountRequest($event_name, $start, $owner_name, $app_name, $end, $versions);
 
         return $this->client
@@ -4749,9 +4749,9 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20091
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20091
      */
     public function analyticsEventPerDeviceCount($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
@@ -4769,13 +4769,13 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20091, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20091, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsEventPerDeviceCountWithHttpInfo($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20091';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20091';
         $request = $this->analyticsEventPerDeviceCountRequest($event_name, $start, $owner_name, $app_name, $end, $versions);
 
         try {
@@ -4827,7 +4827,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20091',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20091',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4835,7 +4835,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4887,7 +4887,7 @@ class AnalyticsApi
      */
     public function analyticsEventPerDeviceCountAsyncWithHttpInfo($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20091';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20091';
         $request = $this->analyticsEventPerDeviceCountRequest($event_name, $start, $owner_name, $app_name, $end, $versions);
 
         return $this->client
@@ -5101,9 +5101,9 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20090
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20090
      */
     public function analyticsEventPerSessionCount($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
@@ -5121,13 +5121,13 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20090, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20090, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsEventPerSessionCountWithHttpInfo($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20090';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20090';
         $request = $this->analyticsEventPerSessionCountRequest($event_name, $start, $owner_name, $app_name, $end, $versions);
 
         try {
@@ -5179,7 +5179,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20090',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20090',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5187,7 +5187,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5239,7 +5239,7 @@ class AnalyticsApi
      */
     public function analyticsEventPerSessionCountAsyncWithHttpInfo($event_name, $start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20090';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20090';
         $request = $this->analyticsEventPerSessionCountRequest($event_name, $start, $owner_name, $app_name, $end, $versions);
 
         return $this->client
@@ -5450,9 +5450,9 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20087
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20087
      */
     public function analyticsEventProperties($event_name, $owner_name, $app_name)
     {
@@ -5467,13 +5467,13 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20087, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20087, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsEventPropertiesWithHttpInfo($event_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20087';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20087';
         $request = $this->analyticsEventPropertiesRequest($event_name, $owner_name, $app_name);
 
         try {
@@ -5525,7 +5525,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20087',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20087',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5533,7 +5533,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5579,7 +5579,7 @@ class AnalyticsApi
      */
     public function analyticsEventPropertiesAsyncWithHttpInfo($event_name, $owner_name, $app_name)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20087';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20087';
         $request = $this->analyticsEventPropertiesRequest($event_name, $owner_name, $app_name);
 
         return $this->client
@@ -5771,9 +5771,9 @@ class AnalyticsApi
      * @param  string[] $versions versions (optional)
      * @param  int $top The number of property values to return. Set to 0 in order to fetch all results available. (optional, default to 10)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20086
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20086
      */
     public function analyticsEventPropertyCounts($event_name, $event_property_name, $start, $owner_name, $app_name, $end = null, $versions = null, $top = '10')
     {
@@ -5793,13 +5793,13 @@ class AnalyticsApi
      * @param  string[] $versions (optional)
      * @param  int $top The number of property values to return. Set to 0 in order to fetch all results available. (optional, default to 10)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20086, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20086, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsEventPropertyCountsWithHttpInfo($event_name, $event_property_name, $start, $owner_name, $app_name, $end = null, $versions = null, $top = '10')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20086';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20086';
         $request = $this->analyticsEventPropertyCountsRequest($event_name, $event_property_name, $start, $owner_name, $app_name, $end, $versions, $top);
 
         try {
@@ -5851,7 +5851,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20086',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20086',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5859,7 +5859,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5915,7 +5915,7 @@ class AnalyticsApi
      */
     public function analyticsEventPropertyCountsAsyncWithHttpInfo($event_name, $event_property_name, $start, $owner_name, $app_name, $end = null, $versions = null, $top = '10')
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20086';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20086';
         $request = $this->analyticsEventPropertyCountsRequest($event_name, $event_property_name, $start, $owner_name, $app_name, $end, $versions, $top);
 
         return $this->client
@@ -6157,7 +6157,7 @@ class AnalyticsApi
      * @param  string $inlinecount Controls whether or not to include a count of all the items across all pages. (optional, default to none)
      * @param  string $orderby controls the sorting order and sorting based on which column (optional, default to count desc)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -6181,7 +6181,7 @@ class AnalyticsApi
      * @param  string $inlinecount Controls whether or not to include a count of all the items across all pages. (optional, default to none)
      * @param  string $orderby controls the sorting order and sorting based on which column (optional, default to count desc)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6247,7 +6247,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6542,7 +6542,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6558,7 +6558,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6602,7 +6602,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6821,7 +6821,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -6837,7 +6837,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6881,7 +6881,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7100,9 +7100,9 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $start Start date time in data in ISO 8601 date time format. It must be within the current day in the UTC timezone. The default value is the start time of the current day in UTC timezone. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20068
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20068
      */
     public function analyticsGenericLogFlow($owner_name, $app_name, $start = null)
     {
@@ -7117,13 +7117,13 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $start Start date time in data in ISO 8601 date time format. It must be within the current day in the UTC timezone. The default value is the start time of the current day in UTC timezone. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20068, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20068, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsGenericLogFlowWithHttpInfo($owner_name, $app_name, $start = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20068';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20068';
         $request = $this->analyticsGenericLogFlowRequest($owner_name, $app_name, $start);
 
         try {
@@ -7175,7 +7175,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20068',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20068',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7183,7 +7183,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7229,7 +7229,7 @@ class AnalyticsApi
      */
     public function analyticsGenericLogFlowAsyncWithHttpInfo($owner_name, $app_name, $start = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20068';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20068';
         $request = $this->analyticsGenericLogFlowRequest($owner_name, $app_name, $start);
 
         return $this->client
@@ -7406,7 +7406,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -7423,7 +7423,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -7489,7 +7489,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7732,9 +7732,9 @@ class AnalyticsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20085
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20085
      */
     public function analyticsLanguageCounts($start, $owner_name, $app_name, $end = null, $top = '30', $versions = null)
     {
@@ -7752,13 +7752,13 @@ class AnalyticsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20085, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20085, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsLanguageCountsWithHttpInfo($start, $owner_name, $app_name, $end = null, $top = '30', $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20085';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20085';
         $request = $this->analyticsLanguageCountsRequest($start, $owner_name, $app_name, $end, $top, $versions);
 
         try {
@@ -7810,7 +7810,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20085',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20085',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7818,7 +7818,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7870,7 +7870,7 @@ class AnalyticsApi
      */
     public function analyticsLanguageCountsAsyncWithHttpInfo($start, $owner_name, $app_name, $end = null, $top = '30', $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20085';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20085';
         $request = $this->analyticsLanguageCountsRequest($start, $owner_name, $app_name, $end, $top, $versions);
 
         return $this->client
@@ -8078,7 +8078,7 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $include_disabled Include disabled audience definitions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -8095,7 +8095,7 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  bool $include_disabled Include disabled audience definitions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8161,7 +8161,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8383,7 +8383,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -8399,7 +8399,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8465,7 +8465,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8680,7 +8680,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -8696,7 +8696,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -8762,7 +8762,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8979,7 +8979,7 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  string $contains Contains string (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -8997,7 +8997,7 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  string $contains Contains string (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -9063,7 +9063,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9303,9 +9303,9 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $start Start date time in data in ISO 8601 date time format. It must be within the current day in the UTC timezone. The default value is the start time of the current day in UTC timezone. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20084
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20084
      */
     public function analyticsLogFlow($owner_name, $app_name, $start = null)
     {
@@ -9320,13 +9320,13 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $start Start date time in data in ISO 8601 date time format. It must be within the current day in the UTC timezone. The default value is the start time of the current day in UTC timezone. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20084, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20084, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsLogFlowWithHttpInfo($owner_name, $app_name, $start = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20084';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20084';
         $request = $this->analyticsLogFlowRequest($owner_name, $app_name, $start);
 
         try {
@@ -9378,7 +9378,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20084',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20084',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9386,7 +9386,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9432,7 +9432,7 @@ class AnalyticsApi
      */
     public function analyticsLogFlowAsyncWithHttpInfo($owner_name, $app_name, $start = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20084';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20084';
         $request = $this->analyticsLogFlowRequest($owner_name, $app_name, $start);
 
         return $this->client
@@ -9612,9 +9612,9 @@ class AnalyticsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20083
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20083
      */
     public function analyticsModelCounts($start, $owner_name, $app_name, $end = null, $top = '30', $versions = null)
     {
@@ -9632,13 +9632,13 @@ class AnalyticsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20083, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20083, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsModelCountsWithHttpInfo($start, $owner_name, $app_name, $end = null, $top = '30', $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20083';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20083';
         $request = $this->analyticsModelCountsRequest($start, $owner_name, $app_name, $end, $top, $versions);
 
         try {
@@ -9690,7 +9690,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20083',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20083',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9698,7 +9698,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9750,7 +9750,7 @@ class AnalyticsApi
      */
     public function analyticsModelCountsAsyncWithHttpInfo($start, $owner_name, $app_name, $end = null, $top = '30', $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20083';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20083';
         $request = $this->analyticsModelCountsRequest($start, $owner_name, $app_name, $end, $top, $versions);
 
         return $this->client
@@ -9961,9 +9961,9 @@ class AnalyticsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20082
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20082
      */
     public function analyticsOperatingSystemCounts($start, $owner_name, $app_name, $end = null, $top = '30', $versions = null)
     {
@@ -9981,13 +9981,13 @@ class AnalyticsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20082, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20082, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsOperatingSystemCountsWithHttpInfo($start, $owner_name, $app_name, $end = null, $top = '30', $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20082';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20082';
         $request = $this->analyticsOperatingSystemCountsRequest($start, $owner_name, $app_name, $end, $top, $versions);
 
         try {
@@ -10039,7 +10039,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20082',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20082',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10047,7 +10047,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10099,7 +10099,7 @@ class AnalyticsApi
      */
     public function analyticsOperatingSystemCountsAsyncWithHttpInfo($start, $owner_name, $app_name, $end = null, $top = '30', $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20082';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20082';
         $request = $this->analyticsOperatingSystemCountsRequest($start, $owner_name, $app_name, $end, $top, $versions);
 
         return $this->client
@@ -10310,9 +10310,9 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20079
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20079
      */
     public function analyticsPerDeviceCounts($start, $interval, $owner_name, $app_name, $end = null, $versions = null)
     {
@@ -10330,13 +10330,13 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20079, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20079, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsPerDeviceCountsWithHttpInfo($start, $interval, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20079';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20079';
         $request = $this->analyticsPerDeviceCountsRequest($start, $interval, $owner_name, $app_name, $end, $versions);
 
         try {
@@ -10388,7 +10388,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20079',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20079',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10396,7 +10396,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10448,7 +10448,7 @@ class AnalyticsApi
      */
     public function analyticsPerDeviceCountsAsyncWithHttpInfo($start, $interval, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20079';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20079';
         $request = $this->analyticsPerDeviceCountsRequest($start, $interval, $owner_name, $app_name, $end, $versions);
 
         return $this->client
@@ -10658,7 +10658,7 @@ class AnalyticsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -10678,7 +10678,7 @@ class AnalyticsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -10744,7 +10744,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11007,9 +11007,9 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20081[]
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20081[]
      */
     public function analyticsSessionCounts($start, $interval, $owner_name, $app_name, $end = null, $versions = null)
     {
@@ -11027,13 +11027,13 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20081[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20081[], HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsSessionCountsWithHttpInfo($start, $interval, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20081[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20081[]';
         $request = $this->analyticsSessionCountsRequest($start, $interval, $owner_name, $app_name, $end, $versions);
 
         try {
@@ -11085,7 +11085,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20081[]',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20081[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11093,7 +11093,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11145,7 +11145,7 @@ class AnalyticsApi
      */
     public function analyticsSessionCountsAsyncWithHttpInfo($start, $interval, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20081[]';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20081[]';
         $request = $this->analyticsSessionCountsRequest($start, $interval, $owner_name, $app_name, $end, $versions);
 
         return $this->client
@@ -11354,9 +11354,9 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20080
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20080
      */
     public function analyticsSessionDurationsDistribution($start, $owner_name, $app_name, $end = null, $versions = null)
     {
@@ -11373,13 +11373,13 @@ class AnalyticsApi
      * @param  \DateTime $end Last date time in data in ISO 8601 date time format. (optional)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20080, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20080, HTTP status code, HTTP response headers (array of strings)
      */
     public function analyticsSessionDurationsDistributionWithHttpInfo($start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20080';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20080';
         $request = $this->analyticsSessionDurationsDistributionRequest($start, $owner_name, $app_name, $end, $versions);
 
         try {
@@ -11431,7 +11431,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20080',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20080',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11439,7 +11439,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11489,7 +11489,7 @@ class AnalyticsApi
      */
     public function analyticsSessionDurationsDistributionAsyncWithHttpInfo($start, $owner_name, $app_name, $end = null, $versions = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20080';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20080';
         $request = $this->analyticsSessionDurationsDistributionRequest($start, $owner_name, $app_name, $end, $versions);
 
         return $this->client
@@ -11681,11 +11681,11 @@ class AnalyticsApi
     /**
      * Operation analyticsTestAudience
      *
-     * @param  \Swagger\Client\Model\Audience1 $audience Audience definition (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Audience1 $audience Audience definition (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -11698,11 +11698,11 @@ class AnalyticsApi
     /**
      * Operation analyticsTestAudienceWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\Audience1 $audience Audience definition (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Audience1 $audience Audience definition (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -11768,7 +11768,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11783,7 +11783,7 @@ class AnalyticsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Audience1 $audience Audience definition (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Audience1 $audience Audience definition (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -11805,7 +11805,7 @@ class AnalyticsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\Audience1 $audience Audience definition (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Audience1 $audience Audience definition (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -11857,7 +11857,7 @@ class AnalyticsApi
     /**
      * Create request for operation 'analyticsTestAudience'
      *
-     * @param  \Swagger\Client\Model\Audience1 $audience Audience definition (required)
+     * @param  \ZeC128\AppCenter\AppCenterApi\Audience1 $audience Audience definition (required)
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
@@ -11999,7 +11999,7 @@ class AnalyticsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      * @param  string[] $versions versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -12019,7 +12019,7 @@ class AnalyticsApi
      * @param  int $top The maximum number of results to return. (0 will fetch all results) (optional, default to 30)
      * @param  string[] $versions (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12085,7 +12085,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault4',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault4',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12344,7 +12344,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -12360,7 +12360,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -12635,9 +12635,9 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $date Date of data requested (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse20068
+     * @return \ZeC128\AppCenter\AppCenterApi\InlineResponse20068
      */
     public function crashesListSessionLogs($crash_id, $owner_name, $app_name, $date = null)
     {
@@ -12653,13 +12653,13 @@ class AnalyticsApi
      * @param  string $app_name The name of the application (required)
      * @param  \DateTime $date Date of data requested (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse20068, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ZeC128\AppCenter\AppCenterApi\InlineResponse20068, HTTP status code, HTTP response headers (array of strings)
      */
     public function crashesListSessionLogsWithHttpInfo($crash_id, $owner_name, $app_name, $date = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20068';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20068';
         $request = $this->crashesListSessionLogsRequest($crash_id, $owner_name, $app_name, $date);
 
         try {
@@ -12711,7 +12711,7 @@ class AnalyticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse20068',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponse20068',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12719,7 +12719,7 @@ class AnalyticsApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponseDefault2',
+                        '\ZeC128\AppCenter\AppCenterApi\InlineResponseDefault2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12767,7 +12767,7 @@ class AnalyticsApi
      */
     public function crashesListSessionLogsAsyncWithHttpInfo($crash_id, $owner_name, $app_name, $date = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse20068';
+        $returnType = '\ZeC128\AppCenter\AppCenterApi\InlineResponse20068';
         $request = $this->crashesListSessionLogsRequest($crash_id, $owner_name, $app_name, $date);
 
         return $this->client
@@ -12959,7 +12959,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -12976,7 +12976,7 @@ class AnalyticsApi
      * @param  string $owner_name The name of the owner (required)
      * @param  string $app_name The name of the application (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ZeC128\AppCenter\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
