@@ -58,8 +58,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: Basic
 $config = Swagger\Client\Configuration::getDefaultConfiguration()
-    ->setUsername('YOUR_USERNAME')
-    ->setPassword('YOUR_PASSWORD');
+    ->setApiKey('X-API-Token', '[APIKEY]');
 
 $apiInstance = new Swagger\Client\Api\AccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
