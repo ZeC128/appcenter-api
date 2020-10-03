@@ -1,6 +1,7 @@
 {
     "name": "zec128/appcenter-by-swagger",
     "description": "",
+    "version": "1.0.0",
     "keywords": [
         "swagger",
         "php",
