@@ -1,0 +1,11 @@
+# ApiTokenDeleteResponse
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **string** | The unique id (UUID) of the api token | 
+**token_hash** | **string** | The hashed value of api token | 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

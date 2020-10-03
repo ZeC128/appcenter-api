@@ -1,0 +1,12 @@
+# JiraSecretDetails
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**base_url** | **string** | baseUrl to connect to jira instance | 
+**username** | **string** | username to connect to jira instance | 
+**password** | **string** | password to connect to jira instance | 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

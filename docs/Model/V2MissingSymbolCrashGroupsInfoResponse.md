@@ -1,0 +1,10 @@
+# V2MissingSymbolCrashGroupsInfoResponse
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**total_crash_count** | **int** | total number of crashes for all missing symbol groups | 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
